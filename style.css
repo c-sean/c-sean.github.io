@@ -1,0 +1,197 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+nav, button, section, header, footer, title {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+	vertical-align: middle;
+}
+/*---------------------------------reset end---------------------------------*/
+a {
+    text-decoration: none;
+    color: #c5b392;
+}
+/*@font-face {
+   font-family: Butler_Bold_Stencil;
+   src: url(Butler_Bold_Stencil.otf);
+}*/
+/*@font-face {
+   font-family: Futura;
+   src: url(Futura Book.ttf);
+}*/
+/*@font-face {
+  font-family: "NSC_Light";
+  src: url('NotoSansCJKjp-DemiLight.eot?'); 
+  src: url('NotoSansCJKjp-DemiLight.eot?#iefix') format('embedded-opentype'); 
+  src: url('NotoSansCJKjp-DemiLight.woff?') format('woff'); 
+}*/
+/*@font-face {
+   font-family: Futura;
+   src: url(Futura Light.ttf);
+}*/
+html{
+    overflow-x: hidden;
+}
+body {
+    overflow: hidden;
+    font-family:　Futura, sans-serif;
+    font-size: 12px;
+    color: #c5b392;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #000;
+}
+.container, .filter_wrap {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container {
+    margin-top: 90px;
+    flex:1 0 auto;
+}
+.ss-active-child {
+    position: absolute;
+}
+li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+li:nth-child(2){
+    border-left: 1px solid #3c372a;
+}
+.item {
+    width: 240px;
+    text-align: center;
+    overflow: hidden;
+    height: 400px;
+}
+.slider {
+    top: 0px;
+    position: relative;
+}
+.slider_origin, .slider_clone{
+    margin-bottom: 2px;
+    background-color: rgba(255,255,255,.1);
+}
+.slider_origin img {
+    opacity: 0;
+}
+.header {
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #c5b392;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.filter_trigger {
+    display: none;
+}
+.filter {
+    display: inline-block;
+    padding: 25px 30px 20px;
+    min-width: 70px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 1px solid transparent;
+    transition: color 1s, border-bottom 1s;
+    /*font-family: 'Pinyon Script', sans-serif;*/
+    /*font-size: 17px;*/
+}
+.title {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
+.filter, h1{
+    font-family:'Pinyon Script', sans-serif;
+    letter-spacing: .1em;
+    font-size: 17px;
+    font-weight: normal;
+}
+h2{
+    font-size: 12px;
+    color: #3c372a;
+    letter-spacing: .05em;
+    margin-top: 7px;
+    font-weight: normal;
+}
+a.active, .filter:not(.disable):hover  {
+    border-bottom: 1px solid #c5b392;
+}
+a.disable {
+    color: #5F5646;
+    cursor: default;
+}
+.fa-tags { 
+    margin-right: 6px;
+}
+.back_top{
+    display: block;
+    width: 100px;
+    padding: 10px 50px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(39, 49, 78, 0.5);
+    color: #E6E6E6;
+}
+.footer{
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(210, 198, 175, 0.5);
+}
+::-moz-selection {
+    color: #D7624E; 
+    background: none;
+}
+::selection {
+    color: #D7624E; 
+    background: none;
+}
+@media (max-width: 650px) {
+    li:nth-child(2) {
+        border-left: none;
+    }
+    .container{
+        margin-top: 180px;
+    }
+}
