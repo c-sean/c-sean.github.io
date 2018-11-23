@@ -294,7 +294,7 @@ var SITE = SITE || {};
 				$popup.bind('click', function(e) {
 					e.preventDefault();
 					$.getJSON('content/ajax/works.json', function (data) {
-						initPhotoSwipe(data);console.log(data);
+						initPhotoSwipe(data);
 					});
 				});
 
@@ -310,7 +310,7 @@ var SITE = SITE || {};
 				    nextPreviousSlideSpeed: 500,
 				    captionAndToolbarAutoHideDelay: 0,
 				    captionAndToolbarOpacity: 1,
-				    zIndex: 1300,
+				    zIndex: 1300,console.log(obj);
 				    getImageSource: function(obj){
 						return obj.url;
 					},
