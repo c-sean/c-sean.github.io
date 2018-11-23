@@ -37,7 +37,7 @@ var SITE = SITE || {};
 				// 	this.
 				// })
 				//-------------------- nicescroll start --------------------//
-				$("html").niceScroll({
+				$("body").niceScroll({
 					cursorcolor: '#B8D8D4',
 					cursorwidth: 10
 				});
@@ -87,7 +87,7 @@ var SITE = SITE || {};
 					overlayColor : "#f7f7f4",
 					overlayOpacity : 0.85,
 					onComplete : function() {
-						$('html').niceScroll({horizrailenabled:false});
+						$('body').niceScroll({horizrailenabled:false});
 						var popHeader = get_header();
 						$('#l_side h4').text(popHeader[0]).animate({'opacity':.5}, 1200, 'easeOutExpo');
 						$('#l_side h5').text(popHeader[1]).animate({'opacity':.5}, 1200, 'easeOutExpo');
@@ -198,6 +198,9 @@ var SITE = SITE || {};
 					},
 					onCleanup : function() {
 						STEP_PRICE = 0;
+					},
+					onClosed : function() {
+						$("body").niceScroll();
 					}
 			 	});
 //-------------------- fancybox end --------------------//
