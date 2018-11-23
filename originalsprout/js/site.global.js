@@ -87,6 +87,7 @@ var SITE = SITE || {};
 					overlayColor : "#f7f7f4",
 					overlayOpacity : 0.85,
 					onComplete : function() {
+						$('html').getNiceScroll().hide();
 						var popHeader = get_header();
 						$('#l_side h4').text(popHeader[0]).animate({'opacity':.5}, 1200, 'easeOutExpo');
 						$('#l_side h5').text(popHeader[1]).animate({'opacity':.5}, 1200, 'easeOutExpo');
