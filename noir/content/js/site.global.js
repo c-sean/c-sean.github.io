@@ -303,14 +303,14 @@ var SITE = SITE || {};
 			});
 		}
 
-		function initPhotoSwipe(galleryJsonData) {
+		function initPhotoSwipe(galleryJsonData) {console.log(obj);console.log(galleryJsonData);
 			var pswi = myPhotoSwipe({
 				options: {
 					captionAndToolbarFlipPosition: false,
 				    nextPreviousSlideSpeed: 500,
 				    captionAndToolbarAutoHideDelay: 0,
 				    captionAndToolbarOpacity: 1,
-				    zIndex: 1300,console.log(obj);
+				    zIndex: 1300,
 				    getImageSource: function(obj){
 						return obj.url;
 					},
