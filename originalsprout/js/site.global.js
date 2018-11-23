@@ -27,11 +27,11 @@ var SITE = SITE || {};
 		this.__construct = function() 
 		{
 			$(function() {
-				var $btnLogoAndHome   = $('#logo, #btn_home');
-				var $btnHome          = $('#btn_home');
-				var $btnAbout         = $('#btn_about');
-				var $btnProduct       = $('#btn_product');
-				var $btnContact       = $('#btn_contact');
+				var $btnLogoAndHome   = $('#logo, #bt_home');
+				var $btnHome          = $('#bt_home');
+				var $btnAbout         = $('#bt_about');
+				var $btnProduct       = $('#bt_product');
+				var $btnContact       = $('#bt_contact');
 				var $target           = $('html, body');
 				// $('#product-list img').imgpreload({
 				// 	this.
@@ -143,56 +143,56 @@ var SITE = SITE || {};
 						});
 					//-------------------- total end --------------------//
 					//-------------------- ajax order start --------------------//
-						// var $overlayer = $('#over_layer'),
-						// 	$form = $('#order_form'),
-						// 	uri = $form.attr('action'),
-						// 	submit_active = false;
+						var $overlayer = $('#over_layer'),
+							$form = $('#order_form'),
+							uri = $form.attr('action'),
+							submit_active = false;
 
-						// $form.removeAttr('action');
+						$form.removeAttr('action');
 
-						// var update_hidden_field = function()
-						// {
-						// 	var header = get_header(),
-						// 		d  = get_product_data();
+						var update_hidden_field = function()
+						{
+							var header = get_header(),
+								d  = get_product_data();
 								
-						// 	$form.find('input[name="product_id"]').val(d.p_id);
-						// 	$form.find('input[name="product_name_en"]').val(header[0]);
-						// 	$form.find('input[name="product_name_ch"]').val(header[1]);
-						// 	$form.find('input[name="product_img"]').val(get_img());
-						// 	$form.find('input[name="product_total_price"]').val((get_product_price()).replace(',', ''));
-						// };
+							$form.find('input[name="product_id"]').val(d.p_id);
+							$form.find('input[name="product_name_en"]').val(header[0]);
+							$form.find('input[name="product_name_ch"]').val(header[1]);
+							$form.find('input[name="product_img"]').val(get_img());
+							$form.find('input[name="product_total_price"]').val((get_product_price()).replace(',', ''));
+						};
 
-						// update_hidden_field();
+						update_hidden_field();
 						
-						// $form.bind('submit', function (e) {
-						// 	$.fancybox.showActivity();
-						// 	$overlayer.css('display', 'block');
+						$form.bind('submit', function (e) {
+							$.fancybox.showActivity();
+							$overlayer.css('display', 'block');
 
-						// 	if (submit_active == false) {
-						// 		submit_active = true;
-						// 		update_hidden_field();
+							if (submit_active == false) {
+								submit_active = true;
+								update_hidden_field();
 								
-						// 		var form_data = $form.serialize();
+								var form_data = $form.serialize();
 
-						// 		$.ajax({
-						// 			url: uri,
-						// 			type: "POST",
-						// 			data: form_data + '&originalsprout_csrf_token=' + $.cookie('originalsproutcsrf'),
-						// 			success: function (r) {
-						// 				if (r == 'success') {
-						// 					window.location.href = SITE_URL;
-						// 				} else {
-						// 					alert(r);
-						// 				}
-						// 				submit_active = false;
-						// 				$overlayer.css('display', 'none');
-						// 				$.fancybox.hideActivity();
-						// 			}
-						// 		});
-						// 	}
+								$.ajax({
+									url: uri,
+									type: "POST",
+									data: form_data + '&originalsprout_csrf_token=' + $.cookie('originalsproutcsrf'),
+									success: function (r) {
+										if (r == 'success') {
+											window.location.href = SITE_URL;
+										} else {
+											alert(r);
+										}
+										submit_active = false;
+										$overlayer.css('display', 'none');
+										$.fancybox.hideActivity();
+									}
+								});
+							}
 							
-						// 	e.preventDefault();
-						// });
+							e.preventDefault();
+						});
 					//-------------------- ajax order end --------------------//
 					},
 					onCleanup : function() {
@@ -217,43 +217,55 @@ var SITE = SITE || {};
 		// }
 		// return false;
 	// });
-				var speed = 1000;
-				var ease  = 'easeInOutExpo';
-				// home
-				$btnLogoAndHome.bind('click', function(e) {
-					e.preventDefault();
-		    		$.scrollTo("#home", speed, {
-		    			axis:'y',
-		    			easing: ease
-					});
-		    	});
+				// $('#Btabout').click(function(e){
+		// e.preventDefault();
+		// console.log($btnAbout);
+		// });
+				$('#header a').on('click',function(e){
+                    var $anchor = $(this);
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000,'easeOutExpo');
+                    e.preventDefault();
+                });
 
-				// about
-				$btnAbout.bind('click', function(e) {
-					e.preventDefault();
-		    		$.scrollTo("#about", speed, {
-		    			axis:'y',
-		    			easing: ease
-					});
-		    	});
+				// var speed = 1000;
+				// var ease  = 'easeInOutExpo';
+				// // home
+				// $btnLogoAndHome.on('click', function(e) {
+				// 	e.preventDefault();
+		  //   		$.scrollTo("#home", speed, {
+		  //   			axis:'y',
+		  //   			easing: ease
+				// 	});
+		  //   	});
 
-				// product
-				$btnProduct.bind('click', function(e) {
-					e.preventDefault();
-		    		$.scrollTo("#product", speed, {
-		    			axis:'y',
-		    			easing: ease
-					});
-		    	});	
+				// // about
+				// $btnAbout.on('click', function(e) {
+				// 	e.preventDefault();
+		  //   		$.scrollTo("#about", speed, {
+		  //   			axis:'y',
+		  //   			easing: ease
+				// 	});
+		  //   	});
 
-				// contact
-				$btnContact.bind('click', function(e) {
-					e.preventDefault();
-		    		$.scrollTo("#contact", speed, {
-		    			axis:'y',
-		    			easing: ease,
-					});
-		    	});
+				// // product
+				// $btnProduct.on('click', function(e) {
+				// 	e.preventDefault();
+		  //   		$.scrollTo("#product", speed, {
+		  //   			axis:'y',
+		  //   			easing: ease
+				// 	});
+		  //   	});	
+
+				// // contact
+				// $btnContact.on('click', function(e) {
+				// 	e.preventDefault();
+		  //   		$.scrollTo("#contact", speed, {
+		  //   			axis:'y',
+		  //   			easing: ease,
+				// 	});
+		  //   	});
 //-------------------- scrollTo end --------------------//
 //-------------------- bxslider start --------------------//
 				var slider = $("#thumbnail ul").bxSlider({
