@@ -294,7 +294,7 @@ var SITE = SITE || {};
 				$popup.bind('click', function(e) {
 					e.preventDefault();
 					$.getJSON('content/ajax/works.json', function (data) {
-						initPhotoSwipe(data);
+						initPhotoSwipe(data);console.log(data);
 					});
 				});
 
