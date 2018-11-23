@@ -303,7 +303,7 @@ var SITE = SITE || {};
 			});
 		}
 
-		function initPhotoSwipe(galleryJsonData) {console.log(obj);console.log(galleryJsonData);
+		function initPhotoSwipe(galleryJsonData) {
 			var pswi = myPhotoSwipe({
 				options: {
 					captionAndToolbarFlipPosition: false,
