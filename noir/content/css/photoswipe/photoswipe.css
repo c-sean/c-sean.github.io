@@ -1,0 +1,294 @@
+/*
+ * photoswipe.css
+ * Copyright (c) %%year%% by Code Computerlove (http://www.codecomputerlove.com)
+ * Licensed under the MIT license
+ *
+ * Default styles for PhotoSwipe
+ * Avoid any position or dimension based styles
+ * where possible, unless specified already here.
+ * The gallery automatically works out gallery item
+ * positions etc.
+ */
+
+ 
+body.ps-active, body.ps-building, div.ps-active, div.ps-building
+{
+	background: #000;
+	/*overflow: hidden;*/
+}
+body.ps-active *, div.ps-active *
+{ 
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+	/*display: none;*/
+}
+body.ps-active *:focus, div.ps-active *:focus 
+{ 
+	outline: 0; 
+}
+
+
+/* Document overlay */
+div.ps-document-overlay 
+{
+	background: rgba(0,0,0,0.9);	
+}
+
+
+/* UILayer */
+div.ps-uilayer { 
+	background: #000;
+	cursor: pointer;
+}
+
+
+/* Zoom/pan/rotate layer */
+div.ps-zoom-pan-rotate{
+	background: #000;
+}
+
+div.ps-zoom-pan-rotate *  { display: block; }
+
+
+/* Carousel */
+div.ps-carousel-item-loading 
+{ 
+	background: url(loader.gif) no-repeat center center; 
+}
+
+div.ps-carousel-item-error 
+{ 
+	background: url(error.gif) no-repeat center center; 
+}
+
+div.ps-carousel-item img
+{
+	-webkit-box-shadow: 0 0px 50px #000;
+	-moz-box-shadow: 0 0 50px #000;
+	-o-box-shadow: 0 0 50px #000;
+	-ms-box-shadow: 0 0 50px #000;
+	box-shadow: 0 0 50px #000;
+}
+
+/* Caption */
+div.ps-caption
+{ 
+	color: #ffffff;
+	font-size: 13px;
+	font-family: "Lucida Grande", Helvetica, Arial,Verdana, sans-serif;
+	text-align: center;
+}
+div.ps-caption *  { display: inline; }
+
+div.ps-caption-bottom
+{ 
+	min-height: 44px;
+}
+
+div.ps-caption-content
+{
+	padding: 13px;
+	display: block;
+}
+
+
+/* Toolbar */
+div.ps-toolbar
+{
+	color: #ffffff;
+	font-size: 13px;
+	font-family: "Lucida Grande", Helvetica, Arial,Verdana, sans-serif;
+	height: 73px;
+	display: table;
+	text-align: right;
+	table-layout: fixed;
+	padding-top: 0;
+}
+div.ps-toolbar * { 
+	display: block;
+}
+
+div.ps-toolbar-top 
+{
+	border-top: none;
+}
+
+div.ps-toolbar-close, div.ps-toolbar-previous, div.ps-toolbar-next, div.ps-toolbar-play
+{
+	cursor: pointer;
+	display: inline-block;
+	*display: inline; /* IE7 inline-block hack */
+	*zoom: 1;
+	margin-left: 1px;
+/*	background: #000;
+*/	opacity: 80;
+	
+	-webkit-transition: background 0.3s linear;
+	-moz-transition: background 0.3s linear;
+	-o-transition: background 0.3s linear;
+	transition: background 0.3s linear;
+}
+
+div.ps-toolbar-close {
+	position: absolute;
+	right: 7px;
+}
+
+div.ps-toolbar-play {
+	position: absolute;
+	right: 151;
+}
+
+div.ps-toolbar-next {
+	position: absolute;
+	right: 55px;
+}
+
+div.ps-toolbar-previous {
+	position: absolute;
+	right: 103px;
+}
+
+div.ps-toolbar-close:hover, div.ps-toolbar-previous:hover, div.ps-toolbar-next:hover, div.ps-toolbar-play:hover {
+	/*background: #9eb78d;*/
+}
+
+div.ps-toolbar-close:active, div.ps-toolbar-previous:active, div.ps-toolbar-next:active, div.ps-toolbar-play:active {
+	/*background: #7f986e;*/
+}
+
+div.ps-toolbar-play {
+	display: none;
+}
+
+div.ps-toolbar div div.ps-toolbar-content
+{
+	width: 73px;
+	height: 73px;
+	margin: 0 auto 0;
+	background-image: url(icons.png);
+	background-repeat: no-repeat;	
+}
+
+div.ps-toolbar-close div.ps-toolbar-content
+{
+	background-position: 0 0;
+}
+
+div.ps-toolbar-previous div.ps-toolbar-content
+{
+	background-position: -73px 0;
+}
+
+div.ps-toolbar-previous-disabled div.ps-toolbar-content
+{
+	background-position: -73px 0;
+}
+
+div.ps-toolbar-next div.ps-toolbar-content
+{
+	background-position: -141px 0;
+}
+
+div.ps-toolbar-next-disabled div.ps-toolbar-content
+{
+	background-position: -141px 0;
+}
+
+div.ps-toolbar-play div.ps-toolbar-content
+{
+	background-position: -94px 0;
+}
+
+/*custom*/
+div.ps-toolbar{
+	height: 100%;
+}
+
+div.ps-toolbar-next, div.ps-toolbar-previous {
+	background: none;	
+	top: 0;
+	margin-top: 0;
+	width: 50%;
+	height: 100%;
+}
+
+div.ps-toolbar div.ps-toolbar-previous div.ps-toolbar-content,
+div.ps-toolbar div.ps-toolbar-next div.ps-toolbar-content {
+	margin: 0;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	margin-top: -36px;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+div.ps-toolbar div.ps-toolbar-previous div.ps-toolbar-content {
+	left: 0;
+}
+
+div.ps-toolbar div.ps-toolbar-next div.ps-toolbar-content {	
+	right: 0;
+}
+
+div.ps-toolbar div.ps-toolbar-previous:hover div.ps-toolbar-content,
+div.ps-toolbar div.ps-toolbar-next:hover div.ps-toolbar-content {
+	opacity: 1;
+}
+
+div.ps-toolbar-next {
+	right: 0;
+}
+
+div.ps-toolbar-previous {
+	right: auto;
+	left: 0;
+}
+
+div.ps-toolbar-close {
+	right: 0;
+	top: 0;
+	z-index: 10;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+div.ps-toolbar-close:hover {
+	opacity: 1;
+}
+
+div.ps-caption{
+	text-align: left;
+}
+
+div.ps-caption-content
+{
+	width: 261px;
+    min-height: 73px;
+    max-height: 170px;
+	background-color: #fff;
+	padding: 30px;
+	display: inline-block;
+}
+
+div.ps-caption-content h2
+{
+	display: block;
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 15px;
+    margin-top: -3px;
+    color: #000;
+}
+
+div.ps-caption-content p
+{
+	display: block;
+	color: #848585;
+}

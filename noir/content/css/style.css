@@ -1,0 +1,798 @@
+/* Border Radius */
+/**
+ * Style Less
+ *
+ * @package		charset, global, section
+ * @author		kiiiick Jay
+ * @copyright	Copyright (C) KICKcreative Co., All Rights Reserved.
+ * @license		dev 1.0
+ * @link		http://www.site.com
+ * 
+ **/
+/**
+ * charset
+ * @param	
+ */
+@charset "utf-8";
+/**
+ * import global
+ * @param	
+ */
+/**
+ * Function Less
+ *
+ * @package		charset, global, section
+ * @author		kiiiick Jay
+ * @copyright	Copyright (C) KICKcreative Co., All Rights Reserved.
+ * @license		dev 1.0
+ * @link		http://www.site.com
+ * 
+ **/
+/**
+ * from bootstrap
+ * @param	
+ */
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  /* Fixes Opera/contenteditable bug: */
+
+  /* http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952 */
+
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+/**
+ * from bootstrap CSS3 PROPERTIES
+ * @param	
+ */
+/* Border Radius */
+/* Single Corner Border Radius */
+/* Single Side Border Radius */
+/* Transitions */
+/* Transformations */
+/**
+ * from kiiiick Jay
+ * @param	
+ */
+/**
+ * from kiiiick Hom
+ * @param	
+ */
+/* sprite */
+/* alpha */
+/* box shadow */
+/* font */
+.FUNC_debug {
+  border-top: 1px red solid;
+  border-bottom: 1px red solid;
+}
+.FUNC_debug * {
+  border-top: 1px red solid;
+  border-bottom: 1px red solid;
+}
+.display_table_cell {
+  display: table-cell;
+  padding: 0 \9;
+}
+.fL {
+  float: left;
+}
+.fR {
+  float: right;
+}
+.br {
+  clear: both;
+}
+.aC {
+  text-align: center;
+}
+.aL {
+  text-align: left;
+}
+.aR {
+  text-align: right;
+}
+.vaT {
+  vertical-align: top;
+}
+.vaM {
+  vertical-align: middle;
+}
+.vaB {
+  vertical-align: bottom;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.custom_v,
+.custom_h,
+.custom_menu,
+.custom_content,
+.custom_nav {
+  margin-left: 0;
+}
+.custom_v li,
+.custom_h li,
+.custom_menu li,
+.custom_content li,
+.custom_nav li {
+  list-style: none;
+}
+ol.custom_v li {
+  list-style: decimal-leading-zero;
+}
+.custom_h li,
+.custom_h dt,
+.custom_h dd,
+.custom_content li,
+.custom_content dt,
+.custom_content dd,
+.custom_nav li,
+.custom_nav dt,
+.custom_nav dd {
+  float: left;
+}
+.custom_v li,
+.custom_v dt,
+.custom_v dd,
+.custom_menu li,
+.custom_menu dt,
+.custom_menu dd {
+  float: none;
+}
+/**
+ * Config Less
+ *
+ * @package		charset, global, section
+ * @author		kiiiick Jay
+ * @copyright	Copyright (C) KICKcreative Co., All Rights Reserved.
+ * @license		dev 1.0
+ * @link		http://www.site.com
+ * 
+ **/
+/**
+ * font style
+ * @param	
+ */
+body {
+  font: 12px arial;
+}
+p {
+  line-height: 18px;
+}
+a {
+  text-decoration: none;
+}
+.header_title,
+.footer_logo,
+.submenu_logo,
+.detail_icon,
+.down_arrow,
+.copyright_text,
+.submenu_comment,
+.popup_close_bt {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.prompt,
+.footer_title,
+.footer_text,
+.fb_button {
+  text-align: center;
+}
+.about_title,
+.about_who_title,
+.about_what_title,
+.works_title,
+.footer_title {
+  font-family: "Avant Garde Medium BT";
+}
+.about_title,
+.works_title {
+  font-size: 130px;
+  color: #fff;
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+  /* fix chrome text */
+
+  padding-left: 5px;
+}
+.about_who_title,
+.about_what_title {
+  font-size: 22px;
+  color: #090909;
+}
+.about_text,
+.detail_text {
+  color: #6c6c6c;
+}
+/*  header  */
+.prompt {
+  color: #d6d6d6;
+}
+/*  content  */
+.detail_title {
+  font-size: 24px;
+}
+.submenu_title {
+  color: #fff;
+  font-size: 34px;
+}
+.submenu_item a {
+  color: #fff;
+  background-color: #1a1a1a;
+}
+.submenu_active a {
+  color: #000;
+  background-color: #fff;
+}
+/*  footer  */
+.footer_title {
+  font-size: 55px;
+  color: #8d8d8d;
+}
+.footer_text {
+  font-size: 16px;
+  color: #5b4c4c;
+}
+.info {
+  font-size: 16px;
+  color: #505050;
+}
+.info_item_title {
+  font-weight: bold;
+}
+.fb_button {
+  font-size: 18px;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.fb_button:hover {
+  background-color: #333;
+}
+/*  nav  */
+.nav_item a {
+  color: #666;
+}
+.nav_active {
+  color: #fff;
+}
+/*  popup  */
+.popup_title {
+  font-size: 36px;
+  color: #fff;
+}
+.popup_text {
+  color: #fff;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+/**
+ * background style
+ * @param	
+ */
+body,
+.header,
+.content,
+.fb_button,
+.popup_overlay,
+.popup_content_wrapper {
+  background-color: #000;
+}
+.header_title,
+.footer_logo,
+.submenu_logo,
+.detail_icon,
+.down_arrow,
+.copyright_text,
+.submenu_comment {
+  background: url(../img/sprite/sprites.png) no-repeat;
+}
+.header_title {
+  background-position: 0 0;
+  width: 186px;
+  height: 277px;
+}
+.footer_logo {
+  background-position: -190px -105px;
+  width: 53px;
+  height: 75px;
+}
+.submenu_logo {
+  background-position: -190px -185px;
+  width: 17px;
+  height: 17px;
+}
+.detail_icon {
+  background-position: -210px -185px;
+  width: 15px;
+  height: 16px;
+}
+.down_arrow {
+  background-position: -230px -185px;
+  width: 19px;
+  height: 11px;
+}
+.copyright_text {
+  background-position: 0 -280px;
+  width: 189px;
+  height: 11px;
+}
+.submenu_comment {
+  background-position: 0 -295px;
+  width: 155px;
+  height: 11px;
+}
+.submenu_front {
+  background-color: #1a1a1a;
+}
+.submenu_back {
+  background-color: transparent;
+}
+.about_who,
+.about_what,
+.submenu_active,
+.detail,
+.footer {
+  background-color: #fff;
+}
+.submenu_gap_vertical,
+.submenu_gap_horizontal {
+  background-color: transparent;
+}
+/*.popup_overlay{
+	.opacity(70);
+}*/
+.popup_close_bt {
+  background: url(bxslider/controls.png) no-repeat -96px 0;
+}
+/*  fancybox  */
+#fancybox-outer {
+  background-color: transparent;
+}
+/**
+ * border style
+ * @param	
+ *//**
+ * Common Less
+ *
+ * @package		charset, global, section
+ * @author		kiiiick Jay
+ * @copyright	Copyright (C) KICKcreative Co., All Rights Reserved.
+ * @license		dev 1.0
+ * @link		http://www.site.com
+ * 
+ **/
+/**
+ * ui global
+ * @param	
+ */
+/**
+ * module global
+ * @param	
+ */
+/**
+ * common global
+ * @param	
+ *//**
+ * Layout Less
+ *
+ * @package		charset, global, section
+ * @author		kiiiick Jay
+ * @copyright	Copyright (C) KICKcreative Co., All Rights Reserved.
+ * @license		dev 1.0
+ * @link		http://www.site.com
+ * 
+ **/
+body {
+  min-width: 1024px;
+}
+img {
+  vertical-align: middle;
+}
+.header,
+.content,
+.footer {
+  position: relative;
+}
+.bg_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -350px;
+  margin-top: -200px;
+  width: 700px;
+}
+.header_title,
+.prompt,
+.down_arrow,
+.footer_title,
+.footer_text,
+.info,
+.fb_button,
+.footer_logo,
+.copyright_text {
+  margin: 0 auto;
+}
+.down_arrow,
+.submenu_comment,
+.submenu_logo,
+.submenu_item a,
+.fb_button,
+.nav_logo {
+  display: block;
+}
+.about,
+.works,
+.nav {
+  width: 100%;
+}
+.about_who,
+.about_what,
+.submenu_front,
+.submenu_back,
+.nav {
+  z-index: 10;
+}
+.about_content_wrapper {
+  overflow: hidden;
+  height: 70%;
+  padding: 10%;
+}
+.about_text {
+  margin-top: 10px;
+}
+.submenuFlipWrapper {
+  position: relative;
+  z-index: 1000;
+}
+.submenuFlipSet {
+  height: 100%;
+}
+.submenu {
+  height: 100%;
+}
+.submenu_front,
+.submenu_back {
+  position: absolute;
+}
+.submenu_back,
+.submenuFlip,
+.submenu_back_wrapper {
+  height: 100%;
+}
+/*  header  */
+.header {
+  height: 870px;
+  overflow: hidden;
+}
+.prompt {
+  margin-top: 100px;
+}
+.down_arrow {
+  margin-top: 22px;
+}
+#skrollr-body {
+  width: 100%;
+  background-color: #000;
+}
+/*  content  */
+.content_wrapper {
+  position: relative;
+}
+.content {
+  z-index: 999;
+}
+.workBgnCon {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.workBgn {
+  width: 100%;
+}
+.squareCon {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -30px;
+  width: 100%;
+}
+.support_height {
+  width: 16.666%;
+}
+.about_title {
+  position: absolute;
+  top: -50px;
+  margin-left: 36%;
+}
+.about,
+.about_who,
+.about_what,
+.works {
+  position: relative;
+}
+.works_title {
+  position: absolute;
+  margin-left: 8%;
+  top: 0;
+}
+.flipWorld {
+  z-index: 0;
+}
+.flipCon,
+.submenuFlip {
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.works_list {
+  margin: 0;
+  position: relative;
+}
+.projectCon {
+  width: 100%;
+}
+.projectCon li {
+  position: absolute;
+}
+.submenu_front {
+  cursor: pointer;
+  width: 80%;
+  height: 80%;
+  padding: 10%;
+}
+.submenu_comment {
+  position: absolute;
+  right: -7%;
+  bottom: 0;
+}
+.submenu_back {
+  width: 100%;
+  min-width: 170px;
+}
+.submenu_back_wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.submenu_item.pos_lt {
+  left: 0;
+  top: 0;
+}
+.submenu_item.pos_rt {
+  right: 0;
+  top: 0;
+}
+.submenu_item.pos_lb {
+  left: 0;
+  bottom: 0;
+}
+.submenu_item.pos_rb {
+  right: 0;
+  bottom: 0;
+}
+.submenu_square {
+  position: absolute;
+  width: 49.7%;
+  height: 49.7%;
+}
+.submenu_square a {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.submenu_square a:hover {
+  color: #000;
+  background-color: #fff;
+}
+.submenu_gap_vertical {
+  width: 1px;
+  height: 1px;
+}
+.submenu_gap_horizontal {
+  width: 100%;
+  height: 1px;
+}
+.submenu_logo {
+  position: absolute;
+  left: 42.857%;
+  top: 28%;
+}
+.submenu_item_text {
+  text-align: center;
+  display: block;
+  position: relative;
+  top: 47%;
+}
+.submenu_item_wrap {
+  top: 35%;
+}
+.works_item_wrapper {
+  position: relative;
+}
+.works_item {
+  display: block;
+  position: relative;
+}
+.works_list_wrapper img {
+  width: 100%;
+}
+.detail {
+  position: absolute;
+  top: 0;
+  left: 99.9%;
+  width: 0;
+  height: 100%;
+}
+.detail.pos_r {
+  left: auto;
+  right: 100%;
+}
+.detail_wrapper {
+  position: absolute;
+  left: 7.29%;
+  top: 14.583%;
+  width: 85.416%;
+  height: 60%;
+  display: none;
+  overflow: hidden;
+}
+.detail_text {
+  margin-top: 20px;
+}
+.detail_icon {
+  position: absolute;
+  right: 17px;
+  bottom: 17px;
+  display: none;
+}
+/*  footer  */
+.footer {
+  height: 635px;
+  background-color: #f9f9f9;
+}
+.footerCon {
+  display: inline-block;
+  padding-top: 130px;
+  text-align: center;
+  width: 100%;
+}
+.footer_text {
+  width: 700px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+.info {
+  width: 680px;
+  margin: 0 auto;
+}
+.info_item {
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.info_item a {
+  color: #505050;
+}
+.info_item a:hover {
+  color: #505050;
+  text-decoration: underline;
+}
+.r_border {
+  border-right: 1px solid #000;
+}
+.fb_button {
+  width: 310px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 1000;
+}
+.footer_logo {
+  margin-top: 55px;
+  margin-bottom: 15px;
+}
+.copyright_text {
+  margin-bottom: 25px;
+}
+/*  nav  */
+.nav {
+  position: absolute;
+  top: 927px;
+  left: 0;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 1100;
+}
+.nav_set {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  padding: 10%;
+}
+.nav_logo {
+  max-height: 84px;
+  margin-bottom: 3%;
+}
+.nav_set ul {
+  margin-top: 5%;
+}
+.nav_item {
+  overflow: hidden;
+  height: 20px;
+}
+.nav_item span {
+  display: block;
+  padding: 3px 0;
+}
+.nav_item span.ch {
+  position: relative;
+  top: -40px;
+}
+.nav_item a {
+  display: block;
+  position: relative;
+  top: 0;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.nav_item a:hover {
+  top: 20px;
+}
+.nav_item a:hover span {
+  color: #fff;
+}
+@media screen and (max-width: 1215px) {
+  .submenu_title {
+    font-size: 26px;
+  }
+  .nav_set ul {
+    margin-top: 3%;
+  }
+}
+/**
+ * import section
+ * @param	
+ */

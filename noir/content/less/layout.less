@@ -1,0 +1,432 @@
+/**
+ * Layout Less
+ *
+ * @package		charset, global, section
+ * @author		kiiiick Jay
+ * @copyright	Copyright (C) KICKcreative Co., All Rights Reserved.
+ * @license		dev 1.0
+ * @link		http://www.site.com
+ * 
+ **/
+ 
+body {
+	min-width: 1024px;
+}
+
+img {
+	vertical-align: middle;
+}
+ 
+.header, .content, .footer {
+	position: relative;
+}
+ 
+.bg_img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -350px;
+	margin-top: -200px;
+	width: 700px;
+}
+
+.header_title, .prompt, .down_arrow, .footer_title, .footer_text, .info, .fb_button, .footer_logo, .copyright_text {
+	margin: 0 auto;
+}
+
+.down_arrow, .submenu_comment, .submenu_logo, .submenu_item a, .fb_button, .nav_logo {
+	display: block; 
+}
+
+.about, .works, .nav {
+	width: 100%;
+}
+
+.about_who, .about_what, .submenu_front, .submenu_back, .nav {
+	z-index: 10;
+}
+
+.about_content_wrapper {
+	overflow: hidden;
+	height: 70%;
+	padding: 10%;
+}
+
+.about_text {
+	margin-top: 10px;
+}
+
+.submenuFlipWrapper {
+	position: relative;
+	z-index: 1000;
+}
+
+.submenuFlipSet {
+	height: 100%;
+}
+
+.submenu {
+	height: 100%;
+}
+
+.submenu_front, .submenu_back {
+	position: absolute;
+}
+
+.submenu_back, .submenuFlip, .submenu_back_wrapper {
+	height: 100%;
+}
+
+/*  header  */
+.header {
+	height: 870px;
+	overflow: hidden;	
+}
+.prompt {
+	margin-top: 100px;
+}
+
+.down_arrow {
+	margin-top: 22px;
+}
+
+#skrollr-body {
+	width: 100%;
+	background-color: #000;
+}
+
+/*  content  */
+.content_wrapper {
+	position:relative;
+}
+
+.content {
+	z-index:999;
+}
+
+.workBgnCon {
+	width: 100%;
+    overflow: hidden;
+	position: relative;
+}
+
+.workBgn {
+	width: 100%;	
+}
+
+.squareCon {
+	.opacity(0);
+	position: absolute;
+	top:0;
+	left:0;
+	margin-top: -30px;
+	width: 100%;
+}
+
+.support_height {
+	width: 16.666%;
+}
+
+.about_title {
+	position: absolute;
+	top: -50px;
+	margin-left: 36%;
+}
+
+.about, .about_who, .about_what, .works {
+	position: relative;
+}
+
+.works_title {
+	position: absolute;
+	margin-left: 8%;
+	top: 0;
+}
+
+.flipWorld {
+	z-index: 0;
+}
+
+.flipCon, .submenuFlip {
+	-moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.works_list {
+	margin:0;
+	position: relative;
+}
+
+.projectCon {
+	width: 100%;
+
+	li {
+		position: absolute;
+	}
+}
+
+.submenu_front {
+	cursor: pointer;
+	width: 80%;
+	height: 80%;
+	padding: 10%;
+}
+
+.submenu_comment {
+	position: absolute;
+	right: -7%;
+	bottom: 0;
+}
+
+.submenu_back {
+	width: 100%;
+	min-width: 170px;
+}
+
+.submenu_back_wrapper {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.submenu_item {
+	&.pos_lt {
+		left: 0; top: 0;
+	}
+
+	&.pos_rt {
+		right: 0; top: 0;
+	}
+
+	&.pos_lb {
+		left: 0; bottom: 0;
+	}
+
+	&.pos_rb {
+		right: 0; bottom: 0;
+	}
+}
+
+.submenu_square {
+	position: absolute;
+	width: 49.7%;
+	height: 49.7%;
+}
+
+.submenu_square a {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	.transition(.5s);
+	&:hover {
+		color: #000;
+		background-color: #fff;
+	}
+}
+
+.submenu_gap_vertical {
+	width: 1px;
+	height: 1px;
+}
+
+.submenu_gap_horizontal {
+	width: 100%;
+	height: 1px;
+}
+
+.submenu_logo {
+	position: absolute;
+	left: 42.857%;
+	top: 28%;
+}
+
+.submenu_item_text {
+	text-align: center;
+	display: block;
+	position: relative;
+	top: 47%;
+}
+
+.submenu_item_wrap {
+	top: 35%;
+}
+
+.works_item_wrapper {
+	position: relative;
+}
+
+.works_item {
+	display: block;
+	position: relative;
+}
+
+.works_list_wrapper img {
+	width:100%;
+}
+
+.detail {
+	position: absolute;
+	top:0;
+	left: 99.9%;
+	width: 0;
+	height: 100%;
+
+	&.pos_r {
+		left: auto;
+		right: 100%;
+	}
+}
+
+.detail_wrapper {
+	position: absolute;
+	left: 7.29%;
+	top: 14.583%;
+	width: 85.416%;
+	height: 60%;
+	display: none;
+	overflow: hidden;
+}
+
+.detail_text {
+	margin-top: 20px;
+}
+
+.detail_icon {
+	position: absolute;
+	right: 17px;
+	bottom: 17px;
+	display: none;
+}
+
+/*  footer  */
+.footer {
+	height: 635px;
+	background-color: #f9f9f9;
+}
+
+.footerCon {
+	display: inline-block;
+	padding-top: 130px;
+	text-align: center;
+	width: 100%;
+}
+
+.footer_text {
+	width: 700px;
+	margin-top: 40px;
+	margin-bottom: 35px;
+}
+
+.info {
+	width: 680px;
+	margin: 0 auto;
+}
+
+.info_item {
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+	& a {
+		color: #505050;
+		&:hover {
+			color: #505050;
+			text-decoration: underline;
+		}
+	}
+}
+
+.r_border{
+	border-right: 1px solid #000;
+}
+
+.fb_button {
+	width: 310px;
+	padding-top: 28px;
+	padding-bottom: 28px;
+	margin-top: 50px;
+	position: relative;
+	z-index: 1000;
+}
+
+.footer_logo {
+	margin-top: 55px;
+	margin-bottom: 15px
+}
+ 
+.copyright_text {
+	margin-bottom: 25px
+}
+
+/*  nav  */
+.nav {
+	position: absolute;
+	top: 927px;
+	left: 0;
+	background-color: transparent;
+	.opacity(0);
+	z-index: 1100;
+}
+
+.nav_set {
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	padding: 10%;
+}
+
+.nav_logo {
+	max-height: 84px;
+	margin-bottom: 3%;
+}
+
+.nav_set ul {
+	margin-top: 5%;
+}
+
+.nav_item {
+    overflow: hidden;
+    height: 20px;
+
+    span {
+        display: block;
+        padding: 3px 0;
+        &.ch {
+            position: relative;
+            top: -40px;
+        }
+    }
+
+    a {
+        display: block;
+        position: relative;
+        top: 0;
+        .transition(.2s);
+
+        &:hover {
+            top: 20px;
+
+            span {
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1215px) {
+	.submenu_title {
+		font-size: 26px;
+	}
+	.nav_set ul {
+		margin-top: 3%;
+	}
+}

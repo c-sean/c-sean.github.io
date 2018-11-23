@@ -1,0 +1,226 @@
+/**
+ * Config Less
+ *
+ * @package		charset, global, section
+ * @author		kiiiick Jay
+ * @copyright	Copyright (C) KICKcreative Co., All Rights Reserved.
+ * @license		dev 1.0
+ * @link		http://www.site.com
+ * 
+ **/
+
+
+ /**
+ * font style
+ * @param	
+ */
+
+body{
+	font: 12px arial;
+
+}
+
+p{
+	line-height: 18px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header_title, .footer_logo, .submenu_logo, .detail_icon, .down_arrow, .copyright_text, .submenu_comment, .popup_close_bt{
+	.hide-text;
+}
+
+.prompt, .footer_title, .footer_text, .fb_button{
+	text-align: center;
+}
+
+.about_title, .about_who_title, .about_what_title, .works_title, .footer_title{
+	font-family: "Avant Garde Medium BT";
+}
+
+.about_title, .works_title{ 
+	font-size: 130px;
+	color: #fff;
+	.opacity(10);
+	/* fix chrome text */
+	padding-left: 5px;
+}
+
+.about_who_title, .about_what_title{
+	font-size: 22px;
+	color: #090909; 
+}
+
+.about_text, .detail_text{
+	color: #6c6c6c;
+}
+
+/*  header  */
+.prompt{
+	color: #d6d6d6;
+}
+
+/*  content  */
+.detail_title{
+	font-size: 24px;
+}
+
+.submenu_title{
+	color: #fff;
+	font-size: 34px;
+}
+
+.submenu_item a{
+	color: #fff;
+	background-color: #1a1a1a;
+}
+
+.submenu_active a{
+	color: #000;
+	background-color: #fff;
+}
+
+/*  footer  */
+.footer_title{
+	font-size: 55px;
+	color: #8d8d8d;
+}
+
+.footer_text{
+	font-size: 16px;
+	color: #5b4c4c;
+}
+
+.info{
+	font-size: 16px;
+	color: #505050;
+}
+
+.info_item_title{
+	font-weight: bold;
+}
+
+.fb_button{
+	font-size: 18px;
+	color: #fff;
+	.transition(.5s);
+	&:hover {
+		background-color: #333;
+	}
+}
+
+/*  nav  */
+.nav_item a{
+	color: #666;
+}
+
+.nav_active {
+	color: #fff;
+}
+
+/*  popup  */
+.popup_title{
+	font-size: 36px;
+	color: #fff;
+}
+
+.popup_text{
+	color: #fff;
+	.opacity(50);
+}
+
+/**
+ * background style
+ * @param	
+ */
+
+body, .header, .content, .fb_button, .popup_overlay, .popup_content_wrapper{
+	background-color: #000;
+}
+
+.header_title, .footer_logo, .submenu_logo, .detail_icon, .down_arrow, .copyright_text, .submenu_comment{
+	background: url(../img/sprite/sprites.png) no-repeat;
+}
+
+.header_title{
+	background-position: 0 0;
+	width: 186px;
+	height: 277px;
+}
+
+// .nav_logo{
+// 	background-position: -190px 0;
+// 	width: 56px;
+// 	height: 84px;
+// }
+
+.footer_logo{
+	background-position: -190px -105px ;
+	width: 53px;
+	height: 75px;
+}
+
+.submenu_logo{
+	background-position: -190px -185px ;
+	width: 17px;
+	height: 17px;
+}
+
+.detail_icon{
+	background-position: -210px -185px ;
+	width: 15px;
+	height: 16px;
+}
+
+.down_arrow{
+	background-position: -230px -185px ;
+	width: 19px;
+	height: 11px;
+}
+
+.copyright_text{
+	background-position: 0 -280px ;
+	width: 189px;
+	height: 11px;
+}
+
+.submenu_comment{
+	background-position: 0 -295px ;
+	width: 155px;
+	height: 11px;
+}
+.submenu_front {
+	background-color: #1a1a1a;
+}
+
+.submenu_back {
+	background-color: transparent;	
+}
+
+.about_who, .about_what, .submenu_active, .detail, .footer{
+	background-color: #fff;
+}
+
+.submenu_gap_vertical, .submenu_gap_horizontal{
+	background-color: transparent;
+}
+
+/*.popup_overlay{
+	.opacity(70);
+}*/
+
+.popup_close_bt{
+	background: url(bxslider/controls.png) no-repeat -96px 0;
+}
+
+/*  fancybox  */
+#fancybox-outer{
+	background-color: transparent;
+}
+
+/**
+ * border style
+ * @param	
+ */

@@ -1,0 +1,14 @@
+/**
+ * Webfont Css
+ **/
+ 
+@font-face {
+  font-family: 'Avant Garde Medium BT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('folder'), url('Avant Garde Medium BT/AVGARDM.eot');
+  src: local('folder'), url('Avant Garde Medium BT/AVGARDM.eot?#iefix') format('embedded-opentype'),
+						url('Avant Garde Medium BT/AVGARDM.woff') format('woff'),
+						url('Avant Garde Medium BT/AVGARDM.ttf') format('truetype'),
+						url('Avant Garde Medium BT/AVGARDM.svg#Avant Garde Medium BT_lt_std_35_lightregular') format('svg');
+}

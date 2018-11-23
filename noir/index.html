@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<!--
+ * Frontend Welcome Views
+ * @author		Jay
+ * @copyright	Copyright (C) KICKcreative Co., All Rights Reserved. 
+-->
+
+<html lang="zh-TW">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1024">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keywords" content="" />
+ 	<meta name="description" content="" />
+
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge" />-->
+	<!--[if lte IE 7]><script> if (document.all && !document.querySelector) { location.href = 'nosupport.html'; } </script><![endif]-->
+
+	<title>NOiR</title>
+	<link rel="shortcut icon" href="content/img/favicon/favicon.ico">
+
+	<!--
+	 * css
+	 * @note
+	-->
+	<link rel="stylesheet" href="content/css/yui_reset/reset.css"/>
+	<link rel="stylesheet" href="content/css/webfont/webfont.css"/>
+	<link rel="stylesheet" href="content/css/photoswipe/photoswipe.css"/>
+	<link rel="stylesheet" href="content/css/style.css"/>
+
+	<!--
+	 * js
+	 * @note
+	-->
+	<script src="content/js/jquery-1.8.3.min.js"></script>
+	<script src="content/js/jquery/jquery.fullscreenBackground.js"></script>
+	<script src="content/js/greensock/plugins/CSSPlugin.min.js"></script>
+	<script src="content/js/greensock/easing/EasePack.min.js"></script>
+	<script src="content/js/greensock/plugins/jquery.gsap.min.js"></script>
+	<script src="content/js/greensock/TweenMax.min.js"></script>
+	<script src="content/js/jquery/jquery.BlackAndWhite.js"></script>
+	<script src="content/js/jquery/jquery.easing.1.3.js"></script>
+	<script src="content/js/photoswipe/klass.min.js"></script>
+	<script src="content/js/photoswipe/code.photoswipe.jquery-3.0.5.js"></script>
+	<script src="content/js/photoswipe/code.photoswipe.callback.js"></script>
+	<script src="content/js/jquery/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="content/js/jquery/jquery.nicescroll.min.js"></script>
+	<script src="content/js/skrollr/skrollr.min.js"></script>
+	<script src="content/js/site.global.js"></script>
+	<script src="content/js/KC.ItemPosControler.js"></script>
+
+	<script>if(!console)var console={log:function(){}};</script>
+
+</head>
+
+<body>
+	<div id="skrollr-body">
+			
+		<div id="header" class="header">
+			<img class="bg_img" src="content/img/header_bg.jpg"  width="1440" height="873" data-start="margin-top:0px" data-end="margin-top:-1000px" src="content/img/main_bg.jpg" alt="">
+			<div class="wrapper" data-start="margin-top:-200px" data-400-start="margin-top:-300px">
+				<h1 class="header_title">NOiR</h1>
+				<div data-start="opacity:1; filter: alpha(opacity=100);" data-400-start="opacity:0; filter: alpha(opacity=0)';">
+					<p class="prompt">Scroll Down See More About NOiR</p>
+					<span class="down_arrow">scroll down</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="content_wrapper">
+			<div class="nav posBlock calBlock" data-anchor-target="#header" data-0="opacity:1; filter: alpha(opacity=100)'; position:absolute; left:0; top:0;" data-top-bottom="position:fixed; left:0; top:0;">
+				<div id="nav_set" class="nav_set">
+					<a href="#header"><img class="nav_logo" src="content/img/nav_logo.png" alt=""></a>
+					<ul>
+			 			<li class="nav_item">
+			 				<a id="nav_about" href="#about">
+			 					<span class="en">About</span>
+								<span class="ch">關於我們</span>
+			 				</a>
+			 			</li>
+						<li class="nav_item">
+							<a id="nav_works" href="#works">
+								<span class="en">Works</span>
+								<span class="ch">作品欣賞</span>
+							</a>
+						</li>
+						<li class="nav_item">
+							<a id="nav_contact" href="#contact">
+								<span class="en">Contact Us</span>
+								<span class="ch">聯絡我們</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+	
+			<div class="content" >
+				<div class="workBgnCon">
+					<img class="workBgn bg_img" data-start="margin-top:0px" data-end="margin-top:0px" src="content/img/main_bg.jpg" alt="">
+				</div>
+				<div class="squareCon" data-start="opacity:0; filter: alpha(opacity=0)';" data-15-start="opacity:1;filter: alpha(opacity=100)';">
+					
+					<div id="about" class="about">
+						<h2 class="about_title" data-bottom-top="top:-50px" data-top-bottom="top:150px">About</h2>
+						<div class="about_who flipCon posBlock calBlock fadeIn">
+							<div class="about_content_wrapper">
+								<h3 class="about_who_title">Who we are</h3>
+								<p class="about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum iaculis nunc, eget lobortis purus consectetur vulputate. Morbi suscipit, felis id aliquet condimentum, turpis tortor lobortis sem, sit amet viverra tellus dolor ac eros. Maecenas venenatis, odio in sollicitudin interdum, mauris leo tincidunt elit, vitae laoreet tellus velit accumsan erat. Proin faucibus est eget. </p>
+							</div>
+						</div>
+						<div class="about_what flipCon posBlock calBlock fadeIn">
+							<div class="about_content_wrapper">
+								<h3 class="about_what_title">What we do</h3>
+								<p class="about_text">Etiam placerat lacinia felis. Donec at scelerisque mauris. In mattis dui et ipsum ornare suscipit. Ut condimentum venenatis turpis sit amet cursus. Suspendisse quis tristique felis, quis accumsan erat. Curabitur ultricies ultricies dictum. Nullam tincidunt porta sodales. Sed nec odio sagittis, egestas ante at, vulputate ante.</p>
+							</div>
+						</div>
+					</div>					
+
+					<div id="works" class="works posBlock">
+						<h2 class="works_title" data-top="margin-top: 5%;" data-bottom="margin-top: 15%;">Works</h2>
+
+						<div class="submenuFlipWrapper flipCon posBlock calBlock fadeIn">
+							<div class="submenuFlipSet">
+								<div class="submenu_front" id="submenu_front">
+									<div class="submenuFlip submenu">										
+			 							<h3 class="submenu_title">Choice of NOiR</h3>
+										<span class="submenu_comment">Choose a Specific Category</span>
+									</div>
+								</div>
+
+								<div class="submenu_back" id="submenu_back">
+									<div class="submenuFlip">
+			 							<ul class="js-submenu_back_wrapper submenu_back_wrapper clearfix">
+											
+											<li class="submenu_item submenu_active submenu_square pos_lt">
+												<a href="#"><span class="submenu_logo">submenu</span><span class="submenu_item_text">Choice of NOiR</span></a>
+											</li>
+											<li class="submenu_item submenu_square pos_rt">
+												<a class="listDisplay" href="#works"><span class="submenu_item_text">All</span></a>
+											</li>
+											<li class="submenu_item submenu_square pos_lb">
+												<a class="listDisplay" href="#works"><span class="submenu_item_text submenu_item_wrap">Interior<br> Architecture</span></a>
+											</li>
+											<li class="submenu_item submenu_square pos_rb">
+												<a class="listDisplay" href="#works"><span class="submenu_item_text submenu_item_wrap">Commercial <br>Brand</span></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="works_list clearfix">
+							<ul id="works_items" class="projectCon works_list_wrapper clearfix">
+								<!-- <li class="flipWorld">
+									<div id="project_1" class="flipCon works_item_wrapper">
+										<a href="popup.html" class="works_item">
+											<img src="content/img/works/work01.jpg" alt="">
+										</a>
+										<a href=""></a>
+										<a href=""></a>
+										<a href=""></a>
+										<a href=""></a>
+										<a href=""></a>
+										<div class="detail">
+											<div class="detail_wrapper">
+												<h4 class="detail_title">Graphic Design</h4>
+												<p class="detail_text">Mr Cup is an inspiration blog and a shop for graphic designers who need to improve their life and creativity : posters, stickers, vintage objets, letterpress products </p>
+											</div>
+											<span class="detail_icon">+</span>
+										</div>
+									</div>
+
+								</li>
+								-->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact" class="footer">
+			<div class="footerCon">
+				<h2 class="footer_title">May I Help you?</h2>
+				<p class="footer_text">we value your business and welcome any inquiry you may hav about our services, Please email us and we will respond to your request as soon as possible.</p>
+				<ul class="info">
+					<li class="info_item r_border"><span class="info_item_title">TEL : </span>886 2 2195 6185</li>
+					<li class="info_item r_border"><span class="info_item_title">FAX : </span>886 2 2195 6185</li>
+					<li class="info_item"><span class="info_item_title">E-mail : </span><a href="mailto:noir.design@msa.hinet.net">noir.design@msa.hinet.net</a></li>
+				</ul>
+				<a href="https://www.facebook.com/NOiR.design.2007" target="_blank" class="fb_button">Follow Us on Facebook</a>
+				<div class="copyright">
+					<div class="footer_logo">NOiR</div>
+					<div class="copyright_text">copyright 2013 by NOiR right reserved.</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script>
+		var _itemPosControler = new KC.ItemPosControler();
+		var _global = new SITE.Global();
+
+		(function(a) {
+			if(/android|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(ad|hone|od)|iris|kindle|lge |maemo|meego.+mobile|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino|playbook|silk/i.test(a)
+			||
+			/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(di|rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))
+			{
+				//Add skrollr mobile on mobile devices.
+				document.write('<script src="content/js/skrollr/skrollr.mobile.min.js"><\/script>');
+			}
+		})(navigator.userAgent||navigator.vendor||window.opera);
+
+	</script>
+	
+</body>	
+</html>

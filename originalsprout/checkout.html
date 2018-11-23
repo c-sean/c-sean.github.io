@@ -1,0 +1,61 @@
+<div id="pop_up">
+    <div id="over_layer"></div>
+    <form id="order_form" action="" method="post">
+        <div id="l_side">
+            <h3>ORDER PRODUCT</h3>
+            <h4>Curl Calmer</h4>
+            <h5>二合一嬰兒體髮乳</h5>
+            <div id="img_wrap">
+                <img src="img/product/product_1.png">
+            </div>
+
+            <div id="count">
+                <label>Unit / Price 單位 / 價格</label>
+                <select name="select_item" id="select_item" tabindex="1">
+                </select>
+                <label class="label_qty">Quantity 數量</label>
+                <div class="wrap_input quantity">
+                    <input type="text" name="quantity" value="1">
+                    <span id="increment" class="btn">+</span>
+                    <span id="decrement" class="btn">-</span>
+                </div>
+                <p class="total">Total&nbsp;NT<span id="total_price">0</span></p>
+            </div>
+        </div>
+        <div id="r_side">
+            <h3>DELIVERY INFORMATION</h3>
+            <label>Your Name 姓名</label>
+            <div class="wrap_input wide_input">
+                <input type="text" name="name" value="">
+            </div>
+            <label>Your E-mail 信箱</label>
+            <div class="wrap_input wide_input">
+                <input type="text" name="email" value="">
+            </div>
+            <label>Your Mobile Number 手機</label>
+            <div class="wrap_input wide_input">
+                <input type="text" name="mobile" value="">
+            </div>
+            <label>Address 住址</label>
+            <div class="wrap_input wide_input">
+                <input type="text" name="address" value="">
+            </div>
+            <label>Note 備註</label>
+            <div class="wrap_input wide_input">
+                <input type="text" name="note" value=""> 
+            </div>
+            <input id="submit_bt" type="button" name="submit" value="SUBMIT" style="cursor:pointer;">
+        </div>
+        <input type="hidden" name="product_id" value="" />
+        <input type="hidden" name="product_name_en" value="" />
+        <input type="hidden" name="product_name_ch" value="" />
+        <input type="hidden" name="product_img" value="" />
+        <input type="hidden" name="product_total_price" value="" />
+    </form>
+
+    <div id="attention">
+        <h4>MATTERS NEED ATTENTION</h4>
+        <p>請選擇你所購買商品的此寸及數量，並且清楚填寫你的基本運送資料，我們將會有專人與您聯繫</p>
+    </div>
+    <button id="close_bt" type="button" onClick="$.fancybox.close()">×</button>
+</div>
