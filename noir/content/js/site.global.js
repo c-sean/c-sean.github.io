@@ -258,7 +258,7 @@ var SITE = SITE || {};
 					var item = data[i];
 
 					var contStr = '<li class="flipWorld"><div id="project_' + item.id + '" class="flipCon works_item_wrapper">' +
-					'<div class="popup"><div class="works_item" data-rid="' + item.rid + '" style="cursor: pointer;">' +
+					'<div class="popup"><div class="works_item" data-rid="' + item.rid + '" style="cursor: pointer;"><img src="' + item.thumbImg + '" alt=""></div>' + '</div>' +
 					'<div class="detail">' +
 					'<div class="detail_wrapper">' +
 					'<h4 class="detail_title">' + item.title + '</h4>' + 
@@ -293,7 +293,7 @@ var SITE = SITE || {};
 
 				$popup.bind('click', function(e) {
 					e.preventDefault();
-					$.getJSON('content/ajax/works.json', function (data) {
+					$.getJSON('content/ajax/gallery.json', function (data) {
 						initPhotoSwipe(data);
 					});
 				});
