@@ -313,13 +313,13 @@ var SITE = SITE || {};
 				    zIndex: 1300,
 				    getImageSource: function(obj){
 						return obj.url;
-					},
+					},console.log(obj.url);
 				    getImageCaption: function(obj){
  
 	 	                var captionTitle, captionTitleEl;
 		                var captionDesc, captionDescEl;
 
-				        //wan: ¬İ¯à¤£¯à¦b³oÃä³B²zÅã¥ÜÁôÂÃ caption & desc
+				        //wan: çœ‹èƒ½ä¸èƒ½åœ¨é€™é‚Šè™•ç†é¡¯ç¤ºéš±è— caption & desc
 
 		                if (obj.caption != undefined && obj.caption != null)
 		                {

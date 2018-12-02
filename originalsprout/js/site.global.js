@@ -48,28 +48,28 @@ var SITE = SITE || {};
 			    	render: function(wrap) {
 			    		var curTop  = wrap.curTop;
 						// home
-						if(curTop >= this.relativeToAbsolute(document.getElementById('home'), 'top', 'top') && curTop < this.relativeToAbsolute(document.getElementById('about'), 'center', 'top')) {
+						if(curTop < this.relativeToAbsolute(document.getElementById('home'), 'top', 'center') ) {
 							$btnHome.addClass('active');
 						} else {
 							$btnHome.removeClass('active');
 						}
 
 						// about
-						if(curTop >= this.relativeToAbsolute(document.getElementById('about'), 'center', 'top') && curTop < this.relativeToAbsolute(document.getElementById('about'), 'center', 'bottom')) {
+						if(curTop >= this.relativeToAbsolute(document.getElementById('home'), 'top', 'center')  && curTop < this.relativeToAbsolute(document.getElementById('about'), 'top', 'center')) {
 							$btnAbout.addClass('active');
 						} else {
 							$btnAbout.removeClass('active');
 						}
 
 						// product
-						if(curTop >= this.relativeToAbsolute(document.getElementById('product'), 'center', 'top') && curTop < this.relativeToAbsolute(document.getElementById('product'), 'top', 'top')) {
+						if(curTop >= this.relativeToAbsolute(document.getElementById('about'), 'top', 'center') && curTop < this.relativeToAbsolute(document.getElementById('product'), 'top', 'top')) {
 							$btnProduct.addClass('active');
 						} else {
 							$btnProduct.removeClass('active');
 						}
 
 						// contact
-						if(curTop >= this.relativeToAbsolute(document.getElementById('contact'), 'bottom', 'center')) {
+						if(curTop >= this.relativeToAbsolute(document.getElementById('product'), 'top', 'top')) {
 							$btnContact.addClass('active');
 						} else {
 							$btnContact.removeClass('active');
@@ -223,9 +223,13 @@ var SITE = SITE || {};
 		// console.log($btnAbout);
 		// });
 				$('#header a').on('click',function(e){
-                    var $anchor = $(this);
+                    var $anchor = $(this).attr('href'),
+                        $scrollTop = $($anchor).offset().top;
+                    if ($anchor == '#contact') {
+                        $scrollTop = $scrollTop -$(window).height()+$('#contact').innerHeight();
+                    };
                     $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top
+                        scrollTop: $scrollTop
                     }, 1000,'easeOutExpo');
                     e.preventDefault();
                 });

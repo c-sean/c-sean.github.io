@@ -11,7 +11,7 @@ $(function(){
     	gutterX: 20,
     	gutterY: 15,
     	animateOnInit: true,
-    	animationSpeed: 600
+    	animationSpeed: 1000
 	});
 	$('.filter_wrap').shapeshift({
 		enableDrag: false,

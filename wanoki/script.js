@@ -48,7 +48,7 @@ $(function(){
        },function(){
        $(this).children('a').stop().fadeTo(900,1,'easeInOutSine');
     }).click(function(){
-       $(this).children('a').css("opacity",1);
+       $(this).children('a').stop().css("opacity",1);
     });
 <!--footerFade start-->
     $(window).scroll(function() {

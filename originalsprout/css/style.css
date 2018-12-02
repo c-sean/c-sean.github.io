@@ -363,8 +363,8 @@ h5 {
   border: 0;
 }
 ::selection {
-  color: #fff;
-  background-color: #b8d8d4;
+    color: #5f9c94;
+    background-color: #eefbf9;
 }
 /**
  * background style
@@ -585,11 +585,11 @@ h5 {
 }
 #about {
   padding-bottom: 105px;
+  padding-top: 50px;
 }
 #about h2 {
   position: relative;
-  padding-top: 120px;
-  margin-top: -120px;
+  /*margin-top: -120px;*/
   left: 258px;
   width: 600px;
   height: 50px;
@@ -664,7 +664,7 @@ h5 {
 #thumbnail {
   margin-left: 320px;
   position: absolute;
-  top: 560px;
+  top: 565px;
 }
 #thumbnail ul li {
   width: 76px;
