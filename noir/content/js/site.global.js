@@ -248,7 +248,7 @@ var SITE = SITE || {};
 		// get json & append to html
 		function GetItems(url, callback) {
 			//loading show
-			console.log('item.title');
+			
 			//hide content
 			$works_content.empty().hide();
 
@@ -319,12 +319,12 @@ var SITE = SITE || {};
 	 	                var captionTitle, captionTitleEl;
 		                var captionDesc, captionDescEl;
 
-				        //wan: 看能不能在這邊處理顯示隱藏 caption & desc
+				        //wan: ¬Ý¯à¤£¯à¦b³oÃä³B²zÅã¥ÜÁôÂÃ caption & desc
 
-		                if (obj.popupTitle != undefined && obj.popupTitle != null)
+		                if (obj.caption != undefined && obj.caption != null)
 		                {
-		                    captionTitle = obj.popupTitle;
-		                    captionDesc = obj.popupDesc;
+		                    captionTitle = obj.caption;
+		                    captionDesc = obj.desc;
 
 		                    // Return a DOM element with custom styling
 		                    captionTitleEl = document.createElement('h2');
@@ -531,7 +531,7 @@ var SITE = SITE || {};
 				});
 
 				$('#submenu_front, #submenu_back a').click(function() {
-					// submenu_flip();
+					submenu_flip();
 				});		
 
 				downArrow();				
