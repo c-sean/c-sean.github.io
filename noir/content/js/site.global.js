@@ -239,7 +239,7 @@ var SITE = SITE || {};
 			$html.getNiceScroll().resize();
 
 			setTimeout(function () {
-			    // setItemFlip();
+			    setItemFlip();
 				parallax.refresh();
 				getViewPort();
 			}, 500);
