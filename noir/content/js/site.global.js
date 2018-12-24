@@ -248,7 +248,7 @@ var SITE = SITE || {};
 		// get json & append to html
 		function GetItems(url, callback) {
 			//loading show
-			
+			console.log('item.title');
 			//hide content
 			$works_content.empty().hide();
 
@@ -256,7 +256,7 @@ var SITE = SITE || {};
 				
 				for(var i in data) {
 					var item = data[i];
-console.log(item.title);
+
 					var contStr = '<li class="flipWorld"><div id="project_' + item.id + '" class="flipCon works_item_wrapper">' +
 					'<div class="popup"><div class="works_item" data-rid="' + item.rid + '" style="cursor: pointer;"><img src="' + item.thumbImg + '" alt=""></div>' + '</div>' +
 					'<div class="detail">' +
