@@ -464,7 +464,7 @@ img {
   z-index: 10;
 }
 .about_content_wrapper {
-  overflow: hidden;
+  /*overflow: hidden;*/
   height: 80%;
   padding: 10%;
   position: relative;

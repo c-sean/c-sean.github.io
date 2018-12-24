@@ -67,7 +67,23 @@ var SITE = SITE || {};
 
 		
 		//-- set private function --//
-		
+		// $('.about_content_wrapper' ).hover(function() {
+				// var $this = $('.about_content_wrapper' );console.log('try');
+				// $this.parent().css('z-index', '+=2');
+				// $this.find('.detail').stop().animate({'width': '200%'}, 400, 'easeInOutExpo', function(){
+				// 	$(this).children('.detail_wrapper').show(100);
+				// 	$(this).children('.detail_icon').show(100);
+				// });
+			// }, function() {
+			// 	var $this = $(this);
+			// 	$this.parent().css('z-index', '-=1');
+			// 	$this.find('.detail').children('.detail_icon').hide(100);
+			// 	$this.find('.detail').children('.detail_wrapper').hide(100, function(){
+			// 		$(this).parent().stop().animate({'width': '0'}, 400, 'easeInOutExpo',function(){
+			// 			$(this).parent().parent().css('z-index', '0');
+			// 		});
+			// 	});
+			// });
 		// init parallax plugin
 		function initParallax() {
 			parallax = skrollr.init({
@@ -202,8 +218,8 @@ var SITE = SITE || {};
 
 		// set show detail
 		function showDetail() {
-			$('.about_content_wrapper' ).hover(function() {
-				var $this = $(this);
+			$('.works_item_wrapper, .about_content_wrapper').hover(function() {
+				var $this = $(this);console.log($this);
 				$this.parent().css('z-index', '+=2');
 				$this.find('.detail').stop().animate({'width': '200%'}, 400, 'easeInOutExpo', function(){
 					$(this).children('.detail_wrapper').show(100);
