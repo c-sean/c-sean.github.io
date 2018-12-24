@@ -86,50 +86,6 @@
 	"popupDesc": "11Inspiring Branding and Communication Design. Brand strategy, brand identity and marketing communications for Keaykolour developedTweet",
 	"title": "Graphic Design",
 	"description": "Mr Cup is an inspiration blog and a shop for graphic designers who need to improve their life and creativity posters, stickers, vintage objets, letterpress products"
-<<<<<<< HEAD
-	}]
-// },{
-// 	"id":12,
-// 	"thumbImg": "content/img/works/thumb04.jpg",
-// 	"popupImg": ["content/img/works/popup01.jpg", "content/img/works/popup02.jpg", "content/img/works/popup03.jpg", "content/img/works/popup04.jpg"],
-// 	"popupTitle": "12ALU House",
-// 	"popupDesc": "12Inspiring Branding and Communication Design. Brand strategy, brand identity and marketing communications for Keaykolour developedTweet",
-// 	"title": "Graphic Design",
-// 	"description": "Mr Cup is an inspiration blog and a shop for graphic designers who need to improve their life and creativity posters, stickers, vintage objets, letterpress products"
-// },{
-// 	"id":13,
-// 	"thumbImg": "content/img/works/thumb08.jpg",
-// 	"popupImg": ["content/img/works/popup01.jpg", "content/img/works/popup02.jpg", "content/img/works/popup03.jpg", "content/img/works/popup04.jpg"],
-// 	"popupTitle": "13ALU House",
-// 	"popupDesc": "13Inspiring Branding and Communication Design. Brand strategy, brand identity and marketing communications for Keaykolour developedTweet",
-// 	"title": "Graphic Design",
-// 	"description": "Mr Cup is an inspiration blog and a shop for graphic designers who need to improve their life and creativity posters, stickers, vintage objets, letterpress products"
-// },{
-// 	"id":14,
-// 	"thumbImg": "content/img/works/thumb08.jpg",
-// 	"popupImg": ["content/img/works/popup01.jpg", "content/img/works/popup02.jpg", "content/img/works/popup03.jpg", "content/img/works/popup04.jpg"],
-// 	"popupTitle": "14ALU House",
-// 	"popupDesc": "14Inspiring Branding and Communication Design. Brand strategy, brand identity and marketing communications for Keaykolour developedTweet",
-// 	"title": "Graphic Design",
-// 	"description": "Mr Cup is an inspiration blog and a shop for graphic designers who need to improve their life and creativity posters, stickers, vintage objets, letterpress products"
-// },{
-// 	"id":15,
-// 	"thumbImg": "content/img/works/thumb08.jpg",
-// 	"popupImg": ["content/img/works/popup01.jpg", "content/img/works/popup02.jpg", "content/img/works/popup03.jpg", "content/img/works/popup04.jpg"],
-// 	"popupTitle": "15ALU House",
-// 	"popupDesc": "15Inspiring Branding and Communication Design. Brand strategy, brand identity and marketing communications for Keaykolour developedTweet",
-// 	"title": "Graphic Design",
-// 	"description": "Mr Cup is an inspiration blog and a shop for graphic designers who need to improve their life and creativity posters, stickers, vintage objets, letterpress products"
-// },{
-// 	"id":16,
-// 	"thumbImg": "content/img/works/thumb08.jpg",
-// 	"popupImg": ["content/img/works/popup01.jpg", "content/img/works/popup02.jpg", "content/img/works/popup03.jpg", "content/img/works/popup04.jpg"],
-// 	"popupTitle": "16ALU House",
-// 	"popupDesc": "16Inspiring Branding and Communication Design. Brand strategy, brand identity and marketing communications for Keaykolour developedTweet",
-// 	"title": "Graphic Design",
-// 	"description": "Mr Cup is an inspiration blog and a shop for graphic designers who need to improve their life and creativity posters, stickers, vintage objets, letterpress products"
-// }]
-=======
 },{
 	"id":12,
 	"thumbImg": "content/img/works/thumb/work04.jpg",
@@ -171,4 +127,3 @@
 	"title": "Graphic Design",
 	"description": "Mr Cup is an inspiration blog and a shop for graphic designers who need to improve their life and creativity posters, stickers, vintage objets, letterpress products"
 }]
->>>>>>> parent of d714ef1... work
