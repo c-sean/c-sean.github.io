@@ -293,7 +293,11 @@ var SITE = SITE || {};
 
 				$popup.bind('click', function(e) {
 					e.preventDefault();
+<<<<<<< HEAD
 					$.getJSON('content/ajax/works.json', function (data) {
+=======
+					$.getJSON('content/ajax/gallery.json', function (data) {
+>>>>>>> parent of d714ef1... work
 						initPhotoSwipe(data);
 					});
 				});
