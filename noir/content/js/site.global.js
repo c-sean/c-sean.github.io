@@ -202,7 +202,7 @@ var SITE = SITE || {};
 
 		// set show detail
 		function showDetail() {
-			$('.works_item_wrapper').hover(function() {
+			$('.about_content_wrapper' ).hover(function() {
 				var $this = $(this);
 				$this.parent().css('z-index', '+=2');
 				$this.find('.detail').stop().animate({'width': '200%'}, 400, 'easeInOutExpo', function(){
@@ -239,7 +239,7 @@ var SITE = SITE || {};
 			$html.getNiceScroll().resize();
 
 			setTimeout(function () {
-			    setItemFlip();
+			    // setItemFlip();
 				parallax.refresh();
 				getViewPort();
 			}, 500);
@@ -293,7 +293,7 @@ var SITE = SITE || {};
 
 				$popup.bind('click', function(e) {
 					e.preventDefault();
-					$.getJSON('content/ajax/gallery.json', function (data) {
+					$.getJSON('content/ajax/works.json', function (data) {
 						initPhotoSwipe(data);
 					});
 				});

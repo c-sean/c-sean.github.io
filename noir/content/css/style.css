@@ -467,6 +467,7 @@ img {
   overflow: hidden;
   height: 80%;
   padding: 10%;
+  position: relative;
 }
 .about_text {
   margin-top: 10px;
