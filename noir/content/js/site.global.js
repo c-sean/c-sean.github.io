@@ -293,7 +293,7 @@ var SITE = SITE || {};
 
 				$popup.bind('click', function(e) {
 					e.preventDefault();
-					$.getJSON('content/ajax/gallery.json', function (data) {
+					$.getJSON('content/ajax/works.json', function (data) {
 						initPhotoSwipe(data);
 					});
 				});
@@ -313,7 +313,7 @@ var SITE = SITE || {};
 				    zIndex: 1300,
 				    getImageSource: function(obj){
 						return obj.url;
-					},console.log(obj.url);
+					},
 				    getImageCaption: function(obj){
  
 	 	                var captionTitle, captionTitleEl;
