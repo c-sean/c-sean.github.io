@@ -464,13 +464,13 @@ img {
   z-index: 10;
 }
 .about_content_wrapper {
-  /*overflow: hidden;*/
+  cursor: pointer;
   height: 80%;
   padding: 10%;
   position: relative;
 }
 .about_text {
-  /*margin-top: 10px;*/
+  cursor: auto;
 }
 .submenuFlipWrapper {
   position: relative;
