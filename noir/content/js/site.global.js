@@ -293,7 +293,7 @@ var SITE = SITE || {};
 
 				$popup.bind('click', function(e) {
 					e.preventDefault();
-					$.getJSON('content/ajax/gallery.json', function (data) {
+					$.getJSON('content/ajax/works.json', function (data) {
 						initPhotoSwipe(data);
 					});
 				});
@@ -319,7 +319,7 @@ var SITE = SITE || {};
 	 	                var captionTitle, captionTitleEl;
 		                var captionDesc, captionDescEl;
 
-				        //wan: ¬Ý¯à¤£¯à¦b³oÃä³B²zÅã¥ÜÁôÂÃ caption & desc
+				        //wan: �ݯण��b�o��B�z������� caption & desc
 
 		                if (obj.caption != undefined && obj.caption != null)
 		                {
