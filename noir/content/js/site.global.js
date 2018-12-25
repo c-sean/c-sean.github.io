@@ -100,7 +100,7 @@ var SITE = SITE || {};
 
 					// works
 					if(curTop >= this.relativeToAbsolute(document.getElementById('works'), 'top', 'top') && curTop < this.relativeToAbsolute(document.getElementById('contact'), 'bottom', 'center')) {
-						$navWorks.addClass('nav_active');
+						$navWorks.addClass('nav_active');randomTransitions($('.flipWorld'), 0, 1);
 					} else {
 						$navWorks.removeClass('nav_active');
 					}
@@ -219,7 +219,7 @@ var SITE = SITE || {};
 		// set show detail
 		function showDetail() {
 			$('.works_item_wrapper, .about_content_wrapper').hover(function() {
-				var $this = $(this);console.log($this);
+				var $this = $(this);
 				$this.parent().css('z-index', '+=2');
 				$this.find('.detail').stop().animate({'width': '200%'}, 400, 'easeInOutExpo', function(){
 					$(this).children('.detail_wrapper').show(100);
@@ -435,7 +435,7 @@ var SITE = SITE || {};
 			typeArr = [[null, 0, 0, 1, null, null], [null, 0, 1, 0, null, null], [null, 1, 0, 0, null, null], [null, 1, 1, 0, null, null], [null, 0, 1, 1, null, null]];
 			itemRange = [0, 1, 1, 1, 0, 0];
 			_repeat = false;
-// showDetail();randomTransitions($('.flipWorld'), 0, 1);
+// showDetail();
 			GetItems('content/ajax/works.json', function () {
 			    $nav.css('background-color', 'transparent');
 			});
