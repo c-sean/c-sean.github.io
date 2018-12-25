@@ -551,6 +551,7 @@ img {
 }
 .flipWorld {
   z-index: 0;
+  opacity: 0;
 }
 .flipCon,
 .submenuFlip {

@@ -196,7 +196,7 @@ var SITE = SITE || {};
 		// work type item transition
 		function randomTransitions(item, init_item_opa, fade_item_opa) {	
 			// init item opacity
-			item.css('opacity', init_item_opa);
+			// item.css('opacity', init_item_opa);
 			item.each(function() {
 				var delayTime = Math.random() * 600,
 					obj = this;				
@@ -295,7 +295,7 @@ var SITE = SITE || {};
 				//flip binding
 				
 				//show content
-				// $works_content.fadeIn(2000);
+				$works_content.fadeIn(2000);
 
 				//loading hide
 				$flipCon = $('.flipCon');
