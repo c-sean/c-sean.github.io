@@ -198,7 +198,7 @@ var SITE = SITE || {};
 			// init item opacity
 			// item.css('opacity', init_item_opa);
 			item.each(function() {
-				var delayTime = Math.floor(Math.random() * 800) + 500,
+				var delayTime = Math.floor(Math.random() * 800) + 200,
 					obj = this;				
 				setTimeout(function() {
 				    // fade out item				   
