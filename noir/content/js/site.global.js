@@ -198,11 +198,11 @@ var SITE = SITE || {};
 			// init item opacity
 			// item.css('opacity', init_item_opa);
 			item.each(function() {
-				var delayTime = Math.floor(Math.random() * 800) + 200,
+				var delayTime = Math.floor(Math.random() * 500) + 500,
 					obj = this;				
 				setTimeout(function() {
 				    // fade out item				   
-					$(obj).animate({opacity: fade_item_opa}, 800);
+					$(obj).animate({opacity: fade_item_opa}, 1000);
 				}, delayTime)
 			});
 
