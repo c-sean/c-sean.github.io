@@ -435,7 +435,7 @@ var SITE = SITE || {};
 			typeArr = [[null, 0, 0, 1, null, null], [null, 0, 1, 0, null, null], [null, 1, 0, 0, null, null], [null, 1, 1, 0, null, null], [null, 0, 1, 1, null, null]];
 			itemRange = [0, 1, 1, 1, 0, 0];
 			_repeat = false;
-
+// showDetail();randomTransitions($('.flipWorld'), 0, 1);
 			GetItems('content/ajax/works.json', function () {
 			    $nav.css('background-color', 'transparent');
 			});
