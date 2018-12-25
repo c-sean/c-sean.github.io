@@ -202,7 +202,7 @@ var SITE = SITE || {};
 					obj = this;				
 				setTimeout(function() {
 				    // fade out item				   
-					$(obj).animate({opacity: fade_item_opa}, 400);
+					$(obj).animate({opacity: fade_item_opa}, 800);
 				}, delayTime)
 			});
 
