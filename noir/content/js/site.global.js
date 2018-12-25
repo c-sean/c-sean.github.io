@@ -295,7 +295,7 @@ var SITE = SITE || {};
 				//flip binding
 				
 				//show content
-				$works_content.fadeIn(2000);
+				// $works_content.fadeIn(2000);
 
 				//loading hide
 				$flipCon = $('.flipCon');
