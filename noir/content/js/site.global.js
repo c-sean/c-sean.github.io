@@ -92,14 +92,14 @@ var SITE = SITE || {};
 		    		var curTop  = wrap.curTop;
 
 					// about
-					if(curTop >= this.relativeToAbsolute(document.getElementById('about'), 'top', 'top') && curTop < this.relativeToAbsolute(document.getElementById('about'), 'top', 'bottom')) {
+					if(curTop >= this.relativeToAbsolute(document.getElementById('about'), 'center', 'top') && curTop < this.relativeToAbsolute(document.getElementById('about'), 'center', 'bottom')) {
 						$navAbout.addClass('nav_active');
 					} else {
 						$navAbout.removeClass('nav_active');
 					}
 
 					// works
-					if(curTop >= this.relativeToAbsolute(document.getElementById('works'), 'top', 'top') && curTop < this.relativeToAbsolute(document.getElementById('contact'), 'bottom', 'center')) {
+					if(curTop >= this.relativeToAbsolute(document.getElementById('works'), 'center', 'top') && curTop < this.relativeToAbsolute(document.getElementById('contact'), 'bottom', 'center')) {
 						$navWorks.addClass('nav_active');randomTransitions($('.flipWorld'), 0, 1);
 					} else {
 						$navWorks.removeClass('nav_active');
@@ -187,7 +187,7 @@ var SITE = SITE || {};
 
 		// reset content height
 		function resetContentH() {
-		    var contentH = ((_itemPosControler.getQuantityH() + 3) * (_winW / 6) - 70) + "px";
+		    var contentH = ((_itemPosControler.getQuantityH() + 1) * (_winW / 6) - 70) + 800 + "px";
 
 		    $content.css({"height" : contentH});
 		    $workBgnCon.css({ "height": contentH});
@@ -448,7 +448,7 @@ var SITE = SITE || {};
 			_repeat = true;
 
 			GetItems('content/ajax/works.json', function () {
-				randomTransitions($flipWorld, 0, 1);
+				// randomTransitions($flipWorld, 0, 1);
 				scroll_to('#works');				
 				$('.flipWorld:nth-child(6n+5), .flipWorld:nth-child(6n+6)').find('.detail').addClass('pos_r');
 
@@ -461,10 +461,10 @@ var SITE = SITE || {};
 			calculateBox($calBlock);
 
 			// init sub menu flip
-			TweenMax.set('.submenuFlipWrapper', {perspective : 600});
-			TweenMax.set('.submenuFlipSet', {transformStyle : 'preserve-3d'});
-			TweenMax.set('.submenu_back', {rotationY : -180});
-			TweenMax.set(['.submenu_back', '.submenu_front'], {backfaceVisibility : 'hidden'});
+			// TweenMax.set('.submenuFlipWrapper', {perspective : 600});
+			// TweenMax.set('.submenuFlipSet', {transformStyle : 'preserve-3d'});
+			// TweenMax.set('.submenu_back', {rotationY : -180});
+			// TweenMax.set(['.submenu_back', '.submenu_front'], {backfaceVisibility : 'hidden'});
 
 			// check type is choice or list
 			if(_workType == 'CHOICE') {
@@ -546,9 +546,9 @@ var SITE = SITE || {};
 					defaultCss: false
 				});
 
-				$('#submenu_front, #submenu_back a').click(function() {
-					submenu_flip();
-				});		
+				// $('#submenu_front, #submenu_back a').click(function() {
+				// 	submenu_flip();
+				// });		
 
 				downArrow();				
 

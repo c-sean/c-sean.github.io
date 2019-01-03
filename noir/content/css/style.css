@@ -204,6 +204,7 @@ a {
 .about_who_title,
 .about_what_title,
 .works_title,
+.nav_item,
 .footer_title {
   font-family: "Avant Garde Medium BT";
 }
@@ -469,6 +470,24 @@ img {
   padding: 10%;
   position: relative;
 }
+.wrap {
+width: 100vw;
+height: 800px;
+text-align: center;
+display: table;
+}
+.wrap p{
+  display: table-cell;
+ vertical-align: middle;
+}
+.wrap span{
+  line-height: 1.8;
+  font-size: 14px;
+  letter-spacing: 1px;
+  /*max-width: 510px;*/
+  /*display: block;*/
+  color: #fff;
+}
 .about_text {
   cursor: auto;
 }
@@ -571,7 +590,7 @@ img {
   position: absolute;
 }
 .submenu_front {
-  cursor: pointer;
+  /*cursor: pointer;*/
   width: 80%;
   height: 80%;
   padding: 10%;
@@ -748,40 +767,42 @@ img {
 }
 .nav_set {
   position: absolute;
-  width: 80%;
-  height: 80%;
-  padding: 10%;
+  width: 84%;
+  height: 84%;
+  padding: 8%;
 }
 .nav_logo {
-  max-height: 84px;
-  margin-bottom: 3%;
+  max-height: 70px;
+  /*margin-bottom: 3%;*/
 }
 .nav_set ul {
-  margin-top: 5%;
+  margin-top: 14%;
 }
 .nav_item {
-  overflow: hidden;
-  height: 20px;
+  /*overflow: hidden;
+  height: 20px;*/
 }
 .nav_item span {
   display: block;
-  padding: 3px 0;
+  /*padding: 3px 0;*/
 }
 .nav_item span.ch {
-  position: relative;
-  top: -40px;
+  /*position: relative;
+  top: -40px;*/
 }
 .nav_item a {
   display: block;
-  position: relative;
+  letter-spacing: 0.35em;
+  font-size: 13px;
+  /*position: relative;
   top: 0;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
-  transition: 0.2s;
+  transition: 0.2s;*/
 }
 .nav_item a:hover {
-  top: 20px;
+  /*top: 20px;*/
 }
 .nav_item a:hover span {
   color: #fff;
@@ -791,7 +812,7 @@ img {
     font-size: 26px;
   }
   .nav_set ul {
-    margin-top: 3%;
+    /*margin-top: 5%;*/
   }
 }
 /**
