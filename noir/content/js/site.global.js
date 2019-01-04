@@ -100,13 +100,14 @@ var SITE = SITE || {};
 
 					// works
 					if(curTop >= this.relativeToAbsolute(document.getElementById('works'), 'center', 'top') && curTop < this.relativeToAbsolute(document.getElementById('contact'), 'bottom', 'center')) {
-						$navWorks.addClass('nav_active');randomTransitions($('.flipWorld'), 0, 1);
+						$navWorks.addClass('nav_active');
+						randomTransitions($('.flipWorld'), 0, 1);
 					} else {
 						$navWorks.removeClass('nav_active');
 					}
 
 					// contact
-					if(curTop >= this.relativeToAbsolute(document.getElementById('contact'), 'bottom', 'center') && curTop < this.relativeToAbsolute(document.getElementById('contact'), 'bottom', 'bottom')) {
+					if(curTop >= this.relativeToAbsolute(document.getElementById('contact'), 'bottom', 'center') && curTop <= this.relativeToAbsolute(document.getElementById('contact'), 'bottom', 'bottom')) {
 						$navContact.addClass('nav_active');
  					} else {
 						$navContact.removeClass('nav_active');
