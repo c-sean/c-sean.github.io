@@ -278,8 +278,8 @@ var SITE = SITE || {};
 					'<div class="popup"><div class="works_item" data-rid="' + item.rid + '" style="cursor: pointer;"><img src="' + item.thumbImg + '" alt=""></div>' + '</div>' +
 					'<div class="detail">' +
 					'<div class="detail_wrapper">' +
-					'<h4 class="detail_title">' + item.title + '</h4>' + 
-					'<p class="detail_text">' + item.description + '</p>' + 
+					'<h4 class="detail_title">' + item.thumbTitle + '</h4>' + 
+					'<p class="detail_text">' + item.thumbDesc + '</p>' + 
 					'</div>' +
 					'<span class="detail_icon">+</span>' + 
 					'</div></div></li>';
@@ -338,10 +338,10 @@ var SITE = SITE || {};
 
 				        //wan: 看能不能在這邊處理顯示隱藏 caption & desc
 
-		                if (obj.caption != undefined && obj.caption != null)
+		                if (obj.title != undefined && obj.title != null)
 		                {
-		                    captionTitle = obj.caption;
-		                    captionDesc = obj.desc;
+		                    captionTitle = obj.title;
+		                    captionDesc = obj.description;
 
 		                    // Return a DOM element with custom styling
 		                    captionTitleEl = document.createElement('h2');

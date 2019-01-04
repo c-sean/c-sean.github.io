@@ -2,9 +2,9 @@
 	"id":1,
 	"thumbImg": "content/img/works/thumb/work01.jpg",
 	"popupImg": ["content/img/works/popup/work01_1.jpg", "content/img/works/popup/work01_2.jpg", "content/img/works/popup/work01_3.jpg", "content/img/works/popup/work01_4.jpg"],
+	"thumbTitle": "創食居和風居酒料理",
+	"thumbDesc": "Commerical",
 	"title": "創食居",
-	"description": "案子發想來自葛飾北齋所畫的富嶽三十六景之一的信州諏訪湖。運用為整體空間情境的安排。此畫乃葛飾北齋晚年發表的作品，不僅影響許多後人，亦是北齋的代表作。",
-	"title": "創食居和風居酒料理",
-	"description": "Commerical"
+	"description": "案子發想來自葛飾北齋所畫的富嶽三十六景之一的信州諏訪湖。運用為整體空間情境的安排。此畫乃葛飾北齋晚年發表的作品，不僅影響許多後人，亦是北齋的代表作。"
 },{
 }]
