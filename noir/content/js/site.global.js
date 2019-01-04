@@ -329,7 +329,7 @@ var SITE = SITE || {};
 				    captionAndToolbarOpacity: 1,
 				    zIndex: 1300,
 				    getImageSource: function(obj){
-						return obj.url;
+						return obj.popupImg;
 					},
 				    getImageCaption: function(obj){
  
