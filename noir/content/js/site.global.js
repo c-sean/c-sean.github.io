@@ -261,7 +261,9 @@ var SITE = SITE || {};
 				getViewPort();
 			}, 500);
 		}
-
+// $.getJSON('content/ajax/works.json', function(data){
+// 	console.log(data);
+// })
 		// get json & append to html
 		function GetItems(url, callback) {
 			//loading show
@@ -278,8 +280,9 @@ var SITE = SITE || {};
 					'<div class="popup"><div class="works_item" data-rid="' + item.rid + '" style="cursor: pointer;"><img src="' + item.thumbImg + '" alt=""></div>' + '</div>' +
 					'<div class="detail">' +
 					'<div class="detail_wrapper">' +
-					'<h4 class="detail_title">' + item.thumbTitle + '</h4>' + 
-					'<p class="detail_text">' + item.thumbDesc + '</p>' + 
+					'<h4 class="detail_title">' + item.title + '</h4>' + 
+					// '<p class="detail_desc">' + item.description + '</p>' + 
+					'<p class="detail_text">' + item.thumbText + '</p>' + 
 					'</div>' +
 					'<span class="detail_icon">+</span>' + 
 					'</div></div></li>';
@@ -303,16 +306,16 @@ var SITE = SITE || {};
 				$flipWorld = $('.flipWorld');
 				$works_item = $('.works_item');
 				$itemWrap = $('.works_item_wrapper')
-				$popup = $('.popup .works_item');
+				$popup = $('.popup');
 
 				setItems();
 				showDetail();
 
 				$popup.bind('click', function(e) {
 					e.preventDefault();
-					$.getJSON('content/ajax/works.json', function (data) {
+					// $.getJSON('content/ajax/works.json', function (data) {
 						initPhotoSwipe(data);
-					});
+					// });
 				});
 
 				//callback
