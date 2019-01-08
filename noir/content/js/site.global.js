@@ -332,9 +332,9 @@ var SITE = SITE || {};
 				    captionAndToolbarOpacity: 1,
 				    zIndex: 1300,
 				    getImageSource: function(obj){
-				    	console.log(obj);
+				    	// console.log(obj);
 				    	// for (var i in obj) {
-							return obj.popupImg;
+							return obj.url;
 						// }
 					},
 				    getImageCaption: function(obj){
