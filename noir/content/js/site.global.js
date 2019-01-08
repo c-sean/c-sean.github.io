@@ -314,7 +314,7 @@ var SITE = SITE || {};
 				$popup.bind('click', function(e) {
 					e.preventDefault();
 					// $.getJSON('content/ajax/works.json', function (data) {
-						initPhotoSwipe(data);
+						initPhotoSwipe(data);console.log(data);
 					// });
 				});
 
@@ -323,7 +323,7 @@ var SITE = SITE || {};
 			});
 		}
 
-		function initPhotoSwipe(galleryJsonData) {console.log(galleryJsonData);
+		function initPhotoSwipe(galleryJsonData) {
 			var pswi = myPhotoSwipe({
 				options: {
 					captionAndToolbarFlipPosition: false,
