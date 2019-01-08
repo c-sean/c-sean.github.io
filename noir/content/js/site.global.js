@@ -314,7 +314,7 @@ var SITE = SITE || {};
 				$popup.bind('click', function(e) {
 					e.preventDefault();
 					// $.getJSON('content/ajax/works.json', function (data) {
-						initPhotoSwipe(data);
+						initPhotoSwipe(data);console.log(data);
 					// });
 				});
 
@@ -323,7 +323,7 @@ var SITE = SITE || {};
 			});
 		}
 
-		function initPhotoSwipe(galleryJsonData) {
+		function initPhotoSwipe(galleryJsonData) {console.log(galleryJsonData);
 			var pswi = myPhotoSwipe({
 				options: {
 					captionAndToolbarFlipPosition: false,
@@ -332,7 +332,7 @@ var SITE = SITE || {};
 				    captionAndToolbarOpacity: 1,
 				    zIndex: 1300,
 				    getImageSource: function(obj){
-				    	console.log(obj);
+				    	// console.log(obj);
 				    	// for (var i in obj) {
 							return obj.popupImg;
 						// }
