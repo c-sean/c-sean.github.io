@@ -314,7 +314,7 @@ var SITE = SITE || {};
 				$popup.bind('click', function(e) {
 					e.preventDefault();
 					// $.getJSON('content/ajax/works.json', function (data) {
-						initPhotoSwipe(data);console.log(data);
+						initPhotoSwipe(data);
 					// });
 				});
 
@@ -332,7 +332,7 @@ var SITE = SITE || {};
 				    captionAndToolbarOpacity: 1,
 				    zIndex: 1300,
 				    getImageSource: function(obj){
-				    	// console.log(obj);
+				    	console.log(data);
 				    	// for (var i in obj) {
 							return obj.popupImg;
 						// }

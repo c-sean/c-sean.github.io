@@ -1,14 +1,14 @@
 [{
 	"id":1,
 	"thumbImg": "content/img/works/thumb/work01.jpg",
-	"popupImg": ["content/img/works/popup/work01_1.jpg", "content/img/works/popup/work01_2.jpg", "content/img/works/popup/work01_3.jpg", "content/img/works/popup/work01_4.jpg"],
+	"popupImg": "content/img/works/popup/work01_1.jpg",
 	"thumbText": "Commerical Space",
 	"title": "創食居和風居酒料理",
 	"description": "案子發想來自葛飾北齋所畫的富嶽三十六景之一的信州諏訪湖。運用為整體空間情境的安排。此畫乃葛飾北齋晚年發表的作品，不僅影響許多後人，亦是北齋的代表作。"
 },{
 	"id":2,
 	"thumbImg": "content/img/works/thumb/work02.jpg",
-	"popupImg": ["content/img/works/popup/work02_1.jpg", "content/img/works/popup/work02_2.jpg", "content/img/works/popup/work02_3.jpg"],
+	"popupImg": "content/img/works/popup/work02_1.jpg",
 	"thumbText": "Commerical Space",
 	"title": "好美髮廊",
 	"description": "採用直接具象的方式，將頭髮柔順輕盈的印象，做為全區立牆設計靈感。 透過曲線的牆面，讓這些線條柔軟的牆面，輕巧的將空間做分隔，並包覆整個開放區域，牆與牆之間也增添幾分趣味性及溫馨感。"
