@@ -313,7 +313,7 @@ var SITE = SITE || {};
 
 				$popup.bind('click', function(e) {
 					e.preventDefault();
-					var index = $(this).attr('alt');console.log(index);
+					var index = $(this).find('img').attr('alt');console.log(index);
 					// $.getJSON('content/ajax/works.json', function (data) {
 						initPhotoSwipe(index,data);
 					// });
@@ -332,8 +332,9 @@ var SITE = SITE || {};
 				    captionAndToolbarAutoHideDelay: 0,
 				    captionAndToolbarOpacity: 1,
 				    zIndex: 1300,
-				    getImageSource: function(i,obj){
-				    	console.log(obj);console.log(i);
+				    getImageSource: function(obj){
+				    	console.log(obj);
+				    	console.log(i);
 				    	// for (var i in obj) {
 							return obj.popupImg[i];
 						// }
