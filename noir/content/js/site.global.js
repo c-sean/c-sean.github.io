@@ -315,7 +315,7 @@ var SITE = SITE || {};
 					e.preventDefault();
 					var index = $(this).attr('alt');
 					// $.getJSON('content/ajax/works.json', function (data) {
-						initPhotoSwipe(i,data);
+						initPhotoSwipe(index,data);
 					// });
 				});
 
