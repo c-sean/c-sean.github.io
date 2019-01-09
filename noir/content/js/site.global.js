@@ -337,7 +337,7 @@ var SITE = SITE || {};
 				    	console.log(obj);
 				    	console.log(i);
 				    	// for (var i in obj) {
-							return obj.popupImg[i];
+							return obj.popupImg1;
 						// }
 					},
 				    getImageCaption: function(obj){
