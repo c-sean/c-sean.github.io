@@ -335,13 +335,14 @@ var SITE = SITE || {};
 				    captionAndToolbarOpacity: 1,
 				    zIndex: 1300,
 				    getImageSource: function(obj){
-				    	console.log(obj);
-				    	console.log(obj[1][0]);
+				    	var arr = obj;
+				    	console.log(arr);
+				    	console.log(arr[1]);
 				    	console.log(i + '+' + j);
-				    	// for (var i in obj) {
+				    	// for (var i in arr) {
 							j++;
-							console.log(obj[1][j]);
-							return obj[i-1][j];
+							console.log(arr[1][j]);
+							return arr[i-1][j];
 						// }
 					},
 				    getImageCaption: function(obj){
