@@ -334,10 +334,11 @@ var SITE = SITE || {};
 				    captionAndToolbarOpacity: 1,
 				    zIndex: 1300,
 				    getImageSource: function(obj){
-				    	console.log(obj.url);
-				    	console.log(i);
+				    	var j = 0;
+				    	console.log(obj[i-1]);
+				    	console.log(i + '+' + j);
 				    	// for (var i in obj) {
-							return obj.url;
+							return obj[i-1][j];
 						// }
 					},
 				    getImageCaption: function(obj){

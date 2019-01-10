@@ -1,20 +1,5 @@
 [
-	{ "url": "content/img/works/popup/work01_1.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 001 desc"},
-	{ "url": "content/img/works/popup/work02_1.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 002 desc"},
-	{ "url": "content/img/works/popup/work03_1.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 003 desc"},
-	{ "url": "content/img/works/popup/work02.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 004 desc"},
-	{ "url": "content/img/works/popup/work01.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 005 desc"},
-	{ "url": "content/img/works/popup/work02.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 006 desc"},
-	{ "url": "content/img/works/popup/work01.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 007 desc"},
-	{ "url": "content/img/works/popup/work02.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 008 desc"},
-	{ "url": "content/img/works/popup/work01.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 009 desc"},
-	{ "url": "content/img/works/popup/work02.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 010 desc"},
-	{ "url": "content/img/works/popup/work01.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 011 desc"},
-	{ "url": "content/img/works/popup/work02.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 012 desc"},
-	{ "url": "content/img/works/popup/work01.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 013 desc"},
-	{ "url": "content/img/works/popup/work02.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 014 desc"},
-	{ "url": "content/img/works/popup/work01.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 015 desc"},
-	{ "url": "content/img/works/popup/work02.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 016 desc"},
-	{ "url": "content/img/works/popup/work01.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 017 desc"},
-	{ "url": "content/img/works/popup/work02.jpg", "caption_title": "Image 001 title", "caption_desc": "Image 018 desc"}
+	["content/img/works/popup/work01_1.jpg", "content/img/works/popup/work01_2.jpg", "content/img/works/popup/work01_3.jpg", "content/img/works/popup/work01_4.jpg"],
+    ["content/img/works/popup/work02_1.jpg", "content/img/works/popup/work02_2.jpg", "content/img/works/popup/work02_3.jpg"],
+    ["content/img/works/popup/work03_1.jpg", "content/img/works/popup/work03_2.jpg", "content/img/works/popup/work03_3.jpg"]
 ]
