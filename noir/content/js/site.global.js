@@ -326,6 +326,7 @@ var SITE = SITE || {};
 		}
 
 		function initPhotoSwipe(i,galleryJsonData) {
+				    	var j = 0;
 			var pswi = myPhotoSwipe({
 				options: {
 					captionAndToolbarFlipPosition: false,
@@ -334,11 +335,12 @@ var SITE = SITE || {};
 				    captionAndToolbarOpacity: 1,
 				    zIndex: 1300,
 				    getImageSource: function(obj){
-				    	var j = 0;
-				    	console.log(obj[i-1]);
+				    	// console.log(obj[i-1]);
+				    	console.log(obj);
 				    	console.log(i + '+' + j);
 				    	// for (var i in obj) {
 							return obj[i-1][j];
+							j++
 						// }
 					},
 				    getImageCaption: function(obj){
