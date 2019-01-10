@@ -315,9 +315,9 @@ var SITE = SITE || {};
 					e.preventDefault();
 					var index = $(this).find('.thumb').attr('alt');
 					console.log(index);
-					// $.getJSON('content/ajax/works.json', function (data) {
+					$.getJSON('content/ajax/gallery.json', function (data) {
 						initPhotoSwipe(index,data);
-					// });
+					});
 				});
 
 				//callback
@@ -334,10 +334,10 @@ var SITE = SITE || {};
 				    captionAndToolbarOpacity: 1,
 				    zIndex: 1300,
 				    getImageSource: function(obj){
-				    	console.log(obj);
+				    	console.log(obj.url);
 				    	console.log(i);
 				    	// for (var i in obj) {
-							return obj.popupImg1;
+							return obj.url;
 						// }
 					},
 				    getImageCaption: function(obj){
