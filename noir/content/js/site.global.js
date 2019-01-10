@@ -336,11 +336,12 @@ var SITE = SITE || {};
 				    zIndex: 1300,
 				    getImageSource: function(obj){
 				    	// console.log(obj[i-1]);
-				    	console.log(obj[2]);
+				    	console.log(obj[1][0]);
 				    	console.log(i + '+' + j);
 				    	// for (var i in obj) {
-							return obj[i-1][j];
 							j++;
+							console.log(obj[1][j]);
+							return obj[i-1][j];
 						// }
 					},
 				    getImageCaption: function(obj){
