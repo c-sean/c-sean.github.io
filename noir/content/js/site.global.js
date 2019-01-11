@@ -343,7 +343,7 @@ var SITE = SITE || {};
 							j++;
 							// console.log(arr[1][j]);
 							// return arr[i-1][j];
-							return obj.popupImg2[j];
+							return obj.popupImg2;
 						// }
 					},
 				    getImageCaption: function(obj){
