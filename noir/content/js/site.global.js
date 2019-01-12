@@ -344,7 +344,7 @@ var SITE = SITE || {};
 							j++;
 							// console.log(arr[1][j]);
 							// return arr[i-1][j];
-							return arr.popupImg2;
+							return arr.popupImg3;
 						// }
 					},
 				    getImageCaption: function(obj){
