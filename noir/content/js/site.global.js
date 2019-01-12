@@ -338,9 +338,9 @@ var SITE = SITE || {};
 				    	// var arr = obj;
 				    	// console.log(arr);
 				    	// console.log(obj);
-				    	console.log(i + '+' + j);
+				    	// console.log(i + '+' + j);
 							// j++;
-				    	for (var j in popupImg1) {
+				    	for (var j in obj.popupImg1) {
 				    		console.log(obj.popupImg1);
 				    		console.log(obj.popupImg1[j]);
 							// console.log(arr[1][j]);
