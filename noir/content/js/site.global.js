@@ -340,12 +340,12 @@ var SITE = SITE || {};
 				    	// console.log(obj);
 				    	// console.log(i + '+' + j);
 							// j++;
-				    	var url = for (var j in obj.popupImg1) {
+				    	for (var j in obj.popupImg1) {
 				    		console.log(obj.popupImg1);
 				    		console.log(obj.popupImg1[j]);
-							// console.log(arr[1][j]);
 							// return arr[i-1][j];
-							obj.popupImg1[j];
+							var url = obj.popupImg1[j];
+							console.log(url);
 						}
 							return url;
 					},
