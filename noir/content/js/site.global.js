@@ -352,7 +352,7 @@ var SITE = SITE || {};
 	 	                var captionTitle, captionTitleEl;
 		                var captionDesc, captionDescEl;
 
-				        //wan: �ݯण��b�o��B�z������� caption & desc
+				        //wan: ¬Ý¯à¤£¯à¦b³oÃä³B²zÅã¥ÜÁôÂÃ caption & desc
 
 		                if (obj.title != undefined && obj.title != null)
 		                {
