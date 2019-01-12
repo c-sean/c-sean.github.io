@@ -340,13 +340,14 @@ var SITE = SITE || {};
 				    	// console.log(obj);
 				    	// console.log(i + '+' + j);
 							// j++;
-				    	for (var j in obj.popupImg1) {
+				    	var url = for (var j in obj.popupImg1) {
 				    		console.log(obj.popupImg1);
 				    		console.log(obj.popupImg1[j]);
 							// console.log(arr[1][j]);
 							// return arr[i-1][j];
-							return obj.popupImg1[j];
+							obj.popupImg1[j];
 						}
+							return url;
 					},
 				    getImageCaption: function(obj){
  
