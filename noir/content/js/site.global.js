@@ -335,7 +335,7 @@ var SITE = SITE || {};
 				    captionAndToolbarOpacity: 1,
 				    zIndex: 1300,
 				    getImageSource: function(obj){
-				    	// var arr = obj;
+				    	var arr = obj;
 				    	console.log(arr);
 				    	console.log(arr[j]);
 				    	// console.log(arr[1][0]);
