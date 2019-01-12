@@ -316,8 +316,8 @@ var SITE = SITE || {};
 					var index = $(this).find('.thumb').attr('alt');
 					console.log(index);
 					$.getJSON('content/ajax/gallery.json', function (data) {
-						var arr = data[index-1];
-
+						var arr = data[index-1],
+                            len = arr.length;
 						initPhotoSwipe(arr,data);
 					});
 				});
@@ -327,7 +327,7 @@ var SITE = SITE || {};
 			});
 		}
 
-		function initPhotoSwipe(arr,galleryJsonData) {
+		function initPhotoSwipe(arr,len,galleryJsonData) {
 				    	var j = 0;
 			var pswi = myPhotoSwipe({
 				options: {
@@ -342,7 +342,10 @@ var SITE = SITE || {};
 				    	console.log(arr[j]);
 				    	// console.log(arr[1][0]);
 				    	// console.log(i + '+' + j);
-							return arr;
+						return arr[j];
+				    	if(j<len){
+				    		j++;
+				    	}
 							// j++;
 				    	// for (var j in obj.popupImg1) {
 				    	// 	console.log(obj.popupImg1);
