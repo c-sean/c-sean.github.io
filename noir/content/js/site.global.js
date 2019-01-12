@@ -317,6 +317,7 @@ var SITE = SITE || {};
 					console.log(index);
 					$.getJSON('content/ajax/gallery.json', function (data) {
 						var arr = data[index-1];
+
 						initPhotoSwipe(arr,data);
 					});
 				});
@@ -341,7 +342,7 @@ var SITE = SITE || {};
 				    	console.log(arr[j]);
 				    	// console.log(arr[1][0]);
 				    	// console.log(i + '+' + j);
-							return arr[j++];
+							return arr[j];
 							// j++;
 				    	// for (var j in obj.popupImg1) {
 				    	// 	console.log(obj.popupImg1);
