@@ -340,12 +340,14 @@ var SITE = SITE || {};
 				    	// var arr = obj;
 				    	console.log(arr);
 				    	console.log(arr[j]);
+				    	console.log(len);
 				    	// console.log(arr[1][0]);
 				    	// console.log(i + '+' + j);
 				    	if(j<len){
 				    		j++;
 				    	}
-						return arr[j-1];
+				    	console.log(j);
+						return arr[j];
 							// j++;
 				    	// for (var j in obj.popupImg1) {
 				    	// 	console.log(obj.popupImg1);
