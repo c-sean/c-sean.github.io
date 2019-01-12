@@ -1,6 +1,6 @@
 [
-	{"url": ["content/img/works/popup/work01_1.jpg", "content/img/works/popup/work01_2.jpg", "content/img/works/popup/work01_3.jpg", "content/img/works/popup/work01_4.jpg"]},
-    {"url": ["content/img/works/popup/work02_1.jpg", "content/img/works/popup/work02_2.jpg", "content/img/works/popup/work02_3.jpg"]},
-    {"url": ["content/img/works/popup/work03_1.jpg", "content/img/works/popup/work03_2.jpg", "content/img/works/popup/work03_3.jpg"]},
-    {"url": ["content/img/works/popup/work04_1.jpg", "content/img/works/popup/work04_2.jpg", "content/img/works/popup/work04_3.jpg"]}
+	{"url1": ["content/img/works/popup/work01_1.jpg", "content/img/works/popup/work01_2.jpg", "content/img/works/popup/work01_3.jpg", "content/img/works/popup/work01_4.jpg"]},
+    {"url2": ["content/img/works/popup/work02_1.jpg", "content/img/works/popup/work02_2.jpg", "content/img/works/popup/work02_3.jpg"]},
+    {"urls": ["content/img/works/popup/work03_1.jpg", "content/img/works/popup/work03_2.jpg", "content/img/works/popup/work03_3.jpg"]},
+    {"url4": ["content/img/works/popup/work04_1.jpg", "content/img/works/popup/work04_2.jpg", "content/img/works/popup/work04_3.jpg"]}
 ]

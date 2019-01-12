@@ -345,8 +345,9 @@ var SITE = SITE || {};
 				    	// 	console.log(obj.popupImg1[j]);
 							// return arr[i-1][j];
 							// var url = obj.popupImg1[j];
-							console.log(obj.url2[1]);
-							return obj.url2[1];
+							console.log(obj.url2);
+							console.log(obj.urls);
+							return obj.url2;
 							// return obj.popupImg1[j];
 						// }
 					},
