@@ -345,7 +345,7 @@ var SITE = SITE || {};
 				    	if(j<len){
 				    		j++;
 				    	}
-						return arr[j];
+						return arr[j-1];
 							// j++;
 				    	// for (var j in obj.popupImg1) {
 				    	// 	console.log(obj.popupImg1);
