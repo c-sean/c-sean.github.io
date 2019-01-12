@@ -340,14 +340,15 @@ var SITE = SITE || {};
 				    	// console.log(obj);
 				    	// console.log(i + '+' + j);
 							// j++;
-				    	for (var j in obj.popupImg1) {
-				    		console.log(obj.popupImg1);
-				    		console.log(obj.popupImg1[j]);
+				    	// for (var j in obj.popupImg1) {
+				    	// 	console.log(obj.popupImg1);
+				    	// 	console.log(obj.popupImg1[j]);
 							// return arr[i-1][j];
-							var url = obj.popupImg1[j];
-							console.log(url);
-						}
-							return url;
+							// var url = obj.popupImg1[j];
+							// console.log(url);
+							return obj.popupImg;
+							// return obj.popupImg1[j];
+						// }
 					},
 				    getImageCaption: function(obj){
  
