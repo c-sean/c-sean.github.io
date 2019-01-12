@@ -343,9 +343,9 @@ var SITE = SITE || {};
 				    	console.log(len);
 				    	// console.log(arr[1][0]);
 				    	// console.log(i + '+' + j);
-				    	if(j<len){
-				    		j++;
-				    	}
+				    	// if(j<len){
+				    	// 	j++;
+				    	// }
 				    	console.log(j);
 						return arr[j];
 							// j++;
