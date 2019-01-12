@@ -326,7 +326,7 @@ var SITE = SITE || {};
 		}
 
 		function initPhotoSwipe(i,galleryJsonData) {
-				    	// var j = 0;
+				    	var j = 0;
 			var pswi = myPhotoSwipe({
 				options: {
 					captionAndToolbarFlipPosition: false,
@@ -335,16 +335,16 @@ var SITE = SITE || {};
 				    captionAndToolbarOpacity: 1,
 				    zIndex: 1300,
 				    getImageSource: function(obj){
-				    	var arr = obj;
+				    	// var arr = obj;
 				    	console.log(arr);
-				    	console.log(arr[1]);
-				    	console.log(arr[1][0]);
+				    	console.log(arr[j]);
+				    	// console.log(arr[1][0]);
 				    	// console.log(i + '+' + j);
-							// j++;
+							j++;
 				    	// for (var j in obj.popupImg1) {
 				    	// 	console.log(obj.popupImg1);
 				    	// 	console.log(obj.popupImg1[j]);
-							return arr[1];
+							return arr[j];
 							// var url = obj.popupImg1[j];
 							// console.log(obj.url2);
 							// console.log(obj.urls);
