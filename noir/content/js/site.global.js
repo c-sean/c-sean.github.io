@@ -319,7 +319,7 @@ var SITE = SITE || {};
 						console.log(data);
 						console.log(data[0]);
 						console.log(data[0][0]);
-						var arr = data[0][0]['popupImg'+index],
+						var arr = data[0]['popupImg'+index],
                             len = arr.length;
 						initPhotoSwipe(arr,len,data);
 					});
