@@ -338,26 +338,25 @@ var SITE = SITE || {};
 				    zIndex: 1300,
 				    getImageSource: function(obj){
 				    	// var arr = obj;
-				    	console.log(arr);
-				    	console.log(arr[j]);
-				    	console.log(len);
+				   //  	console.log(arr);
+				   //  	console.log(arr[j]);
+				   //  	console.log(len);
+				   //  	console.log(j);
+				   //  	if(j<len){
+							// return arr[j++];
+				   //  	}
+
 				    	// console.log(arr[1][0]);
 				    	// console.log(i + '+' + j);
-				    	console.log(j);
-				    	if(j<len){
-			    			// return false;
-							return arr[j++];
-				    	}
-				    		// j++;
-							// j++;
+
 				    	// for (var j in obj.popupImg1) {
-				    	// 	console.log(obj.popupImg1);
-				    	// 	console.log(obj.popupImg1[j]);
+				    		console.log(obj.popupImg2);
+				    		console.log(obj.popupImg2[0]);
 							// var url = obj.popupImg1[j];
 							// console.log(obj.url2);
 							// console.log(obj.urls);
 							// return obj.url2;
-							// return obj.popupImg1[j];
+							return obj.popupImg2;
 						// }
 					},
 				    getImageCaption: function(obj){
