@@ -318,7 +318,7 @@ var SITE = SITE || {};
 					$.getJSON('content/ajax/gallery.json', function (data) {
 						// var arr = data[index-1],
                             // len = arr.length;
-						initPhotoSwipe(arr,len,data);
+						initPhotoSwipe(data);
 					});
 				});
 
@@ -327,7 +327,7 @@ var SITE = SITE || {};
 			});
 		}
 
-		function initPhotoSwipe(arr,len,galleryJsonData) {
+		function initPhotoSwipe(galleryJsonData) {
 				    	var j = 0;
 			var pswi = myPhotoSwipe({
 				options: {
