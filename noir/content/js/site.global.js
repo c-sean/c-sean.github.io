@@ -317,7 +317,7 @@ var SITE = SITE || {};
 					console.log(index);
 					$.getJSON('content/ajax/gallery.json', function (data) {
 						console.log(data);
-						var arr = data[index],
+						var arr = data[0][index],
                             len = arr.length;
 						initPhotoSwipe(arr,len,data);
 					});
