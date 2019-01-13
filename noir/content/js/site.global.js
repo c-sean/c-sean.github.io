@@ -347,8 +347,8 @@ var SITE = SITE || {};
 			    			return false;
 				    	}
 				    	console.log(j);
-						return arr[j];
-				    		j++;
+				    		// j++;
+						return arr[j++];
 							// j++;
 				    	// for (var j in obj.popupImg1) {
 				    	// 	console.log(obj.popupImg1);
