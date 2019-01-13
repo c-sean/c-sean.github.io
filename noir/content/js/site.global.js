@@ -316,8 +316,8 @@ var SITE = SITE || {};
 					var index = $(this).find('.thumb').attr('alt');
 					console.log(index);
 					$.getJSON('content/ajax/gallery.json', function (data) {
-						var arr = data[index-1],
-                            len = arr.length;
+						// var arr = data[index-1],
+                            // len = arr.length;
 						initPhotoSwipe(arr,len,data);
 					});
 				});
