@@ -316,9 +316,9 @@ var SITE = SITE || {};
 					var index = $(this).find('.thumb').attr('alt');
 					console.log(index);
 					$.getJSON('content/ajax/gallery.json', function (data) {
-						// var arr = data[index-1],
-                            // len = arr.length;
-						initPhotoSwipe(data);
+						var arr = data.popupImg[index],
+                            len = arr.length;
+						initPhotoSwipe(arr,len,data);
 					});
 				});
 
@@ -327,7 +327,7 @@ var SITE = SITE || {};
 			});
 		}
 
-		function initPhotoSwipe(galleryJsonData) {
+		function initPhotoSwipe(arr,len,galleryJsonData) {
 				    	var j = 0;
 			var pswi = myPhotoSwipe({
 				options: {
@@ -342,21 +342,21 @@ var SITE = SITE || {};
 				   //  	console.log(arr[j]);
 				   //  	console.log(len);
 				   //  	console.log(j);
-				   //  	if(j<len){
+				    		console.log(arr[j]);
+				    		// console.log(obj.popupImg[0]);
+				    	if(j<len){
 							// return arr[j++];
-				   //  	}
+							return arr[j++];
+				    	}
 
 				    	// console.log(arr[1][0]);
 				    	// console.log(i + '+' + j);
 
 				    	// for (var j in obj.popupImg1) {
-				    		console.log(obj.popupImg2);
-				    		console.log(obj.popupImg2[0]);
 							// var url = obj.popupImg1[j];
 							// console.log(obj.url2);
 							// console.log(obj.urls);
 							// return obj.url2;
-							return obj.popupImg2;
 						// }
 					},
 				    getImageCaption: function(obj){
