@@ -318,7 +318,7 @@ var SITE = SITE || {};
 					// $.getJSON('content/ajax/gallery.json', function (data) {
 						console.log(data);
 						console.log(data[0]);
-						var obj = data[index];
+						var obj = data[index-1];
 						console.log(obj);
 						var arr = obj['popupImg'+index],
                             len = arr.length;
@@ -343,7 +343,7 @@ var SITE = SITE || {};
 				    getImageSource: function(obj){
 				    	// var arr = obj;
 				    	console.log(arr);
-				    	console.log(galleryJsonData);
+				    	// console.log(galleryJsonData);
 				    	console.log(obj);
 				   //  	console.log(j);
 				    		console.log(arr[j]);
