@@ -317,7 +317,7 @@ var SITE = SITE || {};
 					console.log(index);
 					// $.getJSON('content/ajax/gallery.json', function (data) {
 						// console.log(data);
-						console.log(data[index]);
+						// console.log(data[index]);
 						// var obj = data[index-1];
 						// console.log(obj);
 						var arr = data[index-1]['popupImg'+index],
