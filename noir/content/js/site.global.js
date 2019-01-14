@@ -318,7 +318,8 @@ var SITE = SITE || {};
 					// $.getJSON('content/ajax/gallery.json', function (data) {
 						console.log(data);
 						console.log(data[0]);
-						console.log(data[index]);
+						var obj = data[index];
+						console.log(obj);
 						var arr = data[index]['popupImg'+index],
                             len = arr.length;
 						initPhotoSwipe(arr,len);
