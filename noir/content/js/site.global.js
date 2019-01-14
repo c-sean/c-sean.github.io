@@ -341,16 +341,16 @@ var SITE = SITE || {};
 				    zIndex: 1300,
 				    getImageSource: function(obj){
 				    	// var arr = obj;
-				   //  	console.log(arr);
-				   //  	console.log(arr[j]);
-				   //  	console.log(len);
+				    	console.log(arr);
+				    	console.log(galleryJsonData);
+				    	console.log(obj);
 				   //  	console.log(j);
 				    		console.log(arr[j]);
 				    		// console.log(obj.popupImg[0]);
-				    	if(j<len){
+				    	// if(j<len){
 							// return arr[j++];
 							return arr[j++];
-				    	}
+				    	// }
 
 				    	// console.log(arr[1][0]);
 				    	// console.log(i + '+' + j);
