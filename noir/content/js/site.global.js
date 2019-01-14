@@ -313,7 +313,7 @@ var SITE = SITE || {};
 
 				$popup.bind('click', function(e) {
 					e.preventDefault();
-					var index = $(this).find('.thumb').attr('alt');
+					var index = Number($(this).find('.thumb').attr('alt'));
 					console.log( typeof index);
 					// $.getJSON('content/ajax/gallery.json', function (data) {
 						console.log(data);
