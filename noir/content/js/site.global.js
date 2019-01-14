@@ -386,7 +386,7 @@ var SITE = SITE || {};
 		                return [captionTitleEl, captionDescEl];
 		            }
 				},
-				attachTarget: galleryJsonData,
+				attachTarget: arr,
 				eventCallback: {
 					onBeforeShow: function() {
 						var $photoswipeDocLayer = $('.ps-document-overlay');
