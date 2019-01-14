@@ -313,13 +313,13 @@ var SITE = SITE || {};
 
 				$popup.bind('click', function(e) {
 					e.preventDefault();
-					var index = $(this).find('.thumb').attr('alt');
-					console.log(index);
+					var index = Number($(this).find('.thumb').attr('alt'));
+					console.log( typeof index);
 					// $.getJSON('content/ajax/gallery.json', function (data) {
 						console.log(data);
 						console.log(data[0]);
-						console.log(data.index);
-						var arr = data.index['popupImg'+index],
+						console.log(data[index]);
+						var arr = data[index]['popupImg'+index],
                             len = arr.length;
 						initPhotoSwipe(arr,len);
 					// });
