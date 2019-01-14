@@ -318,8 +318,8 @@ var SITE = SITE || {};
 					// $.getJSON('content/ajax/gallery.json', function (data) {
 						console.log(data);
 						console.log(data[0]);
-						// console.log(data[0][0]);
-						var arr = data[0]['popupImg'+index],
+						console.log(data[0][index]);
+						var arr = data[0][index]['popupImg'+index],
                             len = arr.length;
 						initPhotoSwipe(arr,len);
 					// });
