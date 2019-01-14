@@ -315,14 +315,14 @@ var SITE = SITE || {};
 					e.preventDefault();
 					var index = $(this).find('.thumb').attr('alt');
 					console.log(index);
-					$.getJSON('content/ajax/gallery.json', function (data) {
+					// $.getJSON('content/ajax/gallery.json', function (data) {
 						console.log(data);
 						console.log(data[0]);
 						// console.log(data[0][0]);
 						var arr = data[0]['popupImg'+index],
                             len = arr.length;
-						initPhotoSwipe(arr,len,data);
-					});
+						initPhotoSwipe(arr,len);
+					// });
 				});
 
 				//callback
@@ -330,7 +330,7 @@ var SITE = SITE || {};
 			});
 		}
 
-		function initPhotoSwipe(arr,len,galleryJsonData) {
+		function initPhotoSwipe(arr,len) {
 				    	var j = 0;
 			var pswi = myPhotoSwipe({
 				options: {
