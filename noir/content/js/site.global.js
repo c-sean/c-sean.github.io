@@ -323,7 +323,7 @@ var SITE = SITE || {};
 						var obj = data[index-1],
 						    arr = data[index-1]['popupImg'+index],
                             len = arr.length;
-						initPhotoSwipe(arr,len);
+						initPhotoSwipe(arr,len,obj);
 					// });
 				});
 
@@ -341,7 +341,7 @@ var SITE = SITE || {};
 				    captionAndToolbarAutoHideDelay: 0,
 				    captionAndToolbarOpacity: 1,
 				    zIndex: 1300,
-				    getImageSource: function(){
+				    getImageSource: function(obj){
 				    	// var arr = obj;
 				    	console.log(arr);
 				    	// console.log(galleryJsonData);
