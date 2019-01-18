@@ -342,7 +342,7 @@ var SITE = SITE || {};
 				    captionAndToolbarAutoHideDelay: 0,
 				    captionAndToolbarOpacity: 1,
 				    zIndex: 1300,
-				    getImageSource: function(){
+				    getImageSource: function(obj){
 				    	// var arr = obj;
 				    	// console.log(arr);
 				    	// console.log(galleryJsonData);
