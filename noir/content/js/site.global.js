@@ -342,17 +342,17 @@ var SITE = SITE || {};
 				    captionAndToolbarAutoHideDelay: 0,
 				    captionAndToolbarOpacity: 1,
 				    zIndex: 1300,
-				    getImageSource: function(){
+				    getImageSource: function(obj){
 				    	// var arr = obj;
-				    	console.log(arr);
+				    	// console.log(arr);
 				    	// console.log(galleryJsonData);
 				    	console.log(obj);
 				   //  	console.log(j);
-				    		console.log(arr[j]);
+				    		// console.log(arr[j]);
 				    		// console.log(obj.popupImg[0]);
 				    	// if(j<len){
 							// return arr[j++];
-							return arr[j++];
+							return obj;
 				    	// }
 
 				    	// console.log(arr[1][0]);
@@ -365,7 +365,7 @@ var SITE = SITE || {};
 							// return obj.url2;
 						// }
 					},
-				    getImageCaption: function(obj){
+				    getImageCaption: function(){
  
 	 	                var captionTitle, captionTitleEl;
 		                var captionDesc, captionDescEl;
@@ -389,7 +389,7 @@ var SITE = SITE || {};
 		                return [captionTitleEl, captionDescEl];
 		            }
 				},
-				attachTarget: arr,
+				// attachTarget: arr,
 				eventCallback: {
 					onBeforeShow: function() {
 						var $photoswipeDocLayer = $('.ps-document-overlay');
