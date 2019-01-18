@@ -332,7 +332,7 @@ var SITE = SITE || {};
 			});
 		}
 
-		function initPhotoSwipe(arr,len,obj) {
+		function initPhotoSwipe(index,arr,len,obj) {
 				    	var j = 0;
 				    	console.log(obj);
 			var pswi = myPhotoSwipe({
@@ -352,7 +352,7 @@ var SITE = SITE || {};
 				    		// console.log(obj.popupImg[0]);
 				    	// if(j<len){
 							// return arr[j++];
-							return obj;
+							return obj.popupImg[i];
 				    	// }
 
 				    	// console.log(arr[1][0]);
