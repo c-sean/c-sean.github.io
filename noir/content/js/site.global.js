@@ -351,8 +351,8 @@ var SITE = SITE || {};
 				    		// console.log(arr[j]);
 				    		// console.log(obj.popupImg[0]);
 				    	// if(j<len){
-							// return arr[j++];
-							return obj;
+							return arr[j++];
+							// return obj;
 				    	// }
 
 				    	// console.log(arr[1][0]);
