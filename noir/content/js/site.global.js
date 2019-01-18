@@ -334,6 +334,7 @@ var SITE = SITE || {};
 
 		function initPhotoSwipe(arr,len,obj) {
 				    	var j = 0;
+				    	console.log(obj);
 			var pswi = myPhotoSwipe({
 				options: {
 					captionAndToolbarFlipPosition: false,
@@ -341,7 +342,7 @@ var SITE = SITE || {};
 				    captionAndToolbarAutoHideDelay: 0,
 				    captionAndToolbarOpacity: 1,
 				    zIndex: 1300,
-				    getImageSource: function(obj){
+				    getImageSource: function(){
 				    	// var arr = obj;
 				    	console.log(arr);
 				    	// console.log(galleryJsonData);
