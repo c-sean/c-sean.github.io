@@ -323,7 +323,7 @@ var SITE = SITE || {};
 						var obj = data[index-1],
 						    arr = data[index-1]['popupImg'+index],
                             len = arr.length;
-						initPhotoSwipe(arr,len,obj);
+						initPhotoSwipe(index,arr,len,obj);
 					// });
 				});
 
