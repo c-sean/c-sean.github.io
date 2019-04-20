@@ -101,7 +101,7 @@ var SITE = SITE || {};
 					// works
 					if(curTop >= this.relativeToAbsolute(document.getElementById('works'), 'center', 'top') && curTop < this.relativeToAbsolute(document.getElementById('contact'), 'bottom', 'center')) {
 						$navWorks.addClass('nav_active');
-						randomTransitions($('.flipWorld'), 0, 1);
+						randomTransitions();
 					} else {
 						$navWorks.removeClass('nav_active');
 					}
@@ -195,18 +195,15 @@ var SITE = SITE || {};
 		}
 
 		// work type item transition
-		function randomTransitions(item, init_item_opa, fade_item_opa) {	
-			// init item opacity
-			// item.css('opacity', init_item_opa);
-			item.each(function() {
-				var delayTime = Math.random() * 1000,
-					obj = this;				
-				setTimeout(function() {
-				    // fade out item				   
-					$(obj).animate({opacity: fade_item_opa}, 1000);
-				}, delayTime)
-			});
+		function randomTransitions() {	
 
+			$('.flipWorld').each(function(i, el) {
+				 var intervalT = Math.floor(Math.random() * 4000);
+				 setTimeout(function(){
+				 	t = Math.floor(Math.random() * 1000);
+					$('.list'+(i+1)).animate({opacity: 1}, t);
+				}, intervalT);
+			});
 		}
 
 		// set scroll to
@@ -248,9 +245,8 @@ var SITE = SITE || {};
 				itemArr.push($(".projectCon li:nth-child(" + i + ")"));
 			}
 
-			// console.log("itemArr:"+itemArr);
+			// console.log(itemArr);
 			_itemPosControler.init(itemArr, itemRange, typeArr, _repeat, $projectCon);
-			
 			_itemPosControler.setItemPos();
 			resetContentH();
 			$html.getNiceScroll().resize();
@@ -269,14 +265,27 @@ var SITE = SITE || {};
 			//loading show
 			
 			//hide content
-			$works_content.empty().hide();
+			$works_content.empty().children().hide();
 
  			$.getJSON(url, function(data){
+				var ctr = data.length, temp, index;
+
+				// While there are elements in the array
+			    while (ctr > 0) {
+				// Pick a random index
+			        index = Math.floor(Math.random() * ctr);
+				// Decrease ctr by 1
+			        ctr--;
+				// And swap the last element with it
+			        temp = data[ctr];
+			        data[ctr] = data[index];
+			        data[index] = temp;
+			    }
 				
-				for(var i in data) {
+			    for(var i in data) {
 					var item = data[i];
 
-					var contStr = '<li class="flipWorld"><div id="project_' + item.id + '" class="flipCon works_item_wrapper">' +
+					var contStr = '<li class="flipWorld list' + item.id + '"><div id="project_' + item.id + '" class="flipCon works_item_wrapper">' +
 					'<div class="popup"><div class="works_item" data-rid="' + item.rid + '" style="cursor: pointer;"><img class="thumb" src="' + item.thumbImg + '" alt="' + item.id + '"></div>' + '</div>' +
 					'<div class="detail">' +
 					'<div class="detail_wrapper">' +
@@ -299,7 +308,7 @@ var SITE = SITE || {};
 				//flip binding
 				
 				//show content
-				$works_content.fadeIn(2000);
+				// $works_content.fadeIn(2000);
 
 				//loading hide
 				$flipCon = $('.flipCon');
@@ -344,7 +353,7 @@ var SITE = SITE || {};
 				    zIndex: 1300,
 				    getImageSource: function(obj){
 				    	// var arr = obj;
-				    	// console.log(arr);
+				    	console.log(arr);
 				    	// console.log(galleryJsonData);
 				    	console.log(obj);
 				   //  	console.log(j);
@@ -389,7 +398,7 @@ var SITE = SITE || {};
 		                return [captionTitleEl, captionDescEl];
 		            }
 				},
-				// attachTarget: arr,
+				attachTarget: arr,
 				eventCallback: {
 					onBeforeShow: function() {
 						var $photoswipeDocLayer = $('.ps-document-overlay');
@@ -494,7 +503,7 @@ var SITE = SITE || {};
 		// init this site all setting
 		function init() {	
 			calculateBox($calBlock);
-
+			
 			// init sub menu flip
 			// TweenMax.set('.submenuFlipWrapper', {perspective : 600});
 			// TweenMax.set('.submenuFlipSet', {transformStyle : 'preserve-3d'});
@@ -551,6 +560,20 @@ var SITE = SITE || {};
 				}				
 			});
 		}
+		function setSize(){
+			// new value
+			_winW = $win.width(); // get window width
+
+			if(_winW < 1024) {
+				_winW = 1024;
+			}
+
+			_winH = $win.height(); // get window height
+			boxW = Math.floor(_winW / 6); // this width value for main menu & sub menu & about item box set size
+			
+			// set header height
+			$header.height(getHeaderH());
+		}
 		
 		//-- set construct in object --//
 		this.__construct = function() {
@@ -560,22 +583,11 @@ var SITE = SITE || {};
 				init_nicescroll();
 				initParallax();
 
-				// new value
-				_winW = $win.width(); // get window width
-
-				if(_winW < 1024) {
-					_winW = 1024;
-				}
-
-				_winH = $win.height(); // get window height
-				boxW = Math.floor(_winW / 6); // this width value for main menu & sub menu & about item box set size
-				
-				// set header height
-				$header.height(getHeaderH());
+				setSize();
 
 				// init this site
 				init();				
-
+				
 				// init fullscreen background plugin
 				$header.fullscreenBackground({
 					defaultCss: false
@@ -588,24 +600,19 @@ var SITE = SITE || {};
 				downArrow();				
 
 			});
-
+			var timer;
 			$win.resize(function() {
-				// new value
-				_winW = $win.width(); // get window width
-
-				if(_winW < 1024) {
-					_winW = 1024;
-				}
-
-				_winH = $win.height(); // get window height
-				boxW = Math.floor(_winW / 6); // this width value for main menu & sub menu & about item box set size
-		
-				// set header height
-				$header.height(getHeaderH());
+				clearTimeout(timer);
+				timer = setTimeout(function(){
+					// console.log('test');
+				setSize();
 
 				calculateBox($calBlock);
+				_itemPosControler.resize();
 				_itemPosControler.setItemPos();
 				resetContentH();
+				}, 250)
+				
 			});
 
 		};		

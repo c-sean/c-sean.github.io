@@ -36,17 +36,21 @@ var KC = KC || {};
 			_container = container;
 			_itemRange = itemRange;
 			_typeArr = typeArr;
-			initResize();
+			resize();
 			initCombination();
 		}
 
-		function initResize() {
-			resize();
-			
-			$(window).resize(function() {
-				resize();
-			});
-		}
+		// function initResize() {
+			// resize();
+			// var timer;
+			// $(window).resize(function() {
+			// 	clearTimeout(timer);
+
+			    // timer = setTimeout(function() {console.log($(window).width(),$('.projectCon').innerWidth());
+			          // resize(); //callback your coding
+			      // }, 250);
+			// });
+		// }
 
 
 		function resize() {
@@ -114,6 +118,7 @@ var KC = KC || {};
 			for(var i = 0; i < _itemTotal; i++) {
 				// console.log("X:"+_itemPosArr[i].X*_itemW);
 				_itemArr[i].css({"left" : _itemPosArr[i].X * _itemW, "top" : (_itemPosArr[i].Y) * _itemW, "width" : _itemW + "px", "height" : _itemW + "px"});
+				// _itemArr[i].css({"left" : _itemPosArr[i].X * _itemW, "top" : (_itemPosArr[i].Y) * _itemW});
 			}
 		}
 
@@ -130,6 +135,7 @@ var KC = KC || {};
 		return{
 			init:init,
 			setItemPos:setItemPos,
+			resize:resize,
 			resetItemPos:resetItemPos,
 			getQuantityH:getQuantityH
 		}

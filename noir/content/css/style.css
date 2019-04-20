@@ -674,7 +674,8 @@ display: table;
   position: relative;
 }
 .works_list_wrapper img {
-  width: 100%;
+  width: 100% !important;
+  height: 100% !important;
 }
 .detail {
   position: absolute;
@@ -697,7 +698,7 @@ display: table;
   overflow: hidden;
 }
 .detail_text {
-  margin-top: 20px;
+  /*margin-top: 20px;*/
 }
 .detail_icon {
   position: absolute;

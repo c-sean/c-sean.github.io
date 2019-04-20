@@ -55,9 +55,10 @@ $(function(){
 	});
 	imgArray = imgArray.sort(function(a, b){return 0.5 - Math.random()});
 	$.each(imgArray, function(index, el) {
+		 var intervalT = Math.floor(Math.random() * 2000);
 		 setTimeout(function(){
 			$(el).animate({opacity: 1}, 1200);
-		}, 100*index);
+		}, intervalT);
 	});
 	$('.filter_trigger').tagSort({
      	items:'.filter_item',

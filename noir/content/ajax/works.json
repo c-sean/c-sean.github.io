@@ -11,12 +11,54 @@
 	"popupImg2": ["content/img/works/popup/work02_1.jpg", "content/img/works/popup/work02_2.jpg", "content/img/works/popup/work02_3.jpg"],
 	"thumbText": "Commerical Space",
 	"title": "好美髮廊",
-	"description": "採用直接具象的方式，將頭髮柔順輕盈的印象，做為全區立牆設計靈感。 透過曲線的牆面，讓這些線條柔軟的牆面，輕巧的將空間做分隔，並包覆整個開放區域，牆與牆之間也增添幾分趣味性及溫馨感。"
+	"description": "採用具象的方式，將頭髮柔順輕盈的印象，透過曲線，讓這些線條柔軟的牆面，將空間做分隔，並包覆整個開放區域，牆面之間也增添幾分趣味性及溫馨感。"
 },{
 	"id":3,
 	"thumbImg": "content/img/works/thumb/work03.jpg",
-	"popupImg2": ["content/img/works/popup/work03_1.jpg", "content/img/works/popup/work03_2.jpg", "content/img/works/popup/work03_3.jpg"],
+	"popupImg3": ["content/img/works/popup/work03_1.jpg", "content/img/works/popup/work03_2.jpg", "content/img/works/popup/work03_3.jpg"],
 	"thumbText": "Commerical Space",
 	"title": "田原香滴雞精",
-	"description": "採用直接具象的方式，將頭髮柔順輕盈的印象，做為全區立牆設計靈感。 透過曲線的牆面，讓這些線條柔軟的牆面，輕巧的將空間做分隔，並包覆整個開放區域，牆與牆之間也增添幾分趣味性及溫馨感。"
+	"description": "運用大比例的木作質感，搭配柔和的光源照明，呼應品牌的樸實、天然精神，大面積落地窗的設置，額外增加了通透感，也進一步拉近與顧客的距離。"
+},{
+	"id":4,
+	"thumbImg": "content/img/works/thumb/work04.jpg",
+	"popupImg4": ["content/img/works/popup/work04_1.jpg", "content/img/works/popup/work04_2.jpg", "content/img/works/popup/work04_3.jpg", "content/img/works/popup/work04_4.jpg"],
+	"thumbText": "Commerical Space",
+	"title": "TOTO旗艦店",
+	"description": "結合設計美學與產品機能的日本衛浴品牌，為提供消費者全新的頂級體驗，以大量強烈對比元素打造展示空間，摩登與未來感十足。"
+},{
+	"id":5,
+	"thumbImg": "content/img/works/thumb/work05.jpg",
+	"popupImg5": ["content/img/works/popup/work05_1.jpg", "content/img/works/popup/work05_2.jpg", "content/img/works/popup/work05_3.jpg"],
+	"thumbText": "Commerical Space",
+	"title": "LALOS Bakery",
+	"description": "在擁擠的路口坐落於街角的大樹旁，當夜色漸暗，點上迷人又溫暖的燈光，靜靜的佇立在一旁陪伴著城市中的人們。"
+},{
+	"id":6,
+	"thumbImg": "content/img/works/thumb/work06.jpg",
+	"popupImg6": ["content/img/works/popup/work06_1.jpg", "content/img/works/popup/work06_2.jpg", "content/img/works/popup/work06_3.jpg"],
+	"thumbText": "residential Space",
+	"title": "All in one",
+	"description": "透過原木的溫暖及質感，運用多種不同類型木材來互相搭配，藉由強調顏色的層次變化，表現出自然、放鬆的居住空間"
+},{
+	"id":7,
+	"thumbImg": "content/img/works/thumb/work07.jpg",
+	"popupImg7": ["content/img/works/popup/work07_1.jpg", "content/img/works/popup/work07_2.jpg", "content/img/works/popup/work07_3.jpg"],
+	"thumbText": "residential Space",
+	"title": "遊園塑景",
+	"description": "以「大觀園」為靈感，自遊園意境展開想像，將精雕、集錦、一步一景融入其中，令構圖產生層層框景之特色，刻劃出空間的深邃感。"
+},{
+	"id":8,
+	"thumbImg": "content/img/works/thumb/work08.jpg",
+	"popupImg8": ["content/img/works/popup/work08_1.jpg", "content/img/works/popup/work08_2.jpg", "content/img/works/popup/work08_3.jpg"],
+	"thumbText": "residential Space",
+	"title": "寂靜草廬",
+	"description": "依照動線順序來建構使用空間，保留彈性使用的可能性，刻意強調水平流動性，讓日常的生活感覺更舒適與流暢。"
+},{
+	"id":9,
+	"thumbImg": "content/img/works/thumb/work09.jpg",
+	"popupImg9": ["content/img/works/popup/work09_1.jpg", "content/img/works/popup/work09_2.jpg", "content/img/works/popup/work09_3.jpg"],
+	"thumbText": "residential Space",
+	"title": "侘寂居",
+	"description": "建築立面上的小窗戶解決了隱私的問題並保留自然光及通風，天井提供採光，透過最上層的電動窗達到排熱作用，保持室內空間的涼爽舒適。"
 }]
