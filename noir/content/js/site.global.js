@@ -126,7 +126,7 @@ var SITE = SITE || {};
 
 			$html.niceScroll().scrollstart(function(info) {
 				if(interval) clearInterval(interval);
-				interval = setInterval (getViewPort, 50);
+				// interval = setInterval (getViewPort, 50);
 			});
 
 			$html.niceScroll().scrollend(function(info) {
@@ -135,12 +135,11 @@ var SITE = SITE || {};
 		}
 		
 		// get camera shot move position
-		function getViewPort() {
-			var scrollTop = document.documentElement.scrollTop + document.body.scrollTop,
-				myTop = scrollTop + view;
-				// console.log(myTop);
-			TweenMax.set($content, {css : {perspective : _winW / 2, transformOrigin : '50% ' + myTop + 'px'}});
-		}
+		// function getViewPort() {
+		// 	var scrollTop = document.documentElement.scrollTop + document.body.scrollTop,
+		// 		myTop = scrollTop + view;
+		// 	TweenMax.set($content, {css : {perspective : _winW / 2, transformOrigin : '50% ' + myTop + 'px'}});
+		// }
 
 		// set main menu & sub menu & about box size and position
 		function calculateBox(items) {
@@ -157,27 +156,27 @@ var SITE = SITE || {};
 		}
 
 		// set item animate flip
-		function setItemFlip() {
-			if(_workType == 'CHOICE') {
-				$flipCon.attr('data--' + view + '-bottom', 'transform:rotateX(-90deg); -webkit-transform:rotateX(-90deg); opacity:0; filter: alpha(opacity=0)";').attr('data-center', 'transform:rotateX(-0deg); -webkit-transform:rotateX(0deg); opacity:1;filter: alpha(opacity=100)"');
+		// function setItemFlip() {
+		// 	if(_workType == 'CHOICE') {
+		// 		$flipCon.attr('data--' + view + '-bottom', 'transform:rotateX(-90deg); -webkit-transform:rotateX(-90deg); opacity:0; filter: alpha(opacity=0)";').attr('data-center', 'transform:rotateX(-0deg); -webkit-transform:rotateX(0deg); opacity:1;filter: alpha(opacity=100)"');
 
-				TweenMax.set($flipCon, {css : {transformOrigin : 'left top', rotationX : -90}});
-				TweenMax.set($scrollBody, {css : {'height' : _winH}});
-			}
-		}
+		// 		TweenMax.set($flipCon, {css : {transformOrigin : 'left top', rotationX : -90}});
+		// 		TweenMax.set($scrollBody, {css : {'height' : _winH}});
+		// 	}
+		// }
 
 		// set sub menu animate flip
-		function submenu_flip() {
-			if(positive == true) {
-				rotateAngle = 180;
-				TweenMax.to($submenuFlipSet, .6, {rotationY:rotateAngle});
-				positive = false;
-			} else {
-				rotateAngle = 0;
-				TweenMax.to($submenuFlipSet, .6, {rotationY:rotateAngle});
-				positive = true;
-			}
-		}
+		// function submenu_flip() {
+		// 	if(positive == true) {
+		// 		rotateAngle = 180;
+		// 		TweenMax.to($submenuFlipSet, .6, {rotationY:rotateAngle});
+		// 		positive = false;
+		// 	} else {
+		// 		rotateAngle = 0;
+		// 		TweenMax.to($submenuFlipSet, .6, {rotationY:rotateAngle});
+		// 		positive = true;
+		// 	}
+		// }
 
 		// get header height
 		function getHeaderH() {
@@ -254,7 +253,7 @@ var SITE = SITE || {};
 			setTimeout(function () {
 			    // setItemFlip();
 				parallax.refresh();
-				getViewPort();
+				// getViewPort();
 			}, 500);
 		}
 // $.getJSON('content/ajax/works.json', function(data){
@@ -281,12 +280,12 @@ var SITE = SITE || {};
 			        data[ctr] = data[index];
 			        data[index] = temp;
 			    }
-				
+				// console.log(data);
 			    for(var i in data) {
 					var item = data[i];
 
 					var contStr = '<li class="flipWorld list' + item.id + '"><div id="project_' + item.id + '" class="flipCon works_item_wrapper">' +
-					'<div class="popup"><div class="works_item" data-rid="' + item.rid + '" style="cursor: pointer;"><img class="thumb" src="' + item.thumbImg + '" alt="' + item.id + '"></div>' + '</div>' +
+					'<div class="popup"><div class="works_item" data-rid="' + item.rid + '" style="cursor: pointer;"><img class="thumb" src="' + item.thumbImg + '" alt="' + i + '"></div>' + '</div>' +
 					'<div class="detail">' +
 					'<div class="detail_wrapper">' +
 					'<h4 class="detail_title">' + item.title + '</h4>' + 
@@ -322,16 +321,16 @@ var SITE = SITE || {};
 
 				$popup.bind('click', function(e) {
 					e.preventDefault();
-					var index = $(this).find('.thumb').attr('alt');
-					console.log(index);
+					var index = $(this).find('.thumb').attr('alt'),
+						obj = data[index],
+					    arr = data[index]['popupImg'],
+                        len = arr.length;
+					// console.log(index);
 					// $.getJSON('content/ajax/gallery.json', function (data) {
 						// console.log(data);
 						// console.log(data[index]);
 						// var obj = data[index-1];
-						// console.log(obj);
-						var obj = data[index-1],
-						    arr = data[index-1]['popupImg'+index],
-                            len = arr.length;
+						// console.log(data[index-1]);
 						initPhotoSwipe(index,arr,len,obj);
 					// });
 				});
@@ -343,7 +342,7 @@ var SITE = SITE || {};
 
 		function initPhotoSwipe(index,arr,len,obj) {
 				    	var j = 0;
-				    	console.log(obj);
+				    	// console.log(obj);
 			var pswi = myPhotoSwipe({
 				options: {
 					captionAndToolbarFlipPosition: false,
@@ -353,9 +352,9 @@ var SITE = SITE || {};
 				    zIndex: 1300,
 				    getImageSource: function(obj){
 				    	// var arr = obj;
-				    	console.log(arr);
+				    	// console.log(arr);
 				    	// console.log(galleryJsonData);
-				    	console.log(obj);
+				    	// console.log(obj);
 				   //  	console.log(j);
 				    		// console.log(arr[j]);
 				    		// console.log(obj.popupImg[0]);
@@ -511,11 +510,12 @@ var SITE = SITE || {};
 			// TweenMax.set(['.submenu_back', '.submenu_front'], {backfaceVisibility : 'hidden'});
 
 			// check type is choice or list
-			if(_workType == 'CHOICE') {
 				initChoice();
-			} else if(_workType == 'LIST') {
-				initList();
-			}
+			// if(_workType == 'CHOICE') {
+			// 	initChoice();
+			// } else if(_workType == 'LIST') {
+			// 	initList();
+			// }
 
 			// nav scroll_to & hover
 			$navItem.click(function(e) {
@@ -526,39 +526,39 @@ var SITE = SITE || {};
 			});
 
 			// submenu click change work type & call the type init
-			$submenu_back_wrapper.find('a').click(function(e) {
-				e.preventDefault();
+			// $submenu_back_wrapper.find('a').click(function(e) {
+			// 	e.preventDefault();
 
-				// sub menu click init var
-				var $this = $(this),
-					currentId = $this.attr('href'),	
-					$getClass = $this.attr('class');
-					$getTitle = $this.children('.submenu_item_text').text();
-					// console.log($getTitle);
+			// 	// sub menu click init var
+			// 	var $this = $(this),
+			// 		currentId = $this.attr('href'),	
+			// 		$getClass = $this.attr('class');
+			// 		$getTitle = $this.children('.submenu_item_text').text();
+			// 		// console.log($getTitle);
 
-				$('.submenu_title').text($getTitle);
-				$this.parent().siblings().removeClass('submenu_active');
-				$this.parent().addClass('submenu_active');
+			// 	$('.submenu_title').text($getTitle);
+			// 	$this.parent().siblings().removeClass('submenu_active');
+			// 	$this.parent().addClass('submenu_active');
 
-				// check getclass has listdisplay
-				if($getClass == 'listDisplay') {
-					// set worktype change list
-					_workType = 'LIST';
-					choiceClick=false;
-					// check worktype is list
-					if(_workType == 'LIST') {		
-						initList();
-					}
-				} else {
-					// set worktype change choice
-					_workType="CHOICE";
-					choiceClick=true;
-					// check worktype is choice
-					if(_workType == 'CHOICE') {
-						initChoice();
-					}
-				}				
-			});
+			// 	// check getclass has listdisplay
+			// 	if($getClass == 'listDisplay') {
+			// 		// set worktype change list
+			// 		_workType = 'LIST';
+			// 		choiceClick=false;
+			// 		// check worktype is list
+			// 		if(_workType == 'LIST') {		
+			// 			initList();
+			// 		}
+			// 	} else {
+			// 		// set worktype change choice
+			// 		_workType="CHOICE";
+			// 		choiceClick=true;
+			// 		// check worktype is choice
+			// 		if(_workType == 'CHOICE') {
+			// 			initChoice();
+			// 		}
+			// 	}				
+			// });
 		}
 		function setSize(){
 			// new value
