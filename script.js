@@ -6,13 +6,14 @@ $(function(){
 	    $slider_origin = $('.slider_origin'),
 	    offsetX_R, offsetX_L, offsetX_T, offsetX_B,
 	    imgArray = $slider_origin.children().toArray();
-	    
+	
 	$container.shapeshift({
     	gutterX: 20,
     	gutterY: 15,
     	animateOnInit: true,
     	animationSpeed: 1000
 	});
+
 	$('.filter_wrap').shapeshift({
 		enableDrag: false,
 		animateOnInit: true,
@@ -20,7 +21,9 @@ $(function(){
 		enableCrossDrop: false,
     	minHeight: 85
 	});
-                           
+    if($(window).width()<600){ 
+		$wrap.draggable( "disable" );
+	}                   
 	$('.item').on('mousedown', function( event ) {
 		offsetX_L = event.pageX - $(this).offset().left;
         offsetX_R = $('html').width() - offsetX_L - 15;
@@ -31,6 +34,7 @@ $(function(){
 			containment: [ -offsetX_L, -offsetX_T, offsetX_R, offsetX_B ]
 		});
 	});
+	
 	$wrap.on('drag', function (event, ui) {
         if($(this).offset().top >= ($('html').height() - offsetX_T)) {
     		$wrap.draggable("option", "scroll", false );
@@ -38,10 +42,12 @@ $(function(){
         	$wrap.draggable("option", "scroll", true );
         }
 	});
-
+	// console.log('test');
 	$wrap.draggable({
 		cancel: '.title'
 	});
+	
+	
 	$slider.each(function(i,e) {
 	    length[i] = 0;
 	    $(this).children().each(function() {
