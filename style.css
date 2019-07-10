@@ -168,12 +168,12 @@ a.disable {
 }
 .back_top{
     display: block;
-    width: 100px;
-    padding: 10px 50px;
+    /*width: 100px;*/
+    /*padding: 10px 70px;*/
     text-align: center;
     margin: 0 auto;
-    background-color: #696358;
-    color: #E6E6E6;
+    /*background-color: #696358;*/
+    /*color: #E6E6E6;*/
 }
 .footer{
     margin-bottom: 5px;

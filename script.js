@@ -2,6 +2,7 @@ $(function(){
 	var $container = $('.container'),
 	    $slider = $('.slider'),
 	    $wrap = $('.wrap'),
+	    $filter_wrap = $('.filter_wrap'),
   		length = [],
 	    $slider_origin = $('.slider_origin'),
 	    offsetX_R, offsetX_L, offsetX_T, offsetX_B,
@@ -14,14 +15,15 @@ $(function(){
     	animationSpeed: 1000
 	});
 
-	$('.filter_wrap').shapeshift({
+	$filter_wrap.shapeshift({
 		enableDrag: false,
 		animateOnInit: true,
 		animationSpeed: 600,
 		enableCrossDrop: false,
     	minHeight: 85
 	});
-    if($(window).width()<600){ 
+    if($(window).width()<768){ 
+    	$filter_wrap.delay(600).slideUp(400);
 		$wrap.draggable( "disable" );
 	}                   
 	$('.item').on('mousedown', function( event ) {
@@ -42,7 +44,6 @@ $(function(){
         	$wrap.draggable("option", "scroll", true );
         }
 	});
-	// console.log('test');
 	$wrap.draggable({
 		cancel: '.title'
 	});
