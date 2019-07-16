@@ -22,10 +22,20 @@ $(function(){
 		enableCrossDrop: false,
     	minHeight: 85
 	});
-    if($(window).width()<768){ 
-    	$filter_wrap.delay(600).slideUp(400);
-		$wrap.draggable( "disable" );
-	}                   
+
+	navi_adapt();
+	$(window).resize(function(){
+		navi_adapt();
+	})
+
+	function navi_adapt() {
+	    if($(window).width() < 768) { 
+	    	// $filter_wrap.delay(600).css('position','static').slideUp(400);
+			$wrap.draggable( "disable" );
+		}    
+	}
+
+
 	$('.item').on('mousedown', function( event ) {
 		offsetX_L = event.pageX - $(this).offset().left;
         offsetX_R = $('html').width() - offsetX_L - 15;
@@ -44,6 +54,7 @@ $(function(){
         	$wrap.draggable("option", "scroll", true );
         }
 	});
+
 	$wrap.draggable({
 		cancel: '.title'
 	});
