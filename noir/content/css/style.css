@@ -816,6 +816,15 @@ display: table;
     /*margin-top: 5%;*/
   }
 }
+.try{
+  display: block;
+  background-color: #fff;
+}
+.test{
+  height: 200px;
+  width: 500px;
+  overflow: auto;
+}
 /**
  * import section
  * @param	

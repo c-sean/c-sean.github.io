@@ -65,7 +65,7 @@ html{
 }
 body {
     overflow: hidden;
-    font-family:　Futura, sans-serif;
+    font-family: Futura, sans-serif;
     font-size: 12px;
     color: #c5b392;
     display: flex;
@@ -170,14 +170,16 @@ a.disable {
     display: block;
     /*width: 100px;*/
     /*padding: 10px 70px;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     margin: 0 auto;
     /*background-color: #696358;*/
     /*color: #E6E6E6;*/
 }
 .footer{
-    margin-bottom: 5px;
-    border-bottom: 1px solid rgba(210, 198, 175, 0.5);
+    /*margin-bottom: 5px;*/
+    border-top: 1px solid rgba(210, 198, 175, 0.5);
 }
 ::-moz-selection {
     color: #D7624E; 

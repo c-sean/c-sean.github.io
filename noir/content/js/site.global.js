@@ -8,7 +8,7 @@
 
 var SITE = SITE || {};
 
-;(function(SITE) {
+(function(SITE) {
 
 	/**
 	 * SITE.Global
@@ -516,7 +516,7 @@ var SITE = SITE || {};
 			// } else if(_workType == 'LIST') {
 			// 	initList();
 			// }
-
+			
 			// nav scroll_to & hover
 			$navItem.click(function(e) {
 				e.preventDefault();
