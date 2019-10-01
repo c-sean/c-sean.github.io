@@ -209,6 +209,9 @@ a.disable {
     background: none;
 }
 
+.ss-cloned-child {
+    display: none;
+}
 
 @media(hover: hover) and (pointer: fine) {
     .slider:hover {
