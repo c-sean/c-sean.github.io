@@ -22,10 +22,23 @@ $(function(){
 		enableCrossDrop: false,
     	minHeight: 85
 	});
-    if($(window).width()<768){ 
-    	$filter_wrap.delay(600).slideUp(400);
-		$wrap.draggable( "disable" );
-	}                   
+
+	navi_adapt();
+	$(window).resize(function(){
+		navi_adapt();
+	})
+	function navi_adapt() {
+	    if($(window).width() < 780) { 
+	    	// $filter_wrap.delay(600).css('position','static').slideUp(400);
+			$wrap.draggable( "disable" );
+		} else {
+			$wrap.draggable( "enable" );
+		}
+	}
+ //    if($(window).width()<768){ 
+ //    	$filter_wrap.delay(600).slideUp(400);
+	// 	$wrap.draggable( "disable" );
+	// }                   
 	$('.item').on('mousedown', function( event ) {
 		offsetX_L = event.pageX - $(this).offset().left;
         offsetX_R = $('html').width() - offsetX_L - 15;
@@ -71,16 +84,16 @@ $(function(){
      	items:'.filter_item',
      	tagElement: 'a'
 	});
-
-    $slider.on({'mouseleave': function() {
-    	$(this).css({'animation-play-state':'running'});
-    }, 'mousedown': function(){
-    	$(this).css({'cursor':'url(img/closedhand.cur),move'});
-    }, 'mouseenter': function(){
-    	$(this).css({'animation-play-state':'paused', 'cursor':'url(img/openhand.cur),move'});
-    }, 'mouseup ': function(){
-    	$(this).css({'cursor':'url(img/openhand.cur),move'});
-    }});
+	
+    // $slider.on({'mouseleave': function() {
+    // 	$(this).css({'animation-play-state':'running'});
+    // }, 'mousedown': function(){
+    // 	$(this).css({'cursor':'url(img/closedhand.cur),move'});
+    // }, 'mouseenter': function(){
+    // 	$(this).css({'animation-play-state':'paused', 'cursor':'url(img/openhand.cur),move'});
+    // }, 'mouseup ': function(){
+    // 	$(this).css({'cursor':'url(img/openhand.cur),move'});
+    // }});
 	$('.filter').on('click', function(event) {
 		event.preventDefault();
 		if (!$(this).siblings().hasClass('active')) {
