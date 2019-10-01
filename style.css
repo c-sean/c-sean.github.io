@@ -15,7 +15,7 @@ nav, button, section, header, footer, title {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -52,9 +52,9 @@ a {
 }*/
 /*@font-face {
   font-family: "NSC_Light";
-  src: url('NotoSansCJKjp-DemiLight.eot?'); 
-  src: url('NotoSansCJKjp-DemiLight.eot?#iefix') format('embedded-opentype'); 
-  src: url('NotoSansCJKjp-DemiLight.woff?') format('woff'); 
+  src: url('NotoSansCJKjp-DemiLight.eot?');
+  src: url('NotoSansCJKjp-DemiLight.eot?#iefix') format('embedded-opentype');
+  src: url('NotoSansCJKjp-DemiLight.woff?') format('woff');
 }*/
 /*@font-face {
    font-family: Futura;
@@ -74,17 +74,20 @@ body {
     background-color: #000;
 }
 .container, .filter_wrap {
-    position: relative;
+    /*position: relative;*/
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 .container {
-    margin-top: 90px;
+    /*margin-top: 90px;*/
     flex:1 0 auto;
 }
 .ss-active-child {
     position: absolute;
+}
+li.ss-active-child {
+    position: fixed;
 }
 li {
     padding-left: 10px;
@@ -92,6 +95,21 @@ li {
 }
 li:nth-child(2){
     border-left: 1px solid #3c372a;
+}
+.fa-filter{
+    background-color: #000000a8;
+
+padding: 10px;
+
+float: right;
+
+box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.39);
+
+margin-right: 20px;
+
+position: sticky;
+
+top: 0;
 }
 .item {
     width: 240px;
@@ -115,7 +133,7 @@ li:nth-child(2){
     border-top-style: solid;
     border-top-color: #c5b392;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     z-index: 5;
     width: 100%;
@@ -163,7 +181,7 @@ a.disable {
     color: #5F5646;
     cursor: default;
 }
-.fa-tags { 
+.fa-tags {
     margin-right: 6px;
 }
 .back_top{
@@ -191,18 +209,15 @@ a.disable {
 }
 
 ::-moz-selection {
-    color: #D7624E; 
+    color: #D7624E;
     background: none;
 }
 ::selection {
-    color: #D7624E; 
+    color: #D7624E;
     background: none;
 }
 @media (max-width: 630px) {
     li:nth-child(2) {
         border-left: none;
-    }
-    .container{
-        margin-top: 180px;
     }
 }
