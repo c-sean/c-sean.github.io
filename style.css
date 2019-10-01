@@ -199,14 +199,6 @@ a.disable {
     /*margin-bottom: 5px;*/
     border-top: 1px solid rgba(210, 198, 175, 0.5);
 }
-.slider:hover {
-    animation-play-state:paused !important;
-    cursor:url(img/openhand.cur),move;
-}
-.slider:active {
-    animation-play-state:running !important;
-    cursor:url(img/closedhand.cur),move;
-}
 
 ::-moz-selection {
     color: #D7624E;
@@ -216,6 +208,23 @@ a.disable {
     color: #D7624E;
     background: none;
 }
+
+
+@media(hover: hover) and (pointer: fine) {
+    .slider:hover {
+        animation-play-state:paused !important;
+        cursor:url(img/openhand.cur),move;
+    }
+    .slider:active {
+        /*animation-play-state:running !important;*/
+        cursor:url(img/closedhand.cur),move;
+    }
+    .ss-dragged-child .slider{
+        animation-play-state:paused !important;
+        cursor:url(img/closedhand.cur),move;
+    }
+}
+
 @media (max-width: 630px) {
     li:nth-child(2) {
         border-left: none;
