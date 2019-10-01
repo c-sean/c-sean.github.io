@@ -9,7 +9,7 @@ $(function(){
 	    imgArray = $slider_origin.children().toArray();
 
 	$container.shapeshift({
-		enableDrag: false,
+		// enableDrag: false,
     	gutterX: 20,
     	gutterY: 15,
     	animateOnInit: true,
