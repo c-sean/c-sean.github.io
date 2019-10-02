@@ -24,10 +24,10 @@ $(function(){
     	minHeight: 85
 	});
 
-	navi_adapt();
-	$(window).resize(function(){
-		navi_adapt();
-	})
+	// navi_adapt();
+	// $(window).resize(function(){
+	// 	navi_adapt();
+	// })
 	function navi_adapt() {
 	    if($(window).width() < 780) {
 	    	// $filter_wrap.delay(600).css('position','static').slideUp(400);
