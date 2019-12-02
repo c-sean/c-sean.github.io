@@ -42,24 +42,6 @@ a {
     text-decoration: none;
     color: #c5b392;
 }
-/*@font-face {
-   font-family: Butler_Bold_Stencil;
-   src: url(Butler_Bold_Stencil.otf);
-}*/
-/*@font-face {
-   font-family: Futura;
-   src: url(Futura Book.ttf);
-}*/
-/*@font-face {
-  font-family: "NSC_Light";
-  src: url('NotoSansCJKjp-DemiLight.eot?');
-  src: url('NotoSansCJKjp-DemiLight.eot?#iefix') format('embedded-opentype');
-  src: url('NotoSansCJKjp-DemiLight.woff?') format('woff');
-}*/
-/*@font-face {
-   font-family: Futura;
-   src: url(Futura Light.ttf);
-}*/
 html{
     overflow-x: hidden;
 }
@@ -74,13 +56,13 @@ body {
     background-color: #000;
 }
 .container, .filter_wrap {
-    /*position: relative;*/
+    position: relative;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 .container {
-    /*margin-top: 90px;*/
+    margin-top: 90px;
     flex:1 0 auto;
 }
 .ss-active-child {
@@ -133,7 +115,7 @@ top: 0;
     border-top-style: solid;
     border-top-color: #c5b392;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
-    /*position: fixed;*/
+    position: fixed;
     top: 0;
     z-index: 5;
     width: 100%;
@@ -207,25 +189,6 @@ a.disable {
 ::selection {
     color: #D7624E;
     background: none;
-}
-
-.ss-cloned-child {
-    display: none;
-}
-
-@media(hover: hover) and (pointer: fine) {
-    .slider:hover {
-        animation-play-state:paused !important;
-        cursor:url(img/openhand.cur),move;
-    }
-    .slider:active {
-        /*animation-play-state:running !important;*/
-        cursor:url(img/closedhand.cur),move;
-    }
-    .ss-dragged-child .slider{
-        animation-play-state:paused !important;
-        cursor:url(img/closedhand.cur),move;
-    }
 }
 
 @media (max-width: 630px) {
