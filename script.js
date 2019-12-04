@@ -10,9 +10,10 @@ $(function(){
 
 	$container.shapeshift({
     	gutterX: 20,
-    	gutterY: 15,
+    	gutterY: 25,
     	animateOnInit: true,
-    	animationSpeed: 1000
+    	animationSpeed: 1000,
+    	handle: '.item'
 	});
 
 	$filter_wrap.shapeshift({
@@ -29,27 +30,27 @@ $(function(){
 		offsetX_T = event.pageY - $(this).offset().top;
         offsetX_B = $('html').height() - offsetX_T;
 		$wrap.draggable({
-			scroll: true,
 			containment: [ -offsetX_L, -offsetX_T, offsetX_R, offsetX_B ]
+		}).on('drag', function () {	
+			$(this).find('.slider').pause();
+	        if($('.item').offset().top >= ($('html').height() - offsetX_T)) {
+	    		$('.item').draggable("option", "scroll", false );
+	        } else {
+	        	$wrap.draggable("option", "scroll", true );
+	        }
 		});
 	});
 
-	$wrap.on('drag', function (event, ui) {
-		$(this).find('.slider').pause();
-        if($(this).offset().top >= ($('html').height() - offsetX_T)) {
-    		$wrap.draggable("option", "scroll", false );
-        } else {
-        	$wrap.draggable("option", "scroll", true );
-        }
-		}).draggable({
-			cancel: '.title'
+	$('.flash, .modal_wrap').on('touchstart', function(event) {
+		event.preventDefault();
+		$('.modal').toggle();
 	});
 
 	$container.on('ss-drop-complete',function () {
 		$slider.resume();
 	})
 
-	function sliderLoop (i,e) {console.log(length[i]);
+	function sliderLoop (i,e) {
 		$(e).animate({top: -length[i]}, length[i]*30, 'linear',  function () {
 			$(this).css('top',0);
 			sliderLoop(i,e);
@@ -90,8 +91,6 @@ $(function(){
      	items:'.filter_item',
      	tagElement: 'a'
 	});
-	
-    $slider
 
 	$('.filter').on('click', function(event) {
 		event.preventDefault();
