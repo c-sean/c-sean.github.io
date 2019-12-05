@@ -31,7 +31,7 @@ $(function(){
         offsetX_B = $('html').height() - offsetX_T;
 		$wrap.draggable({
 			containment: [ -offsetX_L, -offsetX_T, offsetX_R, offsetX_B ]
-		}).on('drag', function () {	
+		}).on('dragstart', function () {	
 			$(this).find('.slider').pause();
 	        if($('.item').offset().top >= ($('html').height() - offsetX_T)) {
 	    		$('.item').draggable("option", "scroll", false );

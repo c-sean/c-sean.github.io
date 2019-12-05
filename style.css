@@ -199,7 +199,6 @@ a.disable {
     height: 100%;
     text-align: center;
     letter-spacing: .2em;
-    cursor: pointer;
 }
 .modal .material-icons{
     font-size: 50px;
