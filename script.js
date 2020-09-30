@@ -87,7 +87,7 @@ $(function(){
 	})
 
 	function sliderLoop (i,e) {
-		$(e).animate({top: -length[i]}, length[i]*30, 'linear',  function () {
+		$(e).animate({top: -length[i]}, length[i]*70, 'linear',  function () {
 			$(this).css('top',0);
 			sliderLoop(i,e);
 		})
@@ -98,14 +98,14 @@ $(function(){
 	    $(this).children().each(function() {
 	        length[i] += $(this).outerHeight(true);
 	    })
-	    // $('<style />').html('@keyframes loop' + i + '{from {transform:translate3d(0,0,0);}to{transform:translate3d(0,' + -length[i] + 'px,0);}}').appendTo('head');
+	    $('<style />').html('@keyframes loop' + i + '{from {transform:translate3d(0,0,0);}to{transform:translate3d(0,' + -length[i] + 'px,0);}}').appendTo('head');
 
-	    // $(this).children().clone().addClass('slider_clone').removeClass('slider_origin').appendTo($(this)).parent().css({
-	    //   'animation': 'loop' + i + ' linear '+ length[i]/30 +'s  infinite'
-	    // });
+	    $(this).children().clone().addClass('slider_clone').removeClass('slider_origin').appendTo($(this)).parent().css({
+	      'animation': 'loop' + i + ' linear '+ length[i]/30 +'s  infinite'
+	    });
     	$(this).children().clone().addClass('slider_clone').removeClass('slider_origin').appendTo($(this));
     	
-		// sliderLoop(i,e);
+		sliderLoop(i,e);
 		}).on({'mouseenter': function(){
 	    	$(this).css({'cursor':'url(img/openhand.cur),move'});
 	    }, 'mousedown': function(){
