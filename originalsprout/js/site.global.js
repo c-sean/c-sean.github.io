@@ -37,10 +37,10 @@ var SITE = SITE || {};
 				// 	this.
 				// })
 				//-------------------- nicescroll start --------------------//
-				$("html").niceScroll({
-					cursorcolor: '#B8D8D4',
-					cursorwidth: 10
-				});
+				// $("html").niceScroll({
+				// 	cursorcolor: '#B8D8D4',
+				// 	cursorwidth: 10
+				// });
 				//-------------------- nicescroll end --------------------//
 				//-------------------- skrollr start --------------------//
 				skrollr.init({
