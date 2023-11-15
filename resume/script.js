@@ -87,6 +87,12 @@ $slider.each(function(i,e) {
      $(this).css({'animation-play-state':'paused'});
     }
   });
+    $('.swiper').on({'mousedown': function(){
+        $(this).css({'cursor':'url(img/closedhand.cur),move'});
+      }, 'mouseup ': function(){
+        $(this).css({'cursor':'url(img/openhand.cur),move'});
+      }
+  });
 
 // $()
 // var swiper2 = new Swiper(".mySwiper2", {

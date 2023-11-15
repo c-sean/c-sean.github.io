@@ -393,10 +393,11 @@ template {
 body{
   font-family: Raleway,Helvetica light,sans-serif;
   letter-spacing: .15rem;
+/*  cursor:grab;*/
 }
-.work_wrap img{
+/*.work_wrap img{
   width: 240px;
-}
+}*/
 .exp_list{
   list-style: none;
   text-align: left;
