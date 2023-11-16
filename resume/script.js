@@ -48,7 +48,7 @@ var swiper = new Swiper(".mySwiper", {
         },
          slideChange: function (){
             if (swiper.activeIndex == 6 || swiper.activeIndex == 8) { 
-            progressInit();console.log(swiper.activeIndex);
+            progressInit();
           }
           // if(swiper.activeIndex == 1) {
             // resetNum();
