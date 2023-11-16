@@ -80,13 +80,13 @@ $slider.each(function(i,e) {
       $(this).children().clone().addClass('slider_clone').removeClass('slider_origin').appendTo($(this));
 });
 
-    $slider.on({'mouseleave': function() {
-     $(this).css({'animation-play-state':'running'});
+  //   $slider.on({'mouseleave': function() {
+  //    $(this).css({'animation-play-state':'running'});
     
-    }, 'mouseenter': function(){
-     $(this).css({'animation-play-state':'paused'});
-    }
-  });
+  //   }, 'mouseenter': function(){
+  //    $(this).css({'animation-play-state':'paused'});
+  //   }
+  // });
     $('.swiper').on({'mousedown': function(){
         $(this).css({'cursor':'url(img/closedhand.cur),move'});
       }, 'mouseup ': function(){
