@@ -505,9 +505,14 @@ body{
 .slider_origin img{
   width: 400px;
 }
+.skill_wrap{
+    width: 100%;
+    max-width: 360px;
+}
 .skill_wrap ul{
   list-style:none;
-  padding: 15px 0;
+      padding: 0;
+    margin: 0;
 }
 .web li, .multimedia li, .language li{
     display: flex;
@@ -540,9 +545,15 @@ body{
   width: 130px;
 /*  position: absolute;*/
 }
+.skill_wrap .design {
+  margin:0 0 40px;
+}
 .design li, .exp_list li{
   font-size: 1rem;
   padding: 5px;
+}
+.design li{
+  display: inline;
 }
 .language img{
   width: 45px;
