@@ -27,7 +27,7 @@ var swiper = new Swiper(".mySwiper", {
 
       mousewheel: true,
       keyboard: true,
-      forceToAxis:true,
+      // forceToAxis:true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
