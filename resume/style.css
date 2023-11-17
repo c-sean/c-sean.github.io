@@ -380,8 +380,8 @@ template {
 
     .swiper-slide img {
       display: block;
-      width: 100%;
-      height: 100%;
+      /*width: 100%;
+      height: 100%;*/
       object-fit: cover;
     }
 
@@ -394,6 +394,9 @@ body{
   font-family: Raleway,Helvetica light,sans-serif;
   letter-spacing: .15rem;
 /*  cursor:grab;*/
+}
+.item{
+    transition-timing-function: linear;
 }
 .slider {
   position: relative;

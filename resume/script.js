@@ -67,6 +67,7 @@ var swiper = new Swiper(".mySwiper", {
       }
     });
 
+$(function(){
 $slider.each(function(i,e) {
       length[i] = 0;
       $(this).children().each(function() {
@@ -80,7 +81,7 @@ $slider.each(function(i,e) {
       });
       $(this).children().clone().addClass('slider_clone').removeClass('slider_origin').appendTo($(this));
 });
-
+})
   //   $slider.on({'mouseleave': function() {
   //    $(this).css({'animation-play-state':'running'});
     
@@ -96,17 +97,17 @@ $slider.each(function(i,e) {
   // });
 
 // $()
-// var swiper2 = new Swiper(".mySwiper2", {
-//   direction: "horizontal",
-//   slidesPerView: 1,
-//   // spaceBetween: 50,
-//   // mousewheel: true,
-//   keyboard: true,
-//   forceToAxis:true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
+// var animation = new Swiper(".item", {
+//   direction: "vertical",
+//   loop: true,
+//         speed: 2000,
+//         // slidesPerView: 'auto',    
+//         autoplay: {
+//             delay: 0,
+//             pauseOnMouseEnter: true,        // stop autoplay when hovering
+//             disableOnInteraction: false,    // restart autoplay when hover is removed
+//             // reverseDirection: true,         // reverse the autoplay direction
+//         },
 // });
 
 // $('.counter').counter({
