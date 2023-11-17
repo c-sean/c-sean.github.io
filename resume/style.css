@@ -395,9 +395,9 @@ body{
   letter-spacing: .15rem;
 /*  cursor:grab;*/
 }
-/*.work_wrap img{
-  width: 240px;
-}*/
+.slider {
+  position: relative;
+}
 .exp_list{
   list-style: none;
   text-align: left;
@@ -503,7 +503,7 @@ body{
     background-color: #fff;
 }
 .slider_origin img{
-  width: 400px;
+/*  width: 400px;*/
 }
 .skill_wrap{
     width: 100%;

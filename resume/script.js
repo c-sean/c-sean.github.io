@@ -72,7 +72,8 @@ $slider.each(function(i,e) {
       $(this).children().each(function() {
           length[i] += $(this).outerHeight(true);
       })
-      $('<style />').html('@keyframes loop' + i + '{from {transform:translate3d(0,0,0);}to{transform:translate3d(0,' + -length[i] + 'px,0);}}').appendTo('head');
+      // $('<style>').html('@keyframes loop' + i + '{from {transform:translate3d(0,0,0);}to{transform:translate3d(0,' + -length[i] + 'px,0);}}').appendTo('head');
+      $('<style>').html('@keyframes loop' + i + '{from {top:0;}to{top:' + -length[i] + 'px;}}').appendTo('head');
 
       $(this).children().clone().addClass('slider_clone').removeClass('slider_origin').appendTo($(this)).parent().css({
         'animation': 'loop' + i + ' linear '+ length[i]/80 +'s  infinite'
