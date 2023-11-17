@@ -17,6 +17,29 @@
 
 var $slider = $('.slider'),
     length = [];
+    const slider = $(".slider-item");
+// slider
+//     .slick({
+//         // slidesToShow: 5,
+//         slidesToScroll: 1,
+//         dots: false,
+//         centerMode: true,
+//         focusOnSelect: true,
+//         // dots: true,
+//         /* vertical: true, */
+//         verticalSwiping: true
+
+//     });
+
+// slider.on('wheel', (function(e) {
+//     e.preventDefault();
+
+//     if (e.originalEvent.deltaY < 0) {
+//         $(this).slick('slickPrev');
+//     } else {
+//         $(this).slick('slickNext');
+//     }
+// }));
 var swiper = new Swiper(".mySwiper", {
       // direction: "vertical",
       slidesPerView: 1,
@@ -66,7 +89,15 @@ var swiper = new Swiper(".mySwiper", {
          }
       }
     });
+swiper.on('wheel', (function(e) {
+    e.preventDefault();
 
+    if (e.originalEvent.deltaY < 0) {
+        $(this).slidePrev();
+    } else {
+        $(this).slideNext();
+    }
+}));
 $(function(){
 $slider.each(function(i,e) {
       length[i] = 0;
