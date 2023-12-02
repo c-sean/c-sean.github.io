@@ -113,10 +113,12 @@ var swiper = new Swiper(".mySwiper", {
 // }));
 var myElement = document.getElementById('swiper');
 var hammer = new Hammer(myElement);
-hammer.on('panup', function() {
+hammer.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+hammer.on('swipeup', function() {
+  console.log('up');
   swiper.slideNext();
 });
-hammer.on('pandown', function() {
+hammer.on('swipedown', function() {
   swiper.slidePrev();
 });
 
