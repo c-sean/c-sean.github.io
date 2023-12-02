@@ -219,7 +219,7 @@ transNum(2023);
   
   var CircleCSS = new ProgressBar.SemiCircle('.ai', {easing: 'easeInOut', trailWidth: 1, strokeWidth: 4.5, color: '#390000'});
   
-  var CircleAE = new ProgressBar.SemiCircle('.ae', {easing: 'easeInOut', trailWidth: 1, strokeWidth: 4.5, color: '#00005b'});
+  // var CircleAE = new ProgressBar.SemiCircle('.ae', {easing: 'easeInOut', trailWidth: 1, strokeWidth: 4.5, color: '#00005b'});
   
 
   var lineEn = new ProgressBar.Line('.en', {easing: 'easeInOut', trailWidth: .5, strokeWidth: 1.5, color: '#e54c20'});
@@ -232,7 +232,7 @@ lineCSS.animate(.8);
 lineJS.animate(.7);
 CirclePS.animate(.8);
 CircleCSS.animate(.7);
-CircleAE.animate(.7);
+// CircleAE.animate(.7);
 lineEn.animate(.6);
 lineJp.animate(.4);
 }
@@ -243,7 +243,7 @@ lineCSS.animate(0, {duration: 0});
 lineJS.animate(0, {duration: 0});
 CirclePS.animate(0, {duration: 0});
 CircleCSS.animate(0, {duration: 0});
-CircleAE.animate(0, {duration: 0});
+// CircleAE.animate(0, {duration: 0});
 lineEn.animate(0, {duration: 0});
 lineJp.animate(0, {duration: 0});
 }
