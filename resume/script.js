@@ -44,6 +44,10 @@ var swiper = new Swiper(".mySwiper", {
       // direction: "vertical",
       slidesPerView: 1,
       speed: 500,
+      // scrollbar: {
+      //   el: ".swiper-scrollbar",
+      //   hide: true,
+      // },
         // renderBullet: function (index, className) {
         //   return '<span class="' + className + '"> <span>'  + (index) + "</span></span>";
         // },
@@ -89,15 +93,33 @@ var swiper = new Swiper(".mySwiper", {
          }
       }
     });
-swiper.on('wheel', (function(e) {
-    e.preventDefault();
+// swiper.on('wheel', (function(e) {
+//     e.preventDefault();
+//     if (e.originalEvent.deltaY < 0) {
+//         $(this).slidePrev();
+//     } else {
+//         $(this).slideNext();
+//     }
+// }));
+// swiper.on('scroll', (function(e) {
+//   console.log('scroll');
+    // e.preventDefault();
 
-    if (e.originalEvent.deltaY < 0) {
-        $(this).slidePrev();
-    } else {
-        $(this).slideNext();
-    }
-}));
+    // if (e.originalEvent.deltaY < 0) {
+    //     $(this).slidePrev();
+    // } else {
+    //     $(this).slideNext();
+    // }
+// }));
+var myElement = document.getElementById('swiper');
+var hammer = new Hammer(myElement);
+hammer.on('swipeup', function() {
+  swiper.slideNext();
+});
+hammer.on('swipedown', function() {
+  swiper.slidePrev();
+});
+
 $(function(){
 $slider.each(function(i,e) {
       length[i] = 0;
