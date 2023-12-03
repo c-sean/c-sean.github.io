@@ -508,7 +508,7 @@ body{
       display: flex;
     flex-direction: column;
         align-items: center;
-    height: auto;
+    height: 80vh;
     max-height: 590px;
 }
 .slider_origin, .slider_clone{
@@ -577,7 +577,7 @@ body{
  @media (max-width: 480px) {
   .item_wrap{
 /*            width: 90%;*/
-            height: 80%;
+/*            height: 80%;*/
         align-self: normal;
         margin-top: 30px;
           }
