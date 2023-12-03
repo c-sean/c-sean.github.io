@@ -15,9 +15,9 @@
   
 // }
 
-var $slider = $('.slider'),
-    length = [];
-    const slider = $(".slider-item");
+// var $slider = $('.slider'),
+//     length = [];
+    // const slider = $(".slider-item");
 // slider
 //     .slick({
 //         // slidesToShow: 5,
@@ -44,28 +44,33 @@ var swiper = new Swiper(".mySwiper", {
       // direction: "vertical",
       slidesPerView: 1,
       speed: 500,
-      // scrollbar: {
-      //   el: ".swiper-scrollbar",
-      //   hide: true,
-      // },
-        // renderBullet: function (index, className) {
-        //   return '<span class="' + className + '"> <span>'  + (index) + "</span></span>";
-        // },
       grabCursor: true,
       mousewheel: true,
       keyboard: true,
-      // forceToAxis:true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
+    //   breakpoints: {
+    // // when window width is >= 320px
+    //     300: {
+    //       // slidesPerView: 2,
+    //       spaceBetween: 0
+    //     },
+    //     // when window width is >= 480px
+    //     485: {
+    //       // slidesPerView: 3,
+    //       spaceBetween: 0
+    //     }
+    //     // when window width is >= 640px
+    //     // 640: {
+    //     //   slidesPerView: 4,
+    //     //   spaceBetween: 40
+    //     // }
+    //   },
       on:{
           slideChangeTransitionEnd: function () {
-          // console.log(swiper.activeIndex);
-          if(swiper.activeIndex == 1 || swiper.activeIndex == 6) {
-            // console.log('done');
-            // swiper.changeDirection();
-          }
+
           if(swiper.activeIndex == 0) {
             transNum(2023);
           }
@@ -77,45 +82,16 @@ var swiper = new Swiper(".mySwiper", {
             if (swiper.activeIndex == 6 || swiper.activeIndex == 8) { 
             progressInit();
           }
-          // if(swiper.activeIndex == 1) {
-            // resetNum();
-          // }
-          // console.log(swiper.activeIndex);
-         },
-         reachBeginning: function (){
-          //   if (swiper.activeIndex == 6 || swiper.activeIndex == 8) { 
-          //   progressInit();
-          // }
-          // console.log($('.odometer-value'));
-            // if(swiper.activeIndex == 0) {
-              resetNum();
-            // }
+
          }
       }
     });
-// swiper.on('wheel', (function(e) {
-//     e.preventDefault();
-//     if (e.originalEvent.deltaY < 0) {
-//         $(this).slidePrev();
-//     } else {
-//         $(this).slideNext();
-//     }
-// }));
-// swiper.on('scroll', (function(e) {
-//   console.log('scroll');
-    // e.preventDefault();
 
-    // if (e.originalEvent.deltaY < 0) {
-    //     $(this).slidePrev();
-    // } else {
-    //     $(this).slideNext();
-    // }
-// }));
 var myElement = document.getElementById('swiper');
 var hammer = new Hammer(myElement);
 hammer.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
 hammer.on('swipeup', function() {
-  console.log('up');
+  // console.log('up');
   swiper.slideNext();
 });
 hammer.on('swipedown', function() {
@@ -123,13 +99,14 @@ hammer.on('swipedown', function() {
 });
 
 $(function(){
-$slider.each(function(i,e) {
+  var length = [];
+$('.slider').each(function(i,e) {
       length[i] = 0;
       $(this).children().each(function() {
           length[i] += $(this).outerHeight(true);
       })
       // $('<style>').html('@keyframes loop' + i + '{from {transform:translate3d(0,0,0);}to{transform:translate3d(0,' + -length[i] + 'px,0);}}').appendTo('head');
-      $('<style>').html('@keyframes loop' + i + '{from {top:0;}to{top:' + -length[i] + 'px;}}').appendTo('head');
+      // $('<style>').html('@keyframes loop' + i + '{from {top:0;}to{top:' + -length[i] + 'px;}}').appendTo('head');
 
       $(this).children().clone().addClass('slider_clone').removeClass('slider_origin').appendTo($(this)).parent().css({
         'animation': 'loop' + i + ' linear '+ length[i]/80 +'s  infinite'
