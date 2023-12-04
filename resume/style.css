@@ -579,7 +579,7 @@ body{
 .exp_list{
   list-style: none;
   text-align: left;
-  margin-bottom: 2rem;
+/*  margin-bottom: 2rem;*/
   margin-top: 0;
   text-indent: -40px;
 }
