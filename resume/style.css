@@ -531,7 +531,7 @@ body{
 }
 .skill_wrap li {
 /*    padding: 10px;*/
-    padding: 0 10px 15px;
+    padding: 0 10px 10px;
 }
 .skill_wrap path:first-child {
     stroke: #dddddd;
@@ -593,13 +593,15 @@ body{
         align-self: normal;
             padding: 15px;
 /*        margin-top: 30px;*/
-    height: 75vh;
-    height: 75dvh;
+    height: 80vh;
+    height: 80dvh;
           }
 .skill_wrap, .bio_wrap{
 /*  margin-top:15px;*/
   }
-
+.exp_list{
+  margin-bottom: 0.7rem;
+}
   .slider img {
       width: 100%;
       height: auto;
