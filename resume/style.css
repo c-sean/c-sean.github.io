@@ -515,8 +515,8 @@ body{
       display: flex;
     flex-direction: column;
         align-items: center;
-    height: 90vh;
-    height: 90dvh;
+    /*height: 90vh;
+    height: 90dvh;*/
 /*    max-height: 590px;*/
 }
 .skill_wrap{
@@ -594,6 +594,11 @@ body{
             padding: 0 5px;
 /*        margin-top: 30px;*/
           }
+  .item_wrap, .skill_wrap, .bio_wrap{
+    height: 90vh;
+    height: 90dvh;
+  }
+
   .slider img {
       width: 100%;
       height: auto;
