@@ -75,7 +75,6 @@ var swiper = new Swiper(".mySwiper", {
     //   },
       on:{
           slideChangeTransitionEnd: function () {
-
           if(swiper.activeIndex == 0) {
             transNum(2023);
           }
@@ -84,10 +83,19 @@ var swiper = new Swiper(".mySwiper", {
           }
         },
          slideChange: function (){
-            if (swiper.activeIndex == 6 || swiper.activeIndex == 8) { 
+            if (swiper.activeIndex != 7) { 
             progressInit();
           }
 
+         },
+         scrollbarDragEnd: function(){
+// console.log('done');
+if (swiper.activeIndex == 7) { 
+            progressAnimate();
+          }
+          else  { 
+            progressInit();
+          }
          }
       }
     });
