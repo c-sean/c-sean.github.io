@@ -606,6 +606,9 @@ body{
       width: 100%;
       height: auto;
     }
+    .swiper-pagination{
+      display: none;
+    }
   }
  @media (min-height: 800px) {
   .item_wrap{

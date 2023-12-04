@@ -52,6 +52,10 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
       },
+      scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
     //   breakpoints: {
     // // when window width is >= 320px
     //     300: {
