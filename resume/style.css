@@ -590,7 +590,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
+
   }
  @media (max-width: 400px) {
   .item_wrap, .skill_wrap, .bio_wrap{
@@ -602,8 +602,8 @@ body{
 /*    height: 80vh;
     height: 80dvh;*/
           }
-.skill_wrap, .bio_wrap{
-/*  margin-top:15px;*/
+.bio_wrap{
+  flex-direction: row;
   }
 .exp_list{
   margin-bottom: 0.7rem;
