@@ -42,6 +42,7 @@
 // }));
 var swiper = new Swiper(".mySwiper", {
       // direction: "vertical",
+   // forceToAxis: true,
       slidesPerView: 1,
       speed: 500,
       grabCursor: true,
@@ -97,6 +98,7 @@ hammer.on('swipeup', function() {
 hammer.on('swipedown', function() {
   swiper.slidePrev();
 });
+
 
 $(function(){
   var length = [];

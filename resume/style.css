@@ -393,6 +393,7 @@ template {
 body{
   font-family: Raleway,Helvetica light,sans-serif;
   letter-spacing: .08rem;
+  overflow: auto;
 /*  cursor:grab;*/
 }
 .item{
