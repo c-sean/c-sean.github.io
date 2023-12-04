@@ -622,7 +622,7 @@ body{
     width: 35px;
 }
   }
- @media (max-height: 800px) {
+ @media (min-height: 600px) {
   .bio_wrap, .skill_wrap{
     margin: 45px 0;
   }
