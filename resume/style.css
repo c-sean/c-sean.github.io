@@ -407,6 +407,7 @@ body{
 }
 .flex-items img{
   width: 50px;
+  margin: 0 5px 20px;
 }
 .odometer{
   font-size: 70px;
@@ -615,6 +616,9 @@ body{
       .swiper-pagination{
         display: none;
       }
+      .flex-items img {
+    width: 35px;
+}
   }
  @media (min-height: 800px) {
    .item_wrap, .skill_wrap, .bio_wrap{
@@ -625,12 +629,24 @@ body{
   .item_wrap a{
             margin-top: 20px;
           }
-  .skill_wrap ul{
+  .skill_wrap ul, .bio_wrap ul{
             margin-bottom: 50px;
           }
       .swiper-pagination{
         display: block;
       }
+      .swiper-scrollbar {
+        display: none;
+      }
+    .skill_wrap li{
+        margin: 10px;
+    }
+    .bio_wrap{
+    flex-direction: column;
+    }
+    .flex-items img {
+    width: 50px;
+}
  }
  @media (min-height: 1000px) {
   .item_wrap{
@@ -640,9 +656,6 @@ body{
             margin-bottom: 70px;
 /*            height:auto;*/
           }
-  .skill_wrap li{
-      margin: 10px;
-  }
  }
 /* ---------------------------------- */
 /*.flex-container {
