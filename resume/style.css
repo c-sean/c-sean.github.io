@@ -595,8 +595,8 @@ body{
 /*        margin-top: 30px;*/
           }
 .skill_wrap, .bio_wrap{
-    height: 80vh;
-    height: 80dvh;
+    height: 95vh;
+    height: 95dvh;
   }
 
   .slider img {
