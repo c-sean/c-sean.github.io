@@ -55,7 +55,7 @@ var swiper = new Swiper(".mySwiper", {
       scrollbar: {
     el: '.swiper-scrollbar',
     draggable: true,
-  },
+  }
     //   breakpoints: {
     // // when window width is >= 320px
     //     300: {
@@ -73,32 +73,49 @@ var swiper = new Swiper(".mySwiper", {
     //     //   spaceBetween: 40
     //     // }
     //   },
-      on:{
-          slideChangeTransitionEnd: function () {
-          if(swiper.activeIndex == 0) {
-            transNum(2023);
-          }
-          else if (swiper.activeIndex == 7) { 
-            progressAnimate();
-          }
-        },
-         slideChange: function (){
-            if (swiper.activeIndex != 7) { 
-            progressInit();
-          }
+      // on:{
+      //     slideChangeTransitionEnd: function () {
+      //     if(swiper.activeIndex == 0) {
+      //       transNum(2023);
+      //     }
+      //     else  { 
+      //       resetNum(1980);
+      //     }
+      //   }
+      //    slideChange: function (){
+      //       if (swiper.activeIndex != 7) { 
+      //       progressInit();
+      //     }
 
-         },
-         scrollbarDragEnd: function(){
-// console.log('done');
-if (swiper.activeIndex == 7) { 
-            progressAnimate();
-          }
-          else  { 
-            progressInit();
-          }
-         }
-      }
+      //    },
+      //    scrollbarDragEnd: function(){
+      //       console.log('done');
+      //       if (swiper.activeIndex == 7) { 
+      //         progressAnimate();
+      //       }
+      //       else  { 
+      //         progressInit();
+      //       }
+      //    }
+      // }
     });
+swiper.on('slideChangeTransitionEnd', anime);
+swiper.on('scrollbarDragEnd', anime);
+
+function anime() {
+        if(swiper.activeIndex == 0) {
+              transNum(2023);
+          }
+            else  { 
+              resetNum(1980);
+            }
+            if (swiper.activeIndex == 7) { 
+              progressAnimate();
+            }
+            else{
+              progressInit();
+            }
+}
 
 var myElement = document.getElementById('swiper');
 var hammer = new Hammer(myElement);
@@ -181,12 +198,12 @@ function transNum(num) {
 
 const numbers = [1, 9, 8, 0];
 
-function resetNum() {
+function resetNum(num) {
   $('.odometer-value').each(function(i,val){
     // console.log($(val).html());
     $(val).html(numbers[i]);
   })
-  od.value=1980;
+  od.value=num;
 }
 
 transNum(2023);
