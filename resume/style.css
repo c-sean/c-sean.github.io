@@ -588,17 +588,17 @@ body{
   font-family: Helvetica light;
 }
  @media (max-width: 400px) {
-  .item_wrap{
+  .item_wrap, .skill_wrap, .bio_wrap{
 /*            width: 90%;*/
 /*            height: 80%;*/
         align-self: normal;
             padding: 0 5px;
 /*        margin-top: 30px;*/
           }
-.skill_wrap, .bio_wrap{
+/*.skill_wrap, .bio_wrap{
     height: 95vh;
     height: 95dvh;
-  }
+  }*/
 
   .slider img {
       width: 100%;
