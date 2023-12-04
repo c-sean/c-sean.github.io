@@ -586,6 +586,12 @@ body{
 .exp_list:last-child li:last-child {
   font-family: Helvetica light;
 }
+  .item_wrap, .skill_wrap, .bio_wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+  }
  @media (max-width: 400px) {
   .item_wrap, .skill_wrap, .bio_wrap{
 /*            width: 90%;*/
@@ -595,9 +601,6 @@ body{
 /*        margin-top: 30px;*/
 /*    height: 80vh;
     height: 80dvh;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
           }
 .skill_wrap, .bio_wrap{
 /*  margin-top:15px;*/
