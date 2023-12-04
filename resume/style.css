@@ -602,19 +602,19 @@ body{
 /*    height: 80vh;
     height: 80dvh;*/
           }
-.bio_wrap{
-  flex-direction: row;
+  .bio_wrap{
+    flex-direction: row;
+    }
+  .exp_list{
+    margin-bottom: 0.7rem;
   }
-.exp_list{
-  margin-bottom: 0.7rem;
-}
-  .slider img {
-      width: 100%;
-      height: auto;
-    }
-    .swiper-pagination{
-      display: none;
-    }
+    .slider img {
+        width: 100%;
+        height: auto;
+      }
+      .swiper-pagination{
+        display: none;
+      }
   }
  @media (min-height: 800px) {
    .item_wrap, .skill_wrap, .bio_wrap{
@@ -628,6 +628,9 @@ body{
   .skill_wrap ul{
             margin-bottom: 50px;
           }
+      .swiper-pagination{
+        display: block;
+      }
  }
  @media (min-height: 1000px) {
   .item_wrap{
@@ -637,8 +640,8 @@ body{
             margin-bottom: 70px;
 /*            height:auto;*/
           }
-  .multimedia li{
-          width: 135px;
+  .skill_wrap li{
+      margin: 10px;
   }
  }
 /* ---------------------------------- */
