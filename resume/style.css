@@ -586,7 +586,7 @@ body{
 .exp_list:last-child li:last-child {
   font-family: Helvetica light;
 }
- @media (max-width: 360px) {
+ @media (max-width: 400px) {
   .item_wrap, .skill_wrap, .bio_wrap{
 /*            width: 90%;*/
 /*            height: 80%;*/
@@ -611,9 +611,9 @@ body{
     }
   }
  @media (min-height: 800px) {
-  .item_wrap{
-            height: 80vh;
-            height: 80dvh;
+   .item_wrap, .skill_wrap, .bio_wrap{
+            /*height: 80vh;
+            height: 80dvh;*/
             align-self: center;
           }
   .item_wrap a{
