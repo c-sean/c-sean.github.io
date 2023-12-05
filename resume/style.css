@@ -433,13 +433,12 @@ body{
   position: absolute;
   top: 12px;
   left: 50%;
-  -webkit-transform: translate3d(-50%, 10px, 0);
-          transform: translate3d(-50%, 10px, 0);
+  -webkit-transform: translate3d(-50%, 0, 0);
+          transform: translate3d(-50%, 0, 0);
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #101010;
-  opacity: 0;
   -webkit-animation: 1200ms ease 0ms forwards infinite scroll;
           animation: 1200ms ease 0ms forwards infinite scroll;
   content: "";
