@@ -42,7 +42,7 @@
 // }));
 var swiper = new Swiper(".mySwiper", {
       // direction: "vertical",
-   // forceToAxis: true,
+   forceToAxis: true,
       slidesPerView: 1,
       speed: 500,
       grabCursor: true,

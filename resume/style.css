@@ -496,6 +496,7 @@ body{
     max-width: 360px;*/
 /*    text-align: center;*/
     overflow: hidden;
+        aspect-ratio: 1 / 2;
 /*    height: 80%;*/
 /*    margin-top: 20px;*/
 }
