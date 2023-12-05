@@ -439,7 +439,7 @@ body{
   height: 10px;
   border-radius: 50%;
   background-color: #101010;
-  opacity: 0;
+  opacity: 1;
   -webkit-animation: 1200ms ease 0ms forwards infinite scroll;
           animation: 1200ms ease 0ms forwards infinite scroll;
   content: "";
