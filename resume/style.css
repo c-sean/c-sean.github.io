@@ -425,7 +425,7 @@ body{
           transform: translate3d(-50%, 0, 0);
   width: 40px;
   height: 65px;
-  border: 2px solid #161616;
+  border: 1px solid #161616;
   border-radius: 30px;
   font-size: 70%;
 }
@@ -435,8 +435,8 @@ body{
   left: 50%;
   -webkit-transform: translate3d(-50%, 0, 0);
           transform: translate3d(-50%, 0, 0);
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background-color: #101010;
   -webkit-animation: 1200ms ease 0ms forwards infinite scroll;
