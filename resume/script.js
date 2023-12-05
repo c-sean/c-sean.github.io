@@ -50,11 +50,11 @@ var swiper = new Swiper(".mySwiper", {
       keyboard: true,
       pagination: {
         el: ".swiper-pagination",
-        clickable: true,
+        clickable: true
       },
       scrollbar: {
     el: '.swiper-scrollbar',
-    draggable: true,
+    draggable: true
   }
     //   breakpoints: {
     // // when window width is >= 320px
