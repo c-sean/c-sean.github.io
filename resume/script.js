@@ -21,7 +21,7 @@ swiper.on('scrollbarDragEnd', anime);
 
 function anime() {
         if(swiper.activeIndex == 0) {
-              transNum(2023);
+              transNum(2024);
           }
             else  { 
               resetNum(1980);
@@ -90,7 +90,7 @@ function resetNum(num) {
   od.value=num;
 }
 
-transNum(2023);
+transNum(2024);
 
 
   var lineHtml = new ProgressBar.Line('.html', {easing: 'easeInOut', trailWidth: .5, strokeWidth: 1.5, color: '#e54c20'});
