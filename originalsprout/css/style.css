@@ -196,6 +196,7 @@ p {
 }
 #header {
   font-size: 16px;
+  display: none;
 }
 #header h1 a {
   font: 0/0 a;
