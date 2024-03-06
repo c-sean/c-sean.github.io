@@ -305,7 +305,19 @@ var SITE = SITE || {};
 					// 	$('.bx-prev', '#thumbnail').addClass('locked');
 					// }
 				});
-
+// var slider = $("#thumbnail ul").bxSlider({
+// 				    slideWidth: 76,
+// 				    minSlides: 8,
+// 				    maxSlides: 8,
+// 					moveSlides: 8,
+// 					pager: false,
+// 					infiniteLoop: false,
+// 					onSlideNext: slideMove,
+// 					onSlidePrev: slideMove,
+// 					onSliderLoad: function(){
+// 						$('.bx-prev', '#thumbnail').addClass('locked');
+// 					}
+// 				});
 				$('.prev').click(function(){
 			        slider.goToPrevSlide(); 
 			    });
